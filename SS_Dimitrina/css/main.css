@@ -1,0 +1,34 @@
+body {font-family: "Lato", sans-serif;}
+
+.tablink {
+    background-color: rgb(218, 214, 214);
+    color:black;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+
+.tablink:hover {
+    background-color: rgb(177, 174, 174);
+}
+
+/* Style the tab content */
+.tabcontent {
+    color: black;
+    display: none;
+    padding: 15px;
+    text-align: center;
+}
+
+#calorieCalculator {background-color:rgb(210, 250, 151)}
+#recommendedDailyCalorieIntake {background-color:rgb(253, 251, 148);}
+#bmiCalculator {background-color:rgb(194, 240, 248);}
+#recipes {background-color:rgb(252, 202, 137);}
+
+
+
+

@@ -2,9 +2,31 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <title>Calorie Calculator</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="resources/iconTitle.ico" type="image/x-icon" />
 </head>
 <body>
+<div id="calorieCalculator" class="tabcontent">
+  <h3>Calculate your daily calorie intake</h3>
+</div>
+
+<div id="recommendedDailyCalorieIntake" class="tabcontent">
+  <h3>Recommendations for calorie intake per day: to maintain your weight, to lose weight or to gain weight</h3>
+</div>
+
+<div id="bmiCalculator" class="tabcontent">
+  <h3>Calculate your Body Mass Index now</h3>
+</div>
+
+<div id="recipes" class="tabcontent">
+  <h3>Try our suggestions for healthy, tasty and easy recipes</h3>
+</div>
+
+<button class="tablink" onclick="openTab('calorieCalculator', this, 'rgb(210, 250, 151)')" id="defaultOpen">Calorie Calculator</button>
+<button class="tablink" onclick="openTab('recommendedDailyCalorieIntake', this, 'rgb(253, 251, 148)')">Recommended Daily Calorie Intake</button>
+<button class="tablink" onclick="openTab('bmiCalculator', this, 'rgb(194, 240, 248)')">BMI Calculator</button>
+<button class="tablink" onclick="openTab('recipes', this, 'rgb(252, 202, 137)')">Recipes</button>
 
 
 <script src="js/main.js"></script> 
