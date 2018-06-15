@@ -6,28 +6,83 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="shortcut icon" href="resources/iconTitle.ico" type="image/x-icon" />
 </head>
-<body>
-<div id="calorieCalculator" class="tabcontent">
-  <h3>Calculate your daily calorie intake</h3>
-</div>
 
-<div id="recommendedDailyCalorieIntake" class="tabcontent">
-  <h3>Recommendations for calorie intake per day: to maintain your weight, to lose weight or to gain weight</h3>
+<body>
+    <a href="index.html"><img id="logo", src="resources/logo.jpg"></a>
+    <a target="_blank" href="https://www.facebook.com/"><img id="social", src="resources/social_media.jpg"></a>
+
+<div id="homePage" class="tabcontent">
+      <h3>The best website for calculating daily calorie intake and body mass index!</h3>
+    </div>
+
+<div id="calorieCalculator" class="tabcontent">
+  <h3>Use this amazing calculator to find out how many calories you intake per day</h3>
 </div>
 
 <div id="bmiCalculator" class="tabcontent">
-  <h3>Calculate your Body Mass Index now</h3>
+  <h3>Calculate your Body Mass Index now by simply entering your weight and height</h3>
+</div>  
+
+<div id="recommendations" class="tabcontent">
+  <h3>Recommendations for calorie intake per day: to maintain your weight, to lose weight or to gain weight</h3>
 </div>
 
 <div id="recipes" class="tabcontent">
-  <h3>Try our suggestions for healthy, tasty and easy recipes</h3>
+  <h3>The most delicious, healthy and easy recipes you have to try</h3>
 </div>
 
-<button class="tablink" onclick="openTab('calorieCalculator', this, 'rgb(210, 250, 151)')" id="defaultOpen">Calorie Calculator</button>
-<button class="tablink" onclick="openTab('recommendedDailyCalorieIntake', this, 'rgb(253, 251, 148)')">Recommended Daily Calorie Intake</button>
-<button class="tablink" onclick="openTab('bmiCalculator', this, 'rgb(194, 240, 248)')">BMI Calculator</button>
-<button class="tablink" onclick="openTab('recipes', this, 'rgb(252, 202, 137)')">Recipes</button>
 
+<button class="tablink" onclick="openTab('homePage', this, 'rgb(218, 214, 214)')" id="defaultOpen">Home</button>
+<button class="tablink" onclick="openTab('calorieCalculator', this, 'rgb(210, 250, 151)')"><a href="html/Calorie Calculator.html">Calorie Calculator</a></button>
+<button class="tablink" onclick="openTab('bmiCalculator', this, 'rgb(194, 240, 248)')"><a href="html/BMI.html">BMI Calculator</a></button>
+<button class="tablink" onclick="openTab('recommendations', this, 'rgb(253, 251, 148)')"><a href="html/Recommended Daily Calorie Intake.html">Recommendations</a></button>
+<button class="tablink" onclick="openTab('recipes', this, 'rgb(252, 202, 137)')"><a href="html/Recipes.html">Recipes</a></button>
+<br>
+<br>
+<br>
+<br>
+
+<center><img id="wall", src="resources/my_wall.jpg", alt="Wall"></center>
+
+<h3>Calculate Your Caloric Intake</h3>
+<p>To create your own personal program you need to calculate your daily calorie requirements. Not everybody needs 2,000 calories a day - your needs are highly individual and determined by much more than your workouts.</p>
+<p>Use this calculator to find out how many calories you really need. It provides you with recommentations for 3 different calorie intakes:</p>
+  <ol>
+    <li> for weight maintenance,</li>
+     <li>for weight loss,</li>
+    <li>for weight gain.</li>
+  </ol>
+<br>
+<br>
+
+<h3>Calculate Your Body Mass Index</h3>
+<p>The index of body mass gives you a general idea of where body weight should be, determining a healthy body weight.</p>
+<p>Basically the BMI assumes a "normal" body weight for men and women of average height and average fitness or activity level.</p>
+<p>It is important to take all this into account when trying to understand your BMI reading and also speak with a doctor or nutritionist before undergoing any new fitness routine or diet. One last thing to remember is that the "overweight", "underweight" readings shown in this BMI calculator are relative to a pre-defined average "normal" body weight. This means that for bodybuilders and very fit people, sometimes it’s better being "overweight" because to them the BMI is stating they are heavier than "normal" people, which is in fact the goal most bodybuilders want to obtain.</p>
+
+<br>
+<br>
+
+<h3>Calorie Counted Healthy Recipes</h3>
+<p>Need some help deciding what to choose? Take a look at our most popular and inspirational recipes or check out the latest dishes we’ve added to the site.</p>
+<p>Whether you’re looking for new healthy recipes or you're on a low-calorie diet, we’ve lots of tested recipes to choose from, so for sure you will find the perfect dish.</p>
+<p>The nutrition facts label is useful if you're tracking calories or just want to be more informed about your diet, but this also helps us to make smarter food decisions.</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<center>
+  <span>
+    <small>&copy 2018 </small>
+    </span>
+  <span>
+    <small>
+    <a href="index.html">Calorie-Calculator/SS_Dimitrina</a>
+  </small>
+    </span>
+  </center>
 
 <script src="js/main.js"></script> 
 </body>

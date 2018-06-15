@@ -1,33 +1,125 @@
 body {font-family: "Lato", sans-serif;}
 
+html {
+    margin: 0px 75px 40px;
+}
+
 .tablink {
+    position: relative;
     background-color: rgb(218, 214, 214);
     color:black;
     float: left;
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
-    font-size: 17px;
-    width: 25%;
+    padding: 8.5px 0px 8.5px 0px;
+    font-size: 15px;
+    width: 221.5px;
+    box-shadow: 20px 20px 20px rgb(0, 0, 0, 0.266);
+transition: 1s;
+
 }
+
 
 .tablink:hover {
+    position: relative;
     background-color: rgb(177, 174, 174);
+    color: blue;
+
 }
 
-/* Style the tab content */
 .tabcontent {
+    position: relative;
     color: black;
     display: none;
-    padding: 15px;
+    padding: 10px;
     text-align: center;
+    border-top: solid black;
+
 }
 
-#calorieCalculator {background-color:rgb(210, 250, 151)}
-#recommendedDailyCalorieIntake {background-color:rgb(253, 251, 148);}
-#bmiCalculator {background-color:rgb(194, 240, 248);}
-#recipes {background-color:rgb(252, 202, 137);}
+#homePage {
+    position: relative; 
+    background-color:rgb(218, 214,214); 
+    margin-left: 75px; 
+    margin-right: 75px;
+}
+
+#calorieCalculator {
+    position: relative; 
+    background-color:rgb(210, 250, 151); 
+    margin-left: 75px; 
+    margin-right: 75px;
+
+}
+
+#bmiCalculator {
+    position: relative; 
+    background-color:rgb(194, 240, 248);
+     margin-left: 75px; 
+     margin-right: 75px;
+    }
+
+#recommendations {
+    position: relative; 
+    background-color:rgb(253, 251, 148); 
+    margin-left: 75px; 
+    margin-right: 75px;
+}
+
+#recipes {position: relative;
+     background-color:rgb(252, 202, 137); 
+     margin-left: 75px; 
+     margin-right: 75px;
+    }
+
+#wall {position: relative; 
+    border-bottom-style: solid;
+}
+
+#logo {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    margin-left: 83px;
+    margin-top: 8px; 
+   filter: grayscale(40%);
+   box-shadow : 5px 10px 5px rgb(218, 214, 214);
+   border: solid black;
+   height: 12%;
+}
+
+#social {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 1;
+    margin-right: 83px;
+    margin-top: 8px; 
+   filter: grayscale(40%);
+   height: 20%;
+}
+
+h3 {
+    position: relative;
+    margin-left: 90px;
+}
+
+p, ol, ul {
+    position: relative;
+    line-height: 1.8;
+    text-align: justify;
+    margin-left: 80px; 
+    margin-right: 70px;
+}
+
+
+
+
+
+
+
 
 
 

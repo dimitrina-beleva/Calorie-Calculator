@@ -6,30 +6,43 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="shortcut icon" href="../resources/iconTitle.ico" type="image/x-icon" />
 </head>
-<body>
-<div id="calorieCalculator" class="tabcontent">
-  <h3>Calculate your daily calorie intake</h3>
-</div>
 
-<div id="recommendedDailyCalorieIntake" class="tabcontent">
-  <h3>Recommendations for calorie intake per day: to maintain your weight, to lose weight or to gain weight</h3>
+<body>
+    <a href="../index.html"><img id="logo", src="../resources/logo.jpg"></a>
+    <a target="_blank" href="https://www.facebook.com/"><img id="social", src="../resources/social_media.jpg"></a>
+
+<div id="homePage" class="tabcontent">
+      <h3>The best website for calculating daily calorie intake and body mass index!</h3>
+    </div>
+
+<div id="calorieCalculator" class="tabcontent">
+  <h3>Use this amazing calculator to find out how many calories you intake per day</h3>
 </div>
 
 <div id="bmiCalculator" class="tabcontent">
-  <h3>Calculate your Body Mass Index now</h3>
+  <h3>Calculate your Body Mass Index now by simply entering your weight and height</h3>
+</div>  
+
+<div id="recommendations" class="tabcontent">
+  <h3>Recommendations for calorie intake per day: to maintain your weight, to lose weight or to gain weight</h3>
 </div>
 
 <div id="recipes" class="tabcontent">
-  <h3>Try our suggestions for healthy, tasty and easy recipes</h3>
+  <h3>The most delicious, healthy and easy recipes you have to try</h3>
 </div>
 
-<button class="tablink" onclick="openTab('calorieCalculator', this, 'rgb(210, 250, 151)')" id="defaultOpen">Calorie Calculator</button>
-<button class="tablink" onclick="openTab('recommendedDailyCalorieIntake', this, 'rgb(253, 251, 148)')">Recommended Daily Calorie Intake</button>
+
+<button class="tablink" onclick="openTab('homePage', this, 'rgb(218, 214, 214)')" id="defaultOpen"><a href="../index.html">Home</a></button>
+<button class="tablink" onclick="openTab('calorieCalculator', this, 'rgb(210, 250, 151)')"><a href="../html/Calorie Calculator.html">Calorie Calculator</a></button>
 <button class="tablink" onclick="openTab('bmiCalculator', this, 'rgb(194, 240, 248)')">BMI Calculator</button>
-<button class="tablink" onclick="openTab('recipes', this, 'rgb(252, 202, 137)')">Recipes</button>
+<button class="tablink" onclick="openTab('recommendations', this, 'rgb(253, 251, 148)')"><a href="../html/Recommended Daily Calorie Intake.html">Recommendations</a></button>
+<button class="tablink" onclick="openTab('recipes', this, 'rgb(252, 202, 137)')"><a href="../html/Recipes.html">Recipes</a></button>
 <br>
 <br>
 <br>
+<br>
+
+<center><img id="wall", src="../resources/my_wall.jpg", alt="Wall"></center>
 <h4>Body Mass Index (BMI)</h4>
 
 <p>BMI is a useful measure of overweight and obesity. It is calculated from your height and weight. BMI is an estimate of body fat and a good gauge of your risk for diseases that can occur with more body fat. The higher your BMI, the higher your risk for certain diseases such as heart disease, high blood pressure, type 2 diabetes, gallstones, breathing problems, and certain cancers.</p>
@@ -48,8 +61,28 @@
  Normal	18.5–24.9
  Overweight	25.0–29.9
  Obesity 30.0 and Above-->
+
+
+ 
  
 <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<center>
+  <span>
+    <small>&copy 2018 </small>
+    </span>
+  <span>
+    <small>
+    <a href="../index.html">Calorie-Calculator/SS_Dimitrina</a>
+  </small>
+    </span>
+  </center>
+
 <script src="../js/main.js"></script> 
 </body>
-</html>
+</html> 
