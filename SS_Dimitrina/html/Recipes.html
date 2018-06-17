@@ -8,47 +8,47 @@
 </head>
 
 <body>
-    <a href="../index.html"><img id="logo" src="../resources/logo.jpg" alt="logo"></a>
-    <div class="social"> 
-            <div><a target="_blank" href="https://www.facebook.com/dimitrina.beleva"><img src="../resources/facebook.jpg" alt="facebook-icon"></a></div>
-            <div><a target="_blank" href="https://www.linkedin.com/in/dimitrina-beleva-0bbb1076/"><img src="../resources/linkedin.jpg" alt="linkedin-icon"></a></div>
-            <div><a target="_blank" href="https://github.com/dimitrina-beleva/Calorie-Calculator"><img src="../resources/github.jpg" alt="github-icon"></a></div>
-       </div>
-
+    <!-- Header -->
+<a href="index.html"><img id="logo" src="../resources/logo.jpg" alt="logo"></a>
+<div class="social"> 
+     <div><a target="_blank" href="https://www.facebook.com/dimitrina.beleva"><img src="../resources/facebook.jpg" alt="facebook-icon"></a></div>
+     <div><a target="_blank" href="https://www.linkedin.com/in/dimitrina-beleva-0bbb1076/"><img src="../resources/linkedin.jpg" alt="linked-icon"></a></div>
+     <div><a target="_blank" href="https://github.com/dimitrina-beleva/Calorie-Calculator"><img src="../resources/github.jpg" alt="github-icon"></a></div>
+</div>
 <div id="homePage" class="tabcontent">
-      <h3>The best website for calculating daily calorie intake and body mass index!</h3>
-    </div>
+<h3>The best website for calculating daily calorie intake and body mass index!</h3>
+</div>
 
 <div id="calorieCalculator" class="tabcontent">
-  <h3>Use this amazing calculator to find out how many calories you intake per day</h3>
+<h3>Use this amazing calculator to find out how many calories you intake per day</h3>
 </div>
 
 <div id="bmiCalculator" class="tabcontent">
-  <h3>Calculate your Body Mass Index now by simply entering your weight and height</h3>
+<h3>Calculate your Body Mass Index now by simply entering your weight and height</h3>
 </div>  
 
 <div id="recommendations" class="tabcontent">
-  <h3>Tips and tricks for better life</h3>
+<h3>Tips and tricks for better life</h3>
 </div>
 
 <div id="recipes" class="tabcontent">
-  <h3>The most delicious, healthy and easy recipes you have to try</h3>
+<h3>The most delicious, healthy and easy recipes you have to try</h3>
 </div>
 
-
-<button class="tablink" onclick="openTab('homePage', this, 'rgb(218, 214, 214)')" id="defaultOpen"><a href="../index.html">Home</a></button>
-<button class="tablink" onclick="openTab('calorieCalculator', this, 'rgb(210, 250, 151)')"><a href="../html/Calorie Calculator.html">Calorie Calculator</a></button>
-<button class="tablink" onclick="openTab('bmiCalculator', this, 'rgb(194, 240, 248)')"><a href="../html/BMI.html">BMI Calculator</a></button>
-<button class="tablink" onclick="openTab('recommendations', this, 'rgb(253, 251, 148)')"><a href="../html/Recommendations.html">Key Recommendations</a></button>
-<button class="tablink" onclick="openTab('recipes', this, 'rgb(252, 202, 137)')">Recipes</button>
+<button id="homePage-button" class="tablink" onclick="loadPage('../index.html')">Home</button>
+<button id="calorieCalculator-button" class="tablink" onclick="loadPage('../html/CalorieCalculator.html')">Calorie Calculator</button>
+<button id="bmiCalculator-button" class="tablink" onclick="loadPage('../html/BMI.html')">BMI Calculator</button>
+<button id="recommendations-button" class="tablink" onclick="loadPage('../html/Recommendations.html')">Key Recommendations</button>
+<button id="recipes-button" class="tablink" onclick="loadPage('../html/Recipes.html')">Recipes</button>
 <br>
 <br>
 <br>
 <br>
 
 <center><img id="wall" src="../resources/my_wall.jpg" alt="Wall"></center>
-
 <br>
+
+<!-- End Header -->
 
 <button onclick="topFunction()" id="myButton" title="Go to top">Back on Top</button>
 
@@ -75,7 +75,7 @@
 <h2><center>Recipe Book</center></h2> 
 <div class="recipes">
 
-    <div class="recipe1">
+    <div class="recipe">
 <a name="Recipe1"><h3>Breakfast smoothie</h3></a>
 <br>
         <div class="image-and-ingredients">
@@ -106,7 +106,7 @@
 
 <br>
 
-<div class="recipe2">
+<div class="recipe">
 <a name="Recipe2"><h3>Omelette Wedges</h3></a>
 
     <div class="image-and-ingredients">
@@ -148,7 +148,7 @@
 
 <br>
 
-<div class="recipe3">
+<div class="recipe">
 <a name="Recipe3"><h3>Poached eggs with smashed avocado and tomatoes</h3></a>
     <div class="image-and-ingredients">
             <div class="images">
@@ -183,7 +183,7 @@
 
 <br>
 
-<div class="recipe4">
+<div class="recipe">
 <a name="Recipe4"><h3>Spicy yogurt chicken</h3></a>
     <div class="image-and-ingredients">
             <div class="images">
@@ -217,7 +217,7 @@
 </div>
 <br>
 
-<div class="recipe5">
+<div class="recipe">
 <a name="Recipe5"><h3>Smoked salmon and lemon scrambled eggs</h3></a>
     <div class="image-and-ingredients">
         <div class="images">
@@ -247,7 +247,7 @@
 </div>
 <br>
 
-<div class="recipe6">
+<div class="recipe">
 <a name="Recipe6"><h3>Thai squash soup</h3></a>
      <div class="image-and-ingredients">
          <div class="images">
@@ -300,6 +300,7 @@
   </center>
 
 <script src="../js/main.js"></script> 
+<script>openTab('recipes', document.getElementById("recipes-button"), 'rgb(252, 202, 137)')</script>
 </body>
 </html> 
 

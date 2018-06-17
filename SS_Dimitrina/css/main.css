@@ -16,16 +16,13 @@ html {
     font-size: 15px;
     width: 221.5px;
     box-shadow: 20px 20px 20px rgb(0, 0, 0, 0.266);
-transition: 1s;
-
+    transition: 1s;
 }
-
 
 .tablink:hover {
     position: relative;
     background-color: rgb(177, 174, 174);
     color: blue;
-
 }
 
 .tabcontent {
@@ -35,8 +32,8 @@ transition: 1s;
     padding: 10px;
     text-align: center;
     border-top: solid black;
-
 }
+
 .tableCalculator {
     position: relative;
     background-color: bisque;
@@ -44,10 +41,7 @@ transition: 1s;
     padding: 20px;
     width: 400px;
     margin-left: 100px;
-
-  
 }
-
 
 
 /*
@@ -89,7 +83,6 @@ transition: 1s;
     padding-right: 80px;
 }
 
-
 #myButton {
     display: none;
     position: fixed;
@@ -115,19 +108,16 @@ transition: 1s;
 }
 
 .block-images {
-position: relative;
-padding-left:195px;
-padding-right: 195px; 
-
+    position: relative;
+    padding-left:195px;
+    padding-right: 195px; 
 }
-
 
 .block-images:hover {
     display: block;
     text-decoration: none;
     transition: color 0.4s ease;
     box-sizing: border-box;
-
 }
 
 .images-rows {
@@ -135,24 +125,20 @@ padding-right: 195px;
     padding: 10px;
     background-color: rgba(248, 211, 211, 0.26);
     border-radius: 10px;
-
-    }
+}
 
 .recipe-images {
     position: relative;
     opacity: 0.80;
     transition: 0.5s ease;
     filter: saturate(100%);
-
 }
 
 .recipe-images:hover {
     position: relative;
     opacity: 1;
     filter: saturate(150%);
-
 }
-
 
 .recipes {
     position: relative;
@@ -161,54 +147,13 @@ padding-right: 195px;
     border: solid 2px rgb(165, 165, 165);
     padding: 10px;
     background-color:rgba(196, 245, 237, 0.342);
-
 }
 
-.recipe1 {
+.recipe {
     position: relative;
     border: solid 2px rgb(125, 127, 129);
     background-color: rgba(248, 183, 183, 0.432);
     padding: 10px;
-}
-
-.recipe2 {
-    position: relative;
-    border: solid 2px rgb(125, 127, 129);
-    background-color: rgba(248, 183, 183, 0.432);
-    padding: 10px;
-
-}
-
-.recipe3 {
-    position: relative;
-    border: solid 2px rgb(125, 127, 129);
-    background-color: rgba(248, 183, 183, 0.432);
-    padding: 10px;
-
-}
-
-.recipe4 {
-    position: relative;
-    border: solid 2px rgb(125, 127, 129);
-    background-color: rgba(248, 183, 183, 0.432);
-    padding: 10px;
-
-}
-
-.recipe5 {
-    position: relative;
-    border: solid 2px rgb(125, 127, 129);
-    background-color: rgba(248, 183, 183, 0.432);
-    padding: 10px;
-
-}
-
-.recipe6 {
-    position: relative;
-    border: solid 2px rgb(125, 127, 129);
-    background-color: rgba(248, 183, 183, 0.432);
-    padding: 10px;
-
 }
 
 .image-and-ingredients {
@@ -248,8 +193,6 @@ padding-right: 195px;
     font-style: italic;
     font-weight: bold;
     font-size: 70%;
-
-
 }
 
 .images {
@@ -257,8 +200,6 @@ padding-right: 195px;
     top: 10px;
     left: 10px;
     padding: 10px;
-
-   
 }
 
 .tableBMI {
@@ -282,7 +223,6 @@ padding-right: 195px;
     background-color:rgb(210, 250, 151); 
     margin-left: 75px; 
     margin-right: 75px;
-
 }
 
 #bmiCalculator {
@@ -290,7 +230,7 @@ padding-right: 195px;
     background-color:rgb(194, 240, 248);
      margin-left: 75px; 
      margin-right: 75px;
-    }
+}
 
 #recommendations {
     position: relative; 
@@ -300,14 +240,13 @@ padding-right: 195px;
 }
 
 #recipes {position: relative;
-     background-color:rgb(252, 202, 137); 
-     margin-left: 75px; 
-     margin-right: 75px;
-    }
+    background-color:rgb(252, 202, 137); 
+    margin-left: 75px; 
+    margin-right: 75px;
+}
 
 #wall {position: relative; 
     border-bottom-style: solid;
-    
 }
 
 #logo {
@@ -317,33 +256,17 @@ padding-right: 195px;
     z-index: 1;
     margin-left: 83px;
     margin-top: 8px; 
-   filter: grayscale(40%);
-   box-shadow : 5px 10px 5px rgb(218, 214, 214);
-   border: solid black;
-   height: 12%;
+    filter: grayscale(40%);
+    box-shadow : 5px 10px 5px rgb(218, 214, 214);
+    border: solid black;
+    height: 12%;
 }
 
-#recommendation1:hover {
-    position: relative;
-    color: blue;
-}
-#recommendation2:hover {
+li a:hover {
     position: relative;
     color: blue;
 }
 
-#recommendation3:hover {
-    position: relative;
-    color: blue;
-}
-#recommendation4:hover {
-    position: relative;
-    color: blue;
-}
-#recommendation5:hover {
-    position: relative;
-    color: blue;
-}
 .social {
     position: absolute;
     right: 0px;
@@ -355,7 +278,6 @@ padding-right: 195px;
    height: 40px;
    width: 40px;
 } 
-
 
 h3, h4 {
     position: relative;
@@ -369,16 +291,3 @@ p, ol, ul {
     margin-left: 80px; 
     margin-right: 70px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

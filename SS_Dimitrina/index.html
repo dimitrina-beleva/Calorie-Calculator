@@ -8,6 +8,8 @@
 </head>
 
 <body>
+
+<!-- Header -->
     <a href="index.html"><img id="logo" src="resources/logo.jpg" alt="logo"></a>
       <div class="social"> 
            <div><a target="_blank" href="https://www.facebook.com/dimitrina.beleva"><img src="resources/facebook.jpg" alt="facebook-icon"></a></div>
@@ -34,12 +36,11 @@
   <h3>The most delicious, healthy and easy recipes you have to try</h3>
 </div>
 
-
-<button class="tablink" onclick="openTab('homePage', this, 'rgb(218, 214, 214)')" id="defaultOpen"><a href="index.html">Home</a></button>
-<button class="tablink" onclick="openTab('calorieCalculator', this, 'rgb(210, 250, 151)')"><a href="html/Calorie Calculator.html">Calorie Calculator</a></button>
-<button class="tablink" onclick="openTab('bmiCalculator', this, 'rgb(194, 240, 248)')">BMI Calculator</button>
-<button class="tablink" onclick="openTab('recommendations', this, 'rgb(253, 251, 148)')"><a href="html/Recommendations.html">Key Recommendations</a></button>
-<button class="tablink" onclick="openTab('recipes', this, 'rgb(252, 202, 137)')"><a href="html/Recipes.html">Recipes</a></button>
+<button id="homePage-button" class="tablink" onclick="loadPage('index.html')">Home</button>
+<button id="calorieCalculator-button" class="tablink" onclick="loadPage('html/CalorieCalculator.html')">Calorie Calculator</button>
+<button id="bmiCalculator-button" class="tablink" onclick="loadPage('html/BMI.html')">BMI Calculator</button>
+<button id="recommendations-button" class="tablink" onclick="loadPage('html/Recommendations.html')">Key Recommendations</button>
+<button id="recipes-button" class="tablink" onclick="loadPage('html/Recipes.html')">Recipes</button>
 <br>
 <br>
 <br>
@@ -47,6 +48,8 @@
 
 <center><img id="wall" src="resources/my_wall.jpg" alt="Wall"></center>
 <br>
+
+<!-- End Header -->
 
 <h3>Calculate Your Caloric Intake</h3>
 <p>To create your own personal program you need to calculate your daily calorie requirements. Not everybody needs 2,000 calories a day - your needs are highly individual and determined by much more than your workouts.</p>
@@ -74,6 +77,7 @@
 <br>
 <br>
 
+<!-- Footer -->
 <center>
   <span>
     <small>&copy; 2018 </small>
@@ -85,6 +89,9 @@
     </span>
   </center>
 
-<script src="js/main.js"></script> 
+<!-- End Footer -->
+
+<script src="js/main.js"></script>
+<script>openTab('homePage', document.getElementById("homePage-button"), 'rgb(218, 214, 214)')</script>
 </body>
 </html> 

@@ -1,33 +1,34 @@
+function loadPage(page) {
+    location.href = page;
+}
 
-function openTab(tabName,elmnt,color) {
+function openTab(tabName, elmnt, color) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
+
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
     }
+
     tablinks = document.getElementsByClassName("tablink");
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].style.backgroundColor = "";
-        
     }
+
     document.getElementById(tabName).style.display = "block";
     elmnt.style.backgroundColor = color;
-    
 }
 
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-
-
-
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+window.onscroll = scrollFunction();
 
 function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("myButton").style.display = "block";
-    } else {
-        document.getElementById("myButton").style.display = "none";
+    if(document.getElementById("myButton")) {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myButton").style.display = "block";
+        } else {
+            document.getElementById("myButton").style.display = "none";
+        }
     }
 }
 
