@@ -267,6 +267,13 @@ li a:hover {
     color: blue;
 }
 
+tr th {
+    font-size: 90%;
+    color: rgb(28, 28, 168);    
+    font-style: italic;
+    padding-left: 20px;
+}
+
 .social {
     position: absolute;
     right: 0px;
