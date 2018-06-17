@@ -38,6 +38,146 @@ transition: 1s;
 
 }
 
+.m_bmi_calculator .__inner {
+    padding: 25px;
+    text-align: center;
+
+}
+
+.clfx, .m_bmi_calculator .__inner, .m_salt_calculator .__inner {
+    zoom: 1;
+}
+
+.m_bmi_calculator {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 100%;
+    color: rgb(218, 214, 214);
+    margin-bottom: 25px;
+    margin-top: 20px;
+    position: relative;
+}
+
+::selection {
+    color: rgb(41, 40, 40);
+    background: rgb(226, 151, 191);
+}
+.block-images {
+position: relative;
+padding-left:195px;
+padding-right: 195px; 
+
+}
+
+
+.block-images:hover {
+    display: block;
+    text-decoration: none;
+    transition: color 0.4s ease;
+    box-sizing: border-box;
+
+}
+
+.images-rows {
+    border: solid 2px rgb(165, 165, 165);
+    padding: 10px;
+    background-color: rgba(248, 211, 211, 0.26);
+
+    }
+
+.recipe-images {
+    position: relative;
+    opacity: 0.80;
+    transition: 0.5s ease;
+    filter: saturate(100%);
+
+}
+
+.recipe-images:hover {
+    position: relative;
+    opacity: 1;
+    filter: saturate(150%);
+
+}
+
+
+.recipes {
+    position: relative;
+    margin-left: 80px; 
+    margin-right: 70px; 
+    border: solid 2px rgb(165, 165, 165);
+    padding: 10px;
+    background-color:rgba(196, 245, 237, 0.342);
+
+}
+
+.recipe1 {
+    position: relative;
+    border: solid 2px rgb(125, 127, 129);
+    background-color: rgba(248, 183, 183, 0.432);
+    padding: 10px;
+}
+
+.recipe2 {
+    position: relative;
+    border: solid 2px rgb(125, 127, 129);
+    background-color: rgba(248, 183, 183, 0.432);
+    padding: 10px;
+
+}
+
+.recipe3 {
+    position: relative;
+    border: solid 2px rgb(125, 127, 129);
+    background-color: rgba(248, 183, 183, 0.432);
+    padding: 10px;
+
+}
+
+.recipe4 {
+    position: relative;
+    border: solid 2px rgb(125, 127, 129);
+    background-color: rgba(248, 183, 183, 0.432);
+    padding: 10px;
+
+}
+
+.recipe5 {
+    position: relative;
+    border: solid 2px rgb(125, 127, 129);
+    background-color: rgba(248, 183, 183, 0.432);
+    padding: 10px;
+
+}
+
+.recipe6 {
+    position: relative;
+    border: solid 2px rgb(125, 127, 129);
+    background-color: rgba(248, 183, 183, 0.432);
+    padding: 10px;
+
+}
+
+.image-and-ingredients {
+    position: relative;
+    border: solid 1px rgb(125, 127, 129);
+    background-color: rgba(255, 255, 255, 0.66);
+    padding: 10px;
+    margin-left: 150px;
+    margin-right: 150px;
+    box-shadow : 5px 10px 5px rgb(218, 214, 214);
+}
+
+.tableBMI {
+    position: relative;
+    border: solid 2px rgb(125, 127, 129);
+    background: repeat-x;
+    background-color: rgba(248, 183, 183, 0.432);
+    margin-left: 75px; 
+    margin-right: 75px;
+}
+
 #homePage {
     position: relative; 
     background-color:rgb(218, 214,214); 
@@ -90,7 +230,7 @@ transition: 1s;
    height: 12%;
 }
 
-#social {
+.social {
     position: absolute;
     right: 0px;
     top: 0px;
@@ -98,10 +238,12 @@ transition: 1s;
     margin-right: 83px;
     margin-top: 8px; 
    filter: grayscale(40%);
-   height: 20%;
-}
+   height: 40px;
+   width: 40px;
+} 
 
-h3 {
+
+h3, h4 {
     position: relative;
     margin-left: 90px;
 }
@@ -113,6 +255,8 @@ p, ol, ul {
     margin-left: 80px; 
     margin-right: 70px;
 }
+
+
 
 
 

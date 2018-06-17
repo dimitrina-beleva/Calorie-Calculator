@@ -8,8 +8,12 @@
 </head>
 
 <body>
-    <a href="../index.html"><img id="logo", src="../resources/logo.jpg"></a>
-    <a target="_blank" href="https://www.facebook.com/"><img id="social", src="../resources/social_media.jpg"></a>
+    <a href="../index.html"><img id="logo" src="../resources/logo.jpg" alt="logo"></a>
+    <div class="social"> 
+        <div><a target="_blank" href="https://www.facebook.com/dimitrina.beleva"><img src="../resources/facebook.jpg" alt="facebook-icon"></a></div>
+        <div><a target="_blank" href="https://www.linkedin.com/in/dimitrina-beleva-0bbb1076/"><img src="../resources/linkedin.jpg" alt="linkedin-icon"></a></div>
+        <div><a target="_blank" href="https://github.com/dimitrina-beleva/Calorie-Calculator"><img src="../resources/github.jpg" alt="github-icon"></a></div>
+   </div>
 
 <div id="homePage" class="tabcontent">
       <h3>The best website for calculating daily calorie intake and body mass index!</h3>
@@ -35,15 +39,15 @@
 <button class="tablink" onclick="openTab('homePage', this, 'rgb(218, 214, 214)')" id="defaultOpen"><a href="../index.html">Home</a></button>
 <button class="tablink" onclick="openTab('calorieCalculator', this, 'rgb(210, 250, 151)')"><a href="../html/Calorie Calculator.html">Calorie Calculator</a></button>
 <button class="tablink" onclick="openTab('bmiCalculator', this, 'rgb(194, 240, 248)')">BMI Calculator</button>
-<button class="tablink" onclick="openTab('recommendations', this, 'rgb(253, 251, 148)')"><a href="../html/Recommended Daily Calorie Intake.html">Recommendations</a></button>
+<button class="tablink" onclick="openTab('recommendations', this, 'rgb(253, 251, 148)')"><a href="../html/Recommendations.html">Key Recommendations</a></button>
 <button class="tablink" onclick="openTab('recipes', this, 'rgb(252, 202, 137)')"><a href="../html/Recipes.html">Recipes</a></button>
 <br>
 <br>
 <br>
 <br>
 
-<center><img id="wall", src="../resources/my_wall.jpg", alt="Wall"></center>
-<h4>Body Mass Index (BMI)</h4>
+<center><img id="wall" src="../resources/my_wall.jpg" alt="Wall"></center>
+<h3>Body Mass Index (BMI)</h3>
 
 <p>BMI is a useful measure of overweight and obesity. It is calculated from your height and weight. BMI is an estimate of body fat and a good gauge of your risk for diseases that can occur with more body fat. The higher your BMI, the higher your risk for certain diseases such as heart disease, high blood pressure, type 2 diabetes, gallstones, breathing problems, and certain cancers.</p>
 <p>Although BMI can be used for most men and women, it does have some limits:</p>
@@ -52,19 +56,131 @@
     <li>It may underestimate body fat in older persons and others who have lost muscle.</li>
 </ul>
 <br>
-<p>Use the BMI Calculator or BMI Tables to estimate your body fat. The BMI score means the following:</p>
+<p>Use the BMI Calculator or BMI Tables to estimate your body fat.</p>
+<br>
+<center><img src="../resources/body-fat-percentage-men-women.jpg" alt="Body fat percentage-men and women"></center>
+<br>
+<h4>BMI calculator and BMI table</h4>
+
+<p>The BMI Calculator is an easy-to-use online tool to help you estimate body fat. It is a measure of your weight relative to your height.</p>
+<i><p>To calculate your BMI, simply modify the values below and click on the "Calculate" button:</p></i>
+
+<div class="__inner">
+
+									<div class="__calculator">
+
+										<h2>Body mass index (BMI)</h2>
+
+										<form action="#" class="js_bmi_form">
+
+											<ul class="__gender">
+													<li>
+														<input type="radio" name="gender" value="" id="male" class="visuallyhidden">
+															<label for="male">
+																<span class="__avatar-window --male">
+																<img src="../resources/bmi-male-loop.gif" alt="BMI Calculator-male">
+															</span> Male</label>
+													</li>
+
+													<li>
+														<input type="radio" name="gender" value="" id="female" class="visuallyhidden">
+															<label for="female">
+																<span class="__avatar-window --female">
+																<img src="../resources/bmi-female-loop.gif" alt="BMI Calculator-female">
+															</span> Female </label>
+													</li>
+											</ul>
+
+                                            <ul class="__unit">
+                                                <li>
+                                                    <a href="#" id="js_show_metric" class="is_active">Metric</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" id="js_show_imperial">Imperial</a>
+                                                </li>
+                                            </ul>
+
+											<ul class="__form-items">
+												<li>
+													<h3>Height</h3>
+													<div class="__form-elements js_input_container">
+														<div id="slider-height" class="__slider-item ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all">
+                              <div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" style="width: 0%;">
+                              </div>
+                              <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 0%;"></span>
+                            </div>
+														<div class="__input-container">
+															<div class="__field" data-unit="metric">
+																<label for="height-metric">cm</label>
+																<input type="text" id="height-metric" class="js_num_lock  js_metric_height">
+															</div>
+															<div class="__field  is_split  is_hidden" data-unit="imperial">
+																<label for="height-imperial-feet">ft</label>
+																<input type="text" id="height-imperial-feet" data-value="height" class="js_imperial_feet" maxlength="1">
+															</div>
+															<div class="__field  is_split  is_hidden" data-unit="imperial">
+																<label for="height-imperial-inches">in</label>
+																<input type="text" id="height-imperial-inches" class="js_num_lock js_imperial_inches">
+															</div>
+														</div>
+													</div>
+												</li>
+												<li>
+													<h3>Weight</h3>
+
+													<div class="__form-elements js_input_container">
+														<div id="slider-weight" class="__slider-item ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" style="width: 1.66667%;"></div><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 1.66667%;"></span></div>
+														<div class="__input-container">
+															<div class="__field" data-unit="metric">
+																<label for="weight-metric">kg</label>
+																<input type="text" id="weight-metric" class="js_num_lock js_metric_weight">
+															</div>
+															<div class="__field  is_hidden" data-unit="imperial">
+																<label for="weight-imperial">Lbs</label>
+																<input type="text" id="weight-imperial" class="js_num_lock  js_imperial_weight">
+															</div>
+														</div>
+													</div>
+												</li>
+											</ul>
+
+											<a href="#" id="js_calculate_bmi" class="btn has_bg">Calculate your BMI</a>
+										</form>
+									</div><!-- __calculator -->
+								</div>
+
 <br>
 
- <!--To be added the table for the different cases
+<p>The BMI score means the following:</p>
 
- Underweight Below 18.5
- Normal	18.5–24.9
- Overweight	25.0–29.9
- Obesity 30.0 and Above-->
+<table border="0" width="350" class="tableBMI">
+    <tbody><tr>
+      <th valign="top">&nbsp;</th>
+            <th valign="top" scope="col"><strong>BMI</strong></th>
+    </tr>
+          <tr>
+            <td valign="top"><strong>Underweight</strong></td>
+            <td valign="top"><div align="center">Below 18.5</div></td>
+          </tr>
+          <tr>
+            <td valign="top"><strong>Normal</strong></td>
+            <td valign="top"><div align="center">18.5–24.9 </div></td>
+          </tr>
+          <tr>
+            <td valign="top"><strong>Overweight</strong></td>
+            <td valign="top"><div align="center">25.0–29.9</div></td>
+      </tr>
+          <tr>
+            <td valign="top"><strong>Obesity</strong></td>
+            <td valign="top"><div align="center">30.0 and Above</div></td>
+      </tr>
+      </tbody>
+    </table>
+<br>
 
-
- 
- 
+<p>For people who are considered obese (BMI greater than or equal to 30) or those who are overweight (BMI of 25 to 29.9) and have two or more risk factors, it is recommended that you lose weight. Even a small weight loss (between 5 and 10 percent of your current weight) will help lower your risk of developing diseases associated with obesity. People who are overweight, do not have a high waist measurement, and have fewer than two risk factors may need to prevent further weight gain rather than lose weight.</p>
+<p>Talk to your doctor to see whether you are at an increased risk and whether you should lose weight. Your doctor will evaluate your BMI, waist measurement, and other risk factors for heart disease.</p>
+<p>The good news is even a small weight loss (between 5 and 10 percent of your current weight) will help lower your risk of developing those diseases.</p>
 <br>
 <br>
 <br>
@@ -78,7 +194,7 @@
     </span>
   <span>
     <small>
-    <a href="../index.html">Calorie-Calculator/SS_Dimitrina</a>
+        <a target="_blank" href="https://github.com/dimitrina-beleva/Calorie-Calculator">Calorie-Calculator/SS_Dimitrina</a>
   </small>
     </span>
   </center>

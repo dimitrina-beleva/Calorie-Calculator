@@ -8,8 +8,12 @@
 </head>
 
 <body>
-    <a href="../index.html"><img id="logo", src="../resources/logo.jpg"></a>
-    <a target="_blank" href="https://www.facebook.com/"><img id="social", src="../resources/social_media.jpg"></a>
+    <a href="../index.html"><img id="logo" src="../resources/logo.jpg" alt="logo"></a>
+    <div class="social"> 
+            <div><a target="_blank" href="https://www.facebook.com/dimitrina.beleva"><img src="../resources/facebook.jpg" alt="facebook-icon"></a></div>
+            <div><a target="_blank" href="https://www.linkedin.com/in/dimitrina-beleva-0bbb1076/"><img src="../resources/linkedin.jpg" alt="linkedin-icon"></a></div>
+            <div><a target="_blank" href="https://github.com/dimitrina-beleva/Calorie-Calculator"><img src="../resources/github.jpg" alt="github-icon"></a></div>
+       </div>
 
 <div id="homePage" class="tabcontent">
       <h3>The best website for calculating daily calorie intake and body mass index!</h3>
@@ -35,55 +39,76 @@
 <button class="tablink" onclick="openTab('homePage', this, 'rgb(218, 214, 214)')" id="defaultOpen"><a href="../index.html">Home</a></button>
 <button class="tablink" onclick="openTab('calorieCalculator', this, 'rgb(210, 250, 151)')"><a href="../html/Calorie Calculator.html">Calorie Calculator</a></button>
 <button class="tablink" onclick="openTab('bmiCalculator', this, 'rgb(194, 240, 248)')"><a href="../html/BMI.html">BMI Calculator</a></button>
-<button class="tablink" onclick="openTab('recommendations', this, 'rgb(253, 251, 148)')"><a href="../html/Recommended Daily Calorie Intake.html">Recommendations</a></button>
+<button class="tablink" onclick="openTab('recommendations', this, 'rgb(253, 251, 148)')"><a href="../html/Recommendations.html">Key Recommendations</a></button>
 <button class="tablink" onclick="openTab('recipes', this, 'rgb(252, 202, 137)')">Recipes</button>
 <br>
 <br>
 <br>
 <br>
 
-<center><img id="wall", src="../resources/my_wall.jpg", alt="Wall"></center>
+<center><img id="wall" src="../resources/my_wall.jpg" alt="Wall"></center>
+
+<br>
 
 <h4>Discover the best healthy recipes, including healthy breakfasts, lunches, dinners and snacks. Find dishes to fit in with special diets.</h4>
-<p><i>List of recipes:</i></p>
-<ul>
-    <a href="#Recipe1"><li>Breakfast smoothie</li></a>
-    <a href="#Recipe2"><li>Omelette wedges</li></a>
-    <a href="#Recipe3"><li>Poached eggs with smashed avocado and tomatoes</li></a>
-    <a href="#Recipe4"><li>Spicy yogurt chicken</li></a>
-    <a href="#Recipe5"><li>Smoked salmon and lemon scrambled eggs</li></a>
-   <!--To be added another recipes here, at least TWO more-->
-</ul>
-<br>
-<br>    
 
-<a name="Recipe1"><h3><b><i>1. Breakfast smoothie</i></b></h3></a>
-<img src="../resources/Breakfast Smoothie.jpg", alt="Breakfast smoothie">
+<div class="block-images">
+    <div class="images-rows">
+        <div class="images-row1">
+            <a class="recipe-images" href="#Recipe1"><img src="../resources/Breakfast-Smoothie.jpg" alt="Breakfast smoothie"></a>
+            <a class="recipe-images" href="#Recipe2"><img src="../resources/Omelette-Wedges.jpg" alt="Omelette wedges"></a>
+            <a class="recipe-images" href="#Recipe3"><img src="../resources/Poached-Eggs-with-Smashed-Avocado-and-Tomatoes.jpg" alt="Poached eggs with smashed avocado and tomatoes"></a>
+        </div>
+        <div class="images-row2">
+            <a class="recipe-images" href="#Recipe4"><img src="../resources/Spicy-Yogurt-Chicken.jpg" alt="Spicy-yogurt-chicken"></a>
+            <a class="recipe-images" href="#Recipe5"><img src="../resources/Smoked-Salmon-and-Lemon-Scramled-Eggs.jpg" alt="Smoked salmon and lemon scrambled eggs"></a>
+            <a class="recipe-images" href="#Recipe6"><img src="../resources/Thai-Squash-Soup.jpg" alt="Thai squash soup"></a>
+        </div>
+    </div>
+</div>
+
 <br>
-<p><i><small>Prep: 5min</small></i></p>
-<p><i><small>Kcal: 165 per 100g</small></i></p>
+<br>  
+<p>The section below includes delicious and easy recipes with photos, with exactly the calories you need based on your calorie intake plan.</p>
+<p>A variety of reduced-calorie daily menus are provided to help make it easier for you to eat right and lose weight. The sample menus include ideas for amazing meals.</p>
+<br>   
+<div class="recipes">
+
+    <div class="recipe1">
+<a name="Recipe1"><h3><b><i><center>Breakfast smoothie</center></i></b></h3></a>
 <br>
-<p><b>Ingredients:</b></p>
+       <div class="image-and-ingredients">
+<img src="../resources/Breakfast-Smoothie.jpg" alt="Breakfast smoothie">
+
+        <div class="ingredients">
+<span><b>Ingredients:</b></span>
 <ul>
     <li>1 small ripe banana</li>
     <li>about 140g blackberries, blueberries, raspberries or strawberries(or use a mix)</li>
     <li>apple juice or mineral water (optional)</li>
     <li>honey</li>
 </ul>
+        </div>
+       </div>
+<br>
+<center><span><i><small>Prep: 5min</small></i></span></center>
+<center><span><i><small>Kcal: 165 per 100g</small></i></span></center>
+<br>
+
 <br>
 <p><b>Method:</b></p>
 <ol>
     <li>Slice the banana into your blender or food processor and add the berries of your choice. Whizz until smooth. With the blades whirring, pour in juice or water to make the consistency you like. Toss a few extra fruits on top, drizzle with honey and serve.</li>
 </ol>
+</div>
+
 <br>
-<br>
-<a name="Recipe2"><h3><b><i>2. Omelette Wedges</i></b></h3></a>
-<img src="../resources/Omelette Wedges.jpg", alt="Omelette wedges">
-<br>
-<p><i><small>Prep: 10min</small></i></p>
-<p><i><small>Cook: 10min</small></i></p>
-<p><i><small>Kcal: 275 per 100g</small></i></p>
-<br>
+
+<div class="recipe2">
+<a name="Recipe2"><h3><b><i><center>Omelette Wedges</center></i></b></h3></a>
+
+     <div class="image-and-ingredients">
+<img src="../resources/Omelette-Wedges.jpg" alt="Omelette wedges">
 <p><b>Ingredients:</b></p>
 <ul>
     <li>3 spring onions</li>
@@ -95,6 +120,14 @@
     <li>85g cheddar</li>
     <li>2 tomatoes</li>
 </ul>
+     </div>
+
+<br>
+<center><span><i><small>Prep: 10min</small></i></span></center>
+<center><span><i><small>Cook: 10min</small></i></span></center>
+<center><span><i><small>Kcal: 275 per 100g</small></i></span></span></center>
+<br>
+
 <br>
 <p><b>Method:</b></p>
 <ol>
@@ -105,16 +138,15 @@
     <li>Turn on the grill so it has time to heat up. Leave the omelette to cook, undisturbed, over a low heat for about 6 mins. Meanwhile, cut the tomatoes into wedges, scatter over the omelette and sprinkle with the grated cheese.</li>
     <li>When the omelette seems set on the base, but is still a little eggy on top, put the frying pan under the grill to cook the last of the egg mixture and melt the cheese. Cool for 5 mins, then turn out of the pan. Cut into wedges and serve with ketchup, toast, tea and orange juice for a delicious family breakfast.</li>
 </ol>
+</div>
+
 <br>
-<br>
-<a name="Recipe3"><h3><b><i>3. Poached eggs with smashed avocado and tomatoes</i></b></h3></a>
-<img src="../resources/Poached Eggs with Smashed Avocado and Tomatoes.jpg", alt="Poached eggs with smashed avocado and tomatoes">
-<br>
-<p><i><small>Prep: 10min</small></i></p>
-<p><i><small>Cook: 10min</small></i></p>
-<p><i><small>Kcal: 411 per 100g</small></i></p>
-<br>
-<p><b>Ingredients:</b></p>
+
+<div class="recipe3">
+<a name="Recipe3"><h3><b><i><center>Poached eggs with smashed avocado and tomatoes</center></i></b></h3></a>
+     <div class="image-and-ingredients">
+<img src="../resources/Poached-Eggs-with-Smashed-Avocado-and-Tomatoes.jpg" alt="Poached eggs with smashed avocado and tomatoes">
+<span><b>Ingredients:</b></span>
 <ul>
     <li>2 tomatoes, halved</li>
     <li>½ tsp rapeseed oil</li>
@@ -123,22 +155,27 @@
     <li>2 slices seeded wholemeal soda bread</li>
     <li>2 handfuls rocket</li>
 </ul>
+</div>
+<br>
+<center><span><i><small>Prep: 10min</small></i></span></center>
+<center><span><i><small>Cook: 10min</small></i></span></center>
+<center><span><i><small>Kcal: 411 per 100g</small></i></span></center>
+<br>
+
 <br>
 <p><b>Method:</b></p>
 <ol>
     <li>Heat a non-stick frying pan, very lightly brush the cut surface of the tomatoes with a little oil, then cook them, cut-side down, in the pan until they have softened and slightly caramelised. Meanwhile, heat a pan of water, carefully break in the eggs and leave to poach for 1-2 mins until the whites are firm but the yolks are still runny.</li>
     <li>Halve and stone the avocado, then scoop out the flesh and smash onto the bread. Add the eggs, grind over black pepper and add a handful of rocket to each portion. Serve the tomatoes on the side.</li>
 </ol>
-<br>
+</div>
 <br>
 
-<a name="Recipe4"><h3><b><i>4. Spicy yogurt chicken</i></b></h3></a>
-<img src="../resources/Spicy Yogurt Chicken.jpg", alt="Spicy yogurt chicken">
-<br>
-<p><i><small>Prep: 5min</small></i></p>
-<p><i><small>Cook: 20min</small></i></p>
-<p><i><small>Kcal: 394 per 100g</small></i></p>
-<br>
+
+<div class="recipe4">
+<a name="Recipe4"><h3><b><i><center>Spicy yogurt chicken</center></i></b></h3></a>
+    <div class="image-and-ingredients">
+<img src="../resources/Spicy-Yogurt-Chicken.jpg" alt="Spicy yogurt chicken">
 <p><b>Ingredients:</b></p>
 <ul>
     <li>8 skinless chicken drumsticks</li>
@@ -148,21 +185,26 @@
     <li>1 tbsp ground coriander</li>
     <li>2 tsp ground turmeric</li>
 </ul>
+    </div>
+<br>
+<center><span><i><small>Prep: 5min</small></i></span></center>
+<center><span><i><small>Cook: 20min</small></i></span></center>
+<center><span><i><small>Kcal: 394 per 100g</small></i></span></center>
+<br>
+
 <br>
 <p><b>Method:</b></p>
 <ol>
     <li>With a sharp knife, make a few slashes in each drumstick. Mix the remaining ingredients in a bowl, season to taste. Add the drumsticks, rubbing the mixture well into the meat. If you have time, cover and chill for 5 mins.</li>
     <li>Remove the drumsticks from the marinade, shaking off the excess. Cook them on the barbecue for 20 mins, turning occasionally, until cooked through.</li>
 </ol>
-<br>
+</div>
 <br>
 
-<a name="Recipe5"><h3><b><i>5. Smoked salmon and lemon scrambled eggs</i></b></h3></a>
-<img src="../resources/Smoked Salmon and Lemon Scramled Eggs.jpg", alt="Smoked salmon and lemon scrambled eggs">
-<br>
-<p><i><small>Prep: 10min</small></i></p>
-<p><i><small>Kcal: 366 per 100g</small></i></p>
-<br>
+<div class="recipe5">
+<a name="Recipe5"><h3><b><i><center>Smoked salmon and lemon scrambled eggs</center></i></b></h3></a>
+     <div class="image-and-ingredients">
+<img src="../resources/Smoked-Salmon-and-Lemon-Scramled-Eggs.jpg" alt="Smoked salmon and lemon scrambled eggs">
 <p><b>Ingredients:</b></p>
 <ul>
     <li>1 bagel</li>
@@ -171,11 +213,53 @@
     <li>a wedge of lemon</li>
     <li>scrambled eggs</li>
 </ul>
+     </div>
+<br>
+<center><span><i><small>Prep: 10min</small></i></span></center>
+<center><span><i><small>Kcal: 366 per 100g</small></i></span></center>
+<br>
+
 <br>
 <p><b>Method:</b></p>
 <ol>
     <li>Halve, toast and butter a bagel. Drape a slice of smoked salmon on each half and spoon over the scrambled egg. Grind over black pepper and serve with a wedge of lemon on the side.</li>
 </ol>
+</div>
+<br>
+
+<div class="recipe6">
+<a name="Recipe6"><h3><b><i><center>Thai squash soup</center></i></b></h3></a>
+     <div class="image-and-ingredients">
+<img src="../resources/Thai-Squash-Soup.jpg" alt="Thai squash soup">
+<p><b>Ingredients:</b></p>
+<ul>
+    <li>1 onion, chopped</li>
+    <li>1 lemongrass stalk, bashed and shredded</li>
+    <li>1-2 red chillies, roughly chopped</li>
+    <li>1kg butternut squash, peeled and diced juice 1 lime</li>
+    <li>125ml coconut milk</li>
+    <li>small bunch coriander, leaves picked</li>
+</ul>
+     </div>
+<br>
+<center><span><i><small>Prep: 15min</small></i></span></center>
+<center><span><i><small>Cook: 20min</small></i></span></center>
+<center><span><i><small>Kcal: 169 per 100g</small></i></span></center>
+<br>
+
+<br>
+<p><b>Method:</b></p>
+<ol>
+    <li>Fry the onion, lemongrass and most of the chilli in a large pan with a splash of water for 2-3 mins until softened – add more water if it starts to catch. Tip in the squash and stir. Cover with 1 litre water, bring to the boil and simmer for 15 mins until the squash is tender. Add lime juice, remove from the heat and blitz with a hand blender until smooth.</li>
+    <li>Pour in the coconut milk, season, then return to the heat to gently warm through. Ladle into bowls and serve with coriander and the remaining chilli.</li>
+</ol>
+</div>  
+
+</div>
+<br>
+
+<center><img src="../resources/recipe-book.gif" alt="Recipe book"></center>
+
 <br>
 <br>
 <br>
@@ -189,7 +273,7 @@
     </span>
   <span>
     <small>
-    <a href="../index.html">Calorie-Calculator/SS_Dimitrina</a>
+        <a target="_blank" href="https://github.com/dimitrina-beleva/Calorie-Calculator">Calorie-Calculator/SS_Dimitrina</a>
   </small>
     </span>
   </center>
