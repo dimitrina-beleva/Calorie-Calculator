@@ -20,7 +20,7 @@ function openTab(tabName, elmnt, color) {
 }
 
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = scrollFunction();
+window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
     if(document.getElementById("myButton")) {
