@@ -37,7 +37,20 @@ transition: 1s;
     border-top: solid black;
 
 }
+.tableCalculator {
+    position: relative;
+    background-color: bisque;
+    border: solid 2px black;
+    padding: 20px;
+    width: 400px;
+    margin-left: 100px;
 
+  
+}
+
+
+
+/*
 .m_bmi_calculator .__inner {
     padding: 25px;
     text-align: center;
@@ -62,7 +75,45 @@ transition: 1s;
 ::selection {
     color: rgb(41, 40, 40);
     background: rgb(226, 151, 191);
+
 }
+
+*/
+
+
+.recommendations {
+    position: relative;
+    border-top: solid 4px rgba(248, 211, 211, 0.507);
+    border-bottom: solid 4px rgba(248, 211, 211, 0.507);
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+
+#myButton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99; 
+    border: none;
+    outline: none;
+    background-color:rgba(245, 168, 26, 0.829);
+    color:black; 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 10px; 
+    font-size: 18px; 
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+    opacity: 1;
+}
+
+#myButton:hover {
+    background-color: rgba(56, 247, 31, 0.644); 
+    opacity: 0.9;
+}
+
 .block-images {
 position: relative;
 padding-left:195px;
@@ -83,6 +134,7 @@ padding-right: 195px;
     border: solid 2px rgb(165, 165, 165);
     padding: 10px;
     background-color: rgba(248, 211, 211, 0.26);
+    border-radius: 10px;
 
     }
 
@@ -164,9 +216,49 @@ padding-right: 195px;
     border: solid 1px rgb(125, 127, 129);
     background-color: rgba(255, 255, 255, 0.66);
     padding: 10px;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 30px;
+    margin-right: 640px;
     box-shadow : 5px 10px 5px rgb(218, 214, 214);
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+    border-radius: 10px;
+}
+
+.ingredients {
+    position: relative;
+    font-size:80%;
+    font-style: italic;
+    font-style: bold;
+}
+
+.method {
+    position: absolute;
+    top:0;
+    right:0;
+    margin-left: 310px;
+    padding-top: 70px;
+    font-size: 90%;
+    color: rgb(98, 98, 117);    
+    font-style: italic;
+
+}
+
+.preparation {
+    position: relative;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 70%;
+
+
+}
+
+.images {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+
+   
 }
 
 .tableBMI {
@@ -215,6 +307,7 @@ padding-right: 195px;
 
 #wall {position: relative; 
     border-bottom-style: solid;
+    
 }
 
 #logo {
@@ -230,6 +323,27 @@ padding-right: 195px;
    height: 12%;
 }
 
+#recommendation1:hover {
+    position: relative;
+    color: blue;
+}
+#recommendation2:hover {
+    position: relative;
+    color: blue;
+}
+
+#recommendation3:hover {
+    position: relative;
+    color: blue;
+}
+#recommendation4:hover {
+    position: relative;
+    color: blue;
+}
+#recommendation5:hover {
+    position: relative;
+    color: blue;
+}
 .social {
     position: absolute;
     right: 0px;
