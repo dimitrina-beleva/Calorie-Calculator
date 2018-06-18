@@ -59,7 +59,7 @@ html {
     padding-right: 80px;
 }
 
-#myButton {
+#scrollButton {
     display: none;
     position: fixed;
     bottom: 20px;
@@ -78,7 +78,7 @@ html {
     opacity: 1;
 }
 
-#myButton:hover {
+#scrollButton:hover {
     background-color: rgba(56, 247, 31, 0.644); 
     opacity: 0.9;
 }
@@ -282,7 +282,34 @@ html {
     box-shadow: 0 5px rgb(119, 117, 117);
     transform: translateY(4px);
 }
+
+#resetCalories-button {
+    position: relative;
+    background-color: rgba(255, 253, 142, 0.89);
+    width: 140px;
+    font-size: 16px;
+    padding: 14px 40px;
+    border-radius: 10px;
+    color: black;
+    font: bold;
+    margin-left: 130px; 
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+#resetCalories-button:hover {
+    background-color: rgba(39, 107, 121, 0.596);
+}
         
+#resetCalories- button:active {
+    background-color: rgb(112, 122, 54);
+    box-shadow: 0 5px rgb(119, 117, 117);
+    transform: translateY(4px);
+}
+
+#sum {
+    font: bold;
+    font-size: 25px;
+}
 
 #bmiCalculator {
     position: relative; 

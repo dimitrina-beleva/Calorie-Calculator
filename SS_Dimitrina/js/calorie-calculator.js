@@ -24,21 +24,25 @@ var products = [
     {id: 'product-21', name: 'Wine', calories: 82, quantity: null},
 ];
 
-// Create table rows and columns based on products data
+// Creates table rows and columns based on products data
 function createTable() {
     var tableBody = document.getElementById('products');
 
     products.forEach(function(product) {
+        // Creates table row element
         var row = document.createElement('tr');
-  
+
+        // Creates table data element for product's name and appends it to the table row
         var name = document.createElement('td');
         name.appendChild(document.createTextNode(product.name));
         row.appendChild(name);
 
+        // Creates table data element for product's calories and appends it to the table row
         var calories = document.createElement('td');
         calories.appendChild(document.createTextNode(product.calories));
         row.appendChild(calories);
 
+        // Creates input element and appends to table row
         var input = document.createElement("input");
         input.type = "number";
         input.name = product.name;
@@ -49,11 +53,12 @@ function createTable() {
         
         row.appendChild(input);
 
+        // Appends table row to a table body
         tableBody.appendChild(row); 
     });
   }
 
-  // Find product by id and set its quantity from input value
+  // Finds product by id and sets its quantity from input value
   var setQuantity = function (element) {
     products.forEach(function(product) {
         if (product.id == element.currentTarget.id)
@@ -63,14 +68,25 @@ function createTable() {
 
   createTable();
 
+  // Calculates the sum of all product's quantity multiplied by product's calories
 function calculateCalories() {
     var sumElement = document.getElementById('sum');
 
     var sum = 0;
     products.forEach(function(product) {
-        sum += (product.quantity / 100) * product.calories; // TODO: round number
+        sum += (product.quantity / 100) * product.calories;
     });
 
     sumElement.innerText = 'Total calories: ' + Math.round(sum);
 } 
+
+// Resets all product quantities to null and clears the total amount -> TO BE REVIEWED
+function resetCalories() {
+    products.forEach(function(product) {
+        product.quantity = null;
+    });
+
+    var sumElement = document.getElementById('sum');
+    sumElement.innerText = '';
+}
 

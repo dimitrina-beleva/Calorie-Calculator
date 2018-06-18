@@ -1,7 +1,9 @@
+//// Loads the current page
 function loadPage(page) {
     location.href = page;
 }
 
+// Changes styling of the tab content and tab link
 function openTab(tabName, elmnt, color) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -19,20 +21,21 @@ function openTab(tabName, elmnt, color) {
     elmnt.style.backgroundColor = color;
 }
 
-// When the user scrolls down 20px from the top of the document, show the button
+//Adds function to scroll event
 window.onscroll = function() {scrollFunction()};
 
+// Displays the scroll button, when scrolling down more than 20px from the top of the document
 function scrollFunction() {
-    if(document.getElementById("myButton")) {
+    if(document.getElementById("scrollButton")) {
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            document.getElementById("myButton").style.display = "block";
+            document.getElementById("scrollButton").style.display = "block";
         } else {
-            document.getElementById("myButton").style.display = "none";
+            document.getElementById("scrollButton").style.display = "none";
         }
     }
 }
 
-// When the user clicks on the button, scroll to the top of the document
+// When the user clicks on the button, crolls to the top of the document
 function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
