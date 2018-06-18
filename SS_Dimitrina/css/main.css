@@ -34,6 +34,14 @@ html {
     border-top: solid black;
 }
 
+.paragraph {
+    position: relative;
+    border-top: solid 4px rgba(248, 211, 211, 0.507);
+    border-bottom: solid 4px rgba(248, 211, 211, 0.507);
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
 .tableCalculator {
     position: relative;
     background-color: bisque;
@@ -42,38 +50,6 @@ html {
     width: 400px;
     margin-left: 100px;
 }
-
-
-/*
-.m_bmi_calculator .__inner {
-    padding: 25px;
-    text-align: center;
-
-}
-
-.clfx, .m_bmi_calculator .__inner, .m_salt_calculator .__inner {
-    zoom: 1;
-}
-
-.m_bmi_calculator {
-    float: left;
-    display: block;
-    margin-right: 2.3576515979%;
-    width: 100%;
-    color: rgb(218, 214, 214);
-    margin-bottom: 25px;
-    margin-top: 20px;
-    position: relative;
-}
-
-::selection {
-    color: rgb(41, 40, 40);
-    background: rgb(226, 151, 191);
-
-}
-
-*/
-
 
 .recommendations {
     position: relative;
@@ -202,6 +178,32 @@ html {
     padding: 10px;
 }
 
+.alert {
+    margin-left: 400px; 
+    margin-right: 400 px;
+    padding: 20px;
+    background-color: #fa958e; 
+    color: black;
+    margin-bottom: 15px;
+    
+}
+
+.closebtn {
+    padding-top: 4px;
+    color: rgb(124, 124, 124);
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
+
+
 .tableBMI {
     position: relative;
     border: solid 2px rgb(125, 127, 129);
@@ -224,6 +226,63 @@ html {
     margin-left: 75px; 
     margin-right: 75px;
 }
+
+#table-products {
+    position: relative;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 350px;
+    text-align: center;
+    font-size: 15px;
+}
+
+#table-products td, #table-products th {
+    border: 1px solid rgba(39, 107, 121, 0.596);
+    padding: 2px;
+}
+
+#table-products tr:nth-child(even) {
+    background-color:rgb(242, 248, 248);
+}
+
+#table-products tr:hover {
+    background-color: rgba(179, 177, 175, 0.616);
+}
+
+#table-products th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color:rgba(102, 252, 164, 0.596);
+    color: black;
+    font-size: 16px;
+}
+
+
+#calculateCalories-Button {
+    position: relative;
+    background-color: rgba(70, 197, 123, 0.849);
+    width: 140px;
+    font-size: 16px;
+    padding: 14px 40px;
+    border-radius: 10px;
+    color: black;
+    font: bold;
+    margin-left: 130px; 
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#calculateCalories-Button:hover {
+    background-color: rgba(39, 107, 121, 0.596);
+}
+        
+#calculateCalories-Button:active {
+    background-color: rgb(112, 122, 54);
+    box-shadow: 0 5px rgb(119, 117, 117);
+    transform: translateY(4px);
+}
+        
 
 #bmiCalculator {
     position: relative; 
@@ -297,4 +356,9 @@ p, ol, ul {
     text-align: justify;
     margin-left: 80px; 
     margin-right: 70px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }

@@ -2,13 +2,14 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calorie Calculator</title>
     <link rel="stylesheet" href="../css/main.css">
     <link rel="shortcut icon" href="../resources/iconTitle.ico" type="image/x-icon" />
 </head>
 
 <body><!-- Header -->
-  <a href="index.html"><img id="logo" src="../resources/logo.jpg" alt="logo"></a>
+  <a href="../index.html"><img id="logo" src="../resources/logo.jpg" alt="logo"></a>
   <div class="social"> 
        <div><a target="_blank" href="https://www.facebook.com/dimitrina.beleva"><img src="../resources/facebook.jpg" alt="facebook-icon"></a></div>
        <div><a target="_blank" href="https://www.linkedin.com/in/dimitrina-beleva-0bbb1076/"><img src="../resources/linkedin.jpg" alt="linked-icon"></a></div>
@@ -49,6 +50,7 @@
   
   <!-- End Header -->
 
+<div class="paragraph">
 <h3>Calorie Calculator</h3>
 
 <p>
@@ -61,21 +63,29 @@
 </p>
 <p>
   This is a simple but highly accurate scientific calorie calculator.
-  Use the table below by simply entering quantities of foods and drinks you have consumed during the day, in order to figure out how many calories you have intaked.
+  Use the table below to enter quantities of foods and drinks and calculate the total calories you have consumed.
 </p>
 <br>
- <!-- Table with Foods and Drinks and their calorie content per 100g -->
+ <!-- Table with Foods and Drinks and their calorie content per 100g / 100ml -->
 <table id=table-products class="tableCalculator">
     <tbody id="products">
         <tr>
             <th>Food/Drink</th>
-            <th>Kcal per 100g</th>
-            <th>Enter qualtity(g)</th>
+            <th>Kcal per 100g (ml)</th>
+            <th>Quantity (g/ml)</th>
         </tr>
     </tbody>
   </table>
-  <button onclick="calculateCalories()">Calculate</button>
-  <div id="sum"></div>
+<br>
+  <button id="calculateCalories-Button" onclick="calculateCalories()">Calculate</button>
+  <span id="sum"></span>
+<br>
+<br>
+<br>
+</div>
+
+
+    
 <br>
 <br>
 <br>

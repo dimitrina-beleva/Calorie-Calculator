@@ -71,5 +71,6 @@ function calculateCalories() {
         sum += (product.quantity / 100) * product.calories; // TODO: round number
     });
 
-    sumElement.innerText = 'Total calories: ' + sum;
+    sumElement.innerText = 'Total calories: ' + Math.round(sum);
 } 
+
