@@ -55,14 +55,6 @@ html {
     margin-left: 100px;
 }
 
-.recommendations {
-    position: relative;
-    border-top: solid 4px rgba(248, 211, 211, 0.507);
-    border-bottom: solid 4px rgba(248, 211, 211, 0.507);
-    padding-left: 80px;
-    padding-right: 80px;
-}
-
 #scrollButton {
     display: none;
     position: fixed;
@@ -149,7 +141,7 @@ html {
 
 .ingredients {
     position: relative;
-    font-size: 10px;
+    font-size: 12px;
     font-style: italic;
     font-style: bold;
 }
