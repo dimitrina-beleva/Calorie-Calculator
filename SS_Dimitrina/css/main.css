@@ -43,10 +43,7 @@ html {
 }
 
 .center { 
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 3px;
-    margin-bottom: 3px;
+    margin: auto; 
     text-align: center;
 }
 
@@ -186,32 +183,6 @@ html {
     padding: 10px;
 }
 
-.alert {
-    margin-left: 400px; 
-    margin-right: 400 px;
-    padding: 20px;
-    background-color: #fa958e; 
-    color: black;
-    margin-bottom: 15px;
-    
-}
-
-.closebtn {
-    padding-top: 4px;
-    color: rgb(124, 124, 124);
-    font-weight: bold;
-    float: right;
-    font-size: 22px;
-    line-height: 20px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.closebtn:hover {
-    color: black;
-}
-
-
 .tableBMI {
     position: relative;
     border: solid 2px rgb(125, 127, 129);
@@ -219,6 +190,10 @@ html {
     background-color: rgba(248, 183, 183, 0.432);
     margin-left: 75px; 
     margin-right: 75px;
+}
+
+.break { 
+    padding-bottom: 65px; 
 }
 
 #homePage {
