@@ -5,91 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calorie Calculator</title>
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="shortcut icon" href="../resources/iconTitle.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="../resources/iconTitle.ico" type="image/x-icon"/>
 </head>
 
 <body><!-- Header -->
-  <a href="../index.html"><img id="logo" src="../resources/logo.jpg" alt="logo"></a>
-  <div class="social"> 
-       <div><a target="_blank" href="https://www.facebook.com/dimitrina.beleva"><img src="../resources/facebook.jpg" alt="facebook-icon"></a></div>
-       <div><a target="_blank" href="https://www.linkedin.com/in/dimitrina-beleva-0bbb1076/"><img src="../resources/linkedin.jpg" alt="linked-icon"></a></div>
-       <div><a target="_blank" href="https://github.com/dimitrina-beleva/Calorie-Calculator"><img src="../resources/github.jpg" alt="github-icon"></a></div>
-  </div>
-  <div id="homePage" class="tabcontent">
-  <h3>The best website for calculating daily calorie intake and body mass index!</h3>
-  </div>
-  <div id="calorieCalculator" class="tabcontent">
-  <h3>Use this amazing calculator to find out how many calories you intake per day</h3>
-  </div>
-  <div id="bmiCalculator" class="tabcontent">
-  <h3>Calculate your Body Mass Index now by simply entering your weight and height</h3>
-  </div>  
-  <div id="recommendations" class="tabcontent">
-  <h3>Tips and tricks for better life</h3>
-  </div>
-  <div id="recipes" class="tabcontent">
-  <h3>The most delicious, healthy and easy recipes you have to try</h3>
-  </div>
-  <button id="homePage-button" class="tablink" onclick="loadPage('../index.html')">Home</button>
-  <button id="calorieCalculator-button" class="tablink" onclick="loadPage('../html/CalorieCalculator.html')">Calorie Calculator</button>
-  <button id="bmiCalculator-button" class="tablink" onclick="loadPage('../html/BMI.html')">BMI Calculator</button>
-  <button id="recommendations-button" class="tablink" onclick="loadPage('../html/Recommendations.html')">Key Recommendations</button>
-  <button id="recipes-button" class="tablink" onclick="loadPage('../html/Recipes.html')">Recipes</button>
-  <div class="break">
-  </div>
-  <div class="center">
+<a href="../index.html"><img id="logo" src="../resources/logo.jpg" alt="logo"></a>
+<div class="social">
+    <div><a target="_blank" href="https://www.facebook.com/dimitrina.beleva"><img src="../resources/facebook.jpg"
+                                                                                  alt="facebook-icon"></a></div>
+    <div><a target="_blank" href="https://www.linkedin.com/in/dimitrina-beleva-0bbb1076/"><img
+            src="../resources/linkedin.jpg" alt="linked-icon"></a></div>
+    <div><a target="_blank" href="https://github.com/dimitrina-beleva/Calorie-Calculator"><img
+            src="../resources/github.jpg" alt="github-icon"></a></div>
+</div>
+<div id="homePage" class="tabcontent">
+    <h3>The best website for calculating daily calorie intake and body mass index!</h3>
+</div>
+<div id="calorieCalculator" class="tabcontent">
+    <h3>Use this amazing calculator to find out how many calories you intake per day</h3>
+</div>
+<div id="bmiCalculator" class="tabcontent">
+    <h3>Calculate your Body Mass Index now by simply entering your weight and height</h3>
+</div>
+<div id="recommendations" class="tabcontent">
+    <h3>Tips and tricks for better life</h3>
+</div>
+<div id="recipes" class="tabcontent">
+    <h3>The most delicious, healthy and easy recipes you have to try</h3>
+</div>
+<button id="homePage-button" class="tablink" onclick="loadPage('../index.html')">Home</button>
+<button id="calorieCalculator-button" class="tablink" onclick="loadPage('../html/CalorieCalculator.html')">Calorie
+    Calculator
+</button>
+<button id="bmiCalculator-button" class="tablink" onclick="loadPage('../html/BMI.html')">BMI Calculator</button>
+<button id="recommendations-button" class="tablink" onclick="loadPage('../html/Recommendations.html')">Key
+    Recommendations
+</button>
+<button id="recipes-button" class="tablink" onclick="loadPage('../html/Recipes.html')">Recipes</button>
+<div class="break">
+</div>
+<div class="center">
     <img id="wall" src="../resources/my_wall.jpg" alt="Wall">
-    </div>
-  <br>
-  <!-- End Header -->
+</div>
+<br>
+<!-- End Header -->
 
 <div class="paragraph">
-<h3>Calorie Calculator</h3>
+    <h3>Calorie Calculator</h3>
 
-<p>
- Calorie calculator is an easy to use caloric counter which provides you with a way to count your daily caloric intake. 
- Calorie counting is an easy way for you to manage your weight.
- Calorie calculator is incredibly useful if you are trying to lose, maintain or even gain weight.
-</p>
-<p>
-  Keeping track of what you eat may help you lose or gain weight faster or just to maintain your weight constantly.
-</p>
-<p>
-  This is a simple but highly accurate scientific calorie calculator.
-  Use the table below to enter quantities of foods and drinks and calculate the total calories you have consumed.
-</p>
-<br>
- <!-- Table with Foods and Drinks and their calorie content per 100g / 100ml -->
-<table id=table-products class="tableCalculator">
-    <tbody id="products">
+    <p>
+        Calorie calculator is an easy to use caloric counter which provides you with a way to count your daily caloric
+        intake.
+        Calorie counting is an easy way for you to manage your weight.
+        Calorie calculator is incredibly useful if you are trying to lose, maintain or even gain weight.
+    </p>
+    <p>
+        Keeping track of what you eat may help you lose or gain weight faster or just to maintain your weight
+        constantly.
+    </p>
+    <p>
+        This is a simple but highly accurate scientific calorie calculator.
+        Use the table below to enter quantities of foods and drinks and calculate the total calories you have consumed.
+    </p>
+    <br>
+    <!-- Table with Foods and Drinks and their calorie content per 100g / 100ml -->
+    <table id=table-products class="tableCalculator">
+        <tbody id="products">
         <tr>
             <th>Food/Drink</th>
             <th>Kcal per 100g (ml)</th>
             <th>Quantity (g/ml)</th>
         </tr>
-    </tbody>
-  </table>
-<br>
-  <button id="calculateCalories-Button" onclick="calculateCalories()">Calculate</button>
-  <span id="sum"></span>
-  <br>
-  <br>
-  <button id="resetCalories-button" onclick="resetCalories()">Reset</button>
-<br>
-<br>
+        </tbody>
+    </table>
+    <br>
+    <button id="calculateCalories-Button" onclick="calculateCalories()">Calculate</button>
+    <span id="sum"></span>
+    <br>
+    <br>
+    <button id="resetCalories-button" onclick="resetCalories()">Reset</button>
+    <br>
+    <br>
 </div>
 <div class="break">
 </div>
 
 <!-- Footer -->
 <div class="center">
-  <small>&copy; 2018
-  <a target="_blank" href="https://github.com/dimitrina-beleva/Calorie-Calculator">Calorie-Calculator/SS_Dimitrina</a>
-</small>
+    <small>&copy; 2018
+        <a target="_blank"
+           href="https://github.com/dimitrina-beleva/Calorie-Calculator">Calorie-Calculator/SS_Dimitrina</a>
+    </small>
 </div>
 <!-- End Footer -->
 
 <script src="../js/main.js"></script>
-<script src="../js/calorie-calculator.js"></script>  
+<script src="../js/calorie-calculator.js"></script>
 </body>
 </html> 
