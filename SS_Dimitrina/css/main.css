@@ -5,6 +5,7 @@ html {
 }
 
 .tablink {
+    position: relative;
     background-color: rgb(218, 214, 214);
     color:black;
     float: left;
@@ -19,11 +20,13 @@ html {
 }
 
 .tablink:hover {
+    position: relative;
     background-color: rgb(177, 174, 174);
     color: blue;
 }
 
 .tabcontent {
+    position: relative;
     color: black;
     display: none;
     padding: 10px;
@@ -32,6 +35,7 @@ html {
 }
 
 .paragraph {
+    position: relative;
     border-bottom: solid 4px rgba(248, 211, 211, 0.507);
     padding-left: 80px;
     padding-right: 80px;
@@ -43,6 +47,7 @@ html {
 }
 
 .tableCalculator {
+    position: relative;
     background-color: bisque;
     border: solid 2px black;
     padding: 20px;
@@ -51,6 +56,7 @@ html {
 }
 
 .recommendations {
+    position: relative;
     border-top: solid 4px rgba(248, 211, 211, 0.507);
     border-bottom: solid 4px rgba(248, 211, 211, 0.507);
     padding-left: 80px;
@@ -82,6 +88,7 @@ html {
 }
 
 .block-images {
+    position: relative;
     padding-left:195px;
     padding-right: 195px; 
 }
@@ -101,17 +108,20 @@ html {
 }
 
 .recipe-images {
+    position: relative;
     opacity: 0.80;
     transition: 0.5s ease;
     filter: saturate(100%);
 }
 
 .recipe-images:hover {
+    position: relative;
     opacity: 1;
     filter: saturate(150%);
 }
 
 .recipes {
+    position: relative;
     margin-left: 80px; 
     margin-right: 70px; 
     border: solid 2px rgb(165, 165, 165);
@@ -120,12 +130,14 @@ html {
 }
 
 .recipe {
+    position: relative;
     border: solid 2px rgb(125, 127, 129);
     background-color: rgba(248, 183, 183, 0.432);
     padding: 10px;
 }
 
 .recipe-details {
+    position: relative; 
     border: solid 1px rgb(125, 127, 129);
     background-color: rgba(255, 255, 255, 0.66);
     padding: 10px;
@@ -136,43 +148,50 @@ html {
 }
 
 .ingredients {
-    font-size:10px;
+    position: relative;
+    font-size: 10px;
     font-style: italic;
     font-style: bold;
 }
 
 .method {
+    position: absolute;
+    top:0;
+    right:0;
+    margin-left: 310px;
+    padding-top: 70px;
     font-size: 90%;
     color: rgb(98, 98, 117);    
     font-style: italic;
+
 }
 
 .preparation {
+    position: relative;
     font-style: italic;
     font-weight: bold;
     font-size: 70%;
 }
 
 .images {
+    position: relative;
     top: 10px;
     left: 10px;
     padding: 10px;
-    margin: auto; 
-    text-align: center;
 }
 
 .tableBMI {
-    background-color: rgba(248, 183, 183, 0.432);
     position: relative;
     width: 350px;
-    border: 1px solid black;
+    border: solid 2px rgb(125, 127, 129);
+    background-color: rgba(248, 183, 183, 0.432);
     margin-left: 75px; 
     margin-right: 75px;
 }
 
 .tableBMI td, th {
     border: 1px solid black;
-   }
+}
 
 .break { 
     padding-bottom: 65px; 
@@ -199,6 +218,7 @@ html {
 }
 
 #table-products {
+    position: relative;
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 350px;
@@ -230,6 +250,7 @@ html {
 
 
 #calculateCalories-Button {
+    position: relative;
     background-color: rgba(70, 197, 123, 0.849);
     width: 140px;
     font-size: 16px;
@@ -253,6 +274,7 @@ html {
 }
 
 #resetCalories-button {
+    position: relative;
     background-color: rgba(255, 253, 142, 0.89);
     width: 140px;
     font-size: 16px;
@@ -279,7 +301,7 @@ html {
     font-size: 25px;
 }
 
-#wall {
+#wall {position: relative; 
     border-bottom-style: solid;
 }
 
@@ -297,6 +319,7 @@ html {
 }
 
 li a:hover {
+    position: relative;
     color: blue;
 }
 
@@ -308,10 +331,12 @@ tr th {
 }
 
 h3, h4 {
+    position: relative;
     margin-left: 90px;
 }
 
 p, ol, ul {
+    position: relative;
     line-height: 1.8;
     text-align: justify;
     margin-left: 80px; 
