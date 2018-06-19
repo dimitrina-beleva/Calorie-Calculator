@@ -36,7 +36,6 @@ html {
 
 .paragraph {
     position: relative;
-    border-top: solid 4px rgba(248, 211, 211, 0.507);
     border-bottom: solid 4px rgba(248, 211, 211, 0.507);
     padding-left: 80px;
     padding-right: 80px;
@@ -138,7 +137,7 @@ html {
 }
 
 .image-and-ingredients {
-    position: relative;
+    position: relative; 
     border: solid 1px rgb(125, 127, 129);
     background-color: rgba(255, 255, 255, 0.66);
     padding: 10px;
@@ -185,8 +184,8 @@ html {
 
 .tableBMI {
     position: relative;
+    width: 350;
     border: solid 2px rgb(125, 127, 129);
-    background: repeat-x;
     background-color: rgba(248, 183, 183, 0.432);
     margin-left: 75px; 
     margin-right: 75px;
