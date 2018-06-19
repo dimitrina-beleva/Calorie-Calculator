@@ -1,4 +1,4 @@
-//// Loads the current page
+// Loads the current page
 function loadPage(page) {
     location.href = page;
 }
@@ -35,7 +35,7 @@ function scrollFunction() {
     }
 }
 
-// When the user clicks on the button, crolls to the top of the document
+// Scrolls to the top of the document
 function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera

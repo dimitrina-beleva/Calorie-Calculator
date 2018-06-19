@@ -42,7 +42,7 @@ function createTable() {
         calories.appendChild(document.createTextNode(product.calories));
         row.appendChild(calories);
 
-        // Creates input element and appends to table row
+        // Creates input element and appends it to the table row
         var input = document.createElement("input");
         input.type = "number";
         input.name = product.name;
@@ -80,9 +80,11 @@ function calculateCalories() {
     sumElement.innerText = 'Total calories: ' + Math.round(sum);
 } 
 
-// Resets all product quantities to null and clears the total amount -> TO BE REVIEWED
+// Resets all product quantities to null and clears the total amount
 function resetCalories() {
     products.forEach(function(product) {
+        var productElement = document.getElementById(product.id);
+        productElement.value = '';
         product.quantity = null;
     });
 
