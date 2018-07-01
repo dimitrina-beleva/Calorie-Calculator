@@ -41,6 +41,11 @@ html {
     padding-right: 80px;
 }
 
+.italic {
+    font-style: italic;
+    font-size: 13px; 
+    padding-left: 20px;
+}
 .center { 
     margin: auto; 
     text-align: center;
@@ -54,6 +59,59 @@ html {
     width: 400px;
     margin-left: 100px;
 }
+
+#searchInput {
+    position: relative;
+    width: 240px;
+    left: 100px;
+    font-style: italic;
+}
+
+.recommendedCalorieIntakeCalculator {
+    background-color:rgb(210, 250, 151); 
+    position: relative;
+    border: solid 2px black;
+    padding: 20px;
+    width: 400px;
+    margin-left: 100px;
+}
+
+#img-male-female {
+    position: relative;
+}
+
+#male, #female {
+    width: 90px;
+    height: 90px;
+    border: solid 10px rgba(245, 168, 26, 0.829);
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.rangeslider .rangeslider__fill {
+    transition: background 0.3s;
+  }
+  
+.rangeslider-is-low-or-high-value .rangeslider__fill{
+    background-color: rgb(248, 246, 136);
+  }
+  
+.rangeslider-is-lowest-or-highest-value .rangeslider__fill {
+    background-color: rgb(245, 122, 122);
+  }
+
+fieldset {
+    border: 0;
+  }
+
+label {
+    display: block;
+    margin: 5px 0 0 0;
+}
+
+.overflow {
+    height: 40px;
+  }
 
 #scrollButton {
     display: none;
@@ -241,7 +299,7 @@ html {
 }
 
 
-#calculateCalories-Button {
+#calculateCalories-Button, #calculateRDCI-Button {
     position: relative;
     background-color: rgba(70, 197, 123, 0.849);
     width: 140px;
@@ -255,17 +313,17 @@ html {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
-#calculateCalories-Button:hover {
+#calculateCalories-Button:hover, #calculateRDCI-Button:hover {
     background-color: rgba(39, 107, 121, 0.596);
 }
         
-#calculateCalories-Button:active {
+#calculateCalories-Button:active, #calculateRDCI-Button:active {
     background-color: rgb(112, 122, 54);
     box-shadow: 0 5px rgb(119, 117, 117);
     transform: translateY(4px);
 }
 
-#resetCalories-button {
+#resetCalories-button, #resetRDCI-button {
     position: relative;
     background-color: rgba(255, 253, 142, 0.89);
     width: 140px;
@@ -278,11 +336,11 @@ html {
     transition-duration: 0.4s;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
-#resetCalories-button:hover {
+#resetCalories-button:hover, #resetRDCI-button:hover {
     background-color: rgba(39, 107, 121, 0.596);
 }
         
-#resetCalories- button:active {
+#resetCalories- button:active, #resetRDCI-button:avtive {
     background-color: rgb(112, 122, 54);
     box-shadow: 0 5px rgb(119, 117, 117);
     transform: translateY(4px);

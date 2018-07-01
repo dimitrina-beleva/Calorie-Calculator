@@ -1,5 +1,14 @@
 openTab('calorieCalculator', document.getElementById("calorieCalculator-button"), 'rgb(210, 250, 151)');
 
+$(document).ready(function(){
+    $("#searchInput").on("keyup", function() {
+      var value = $(this).val().toLowerCase();
+      $("#table-products tr").filter(function() {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+      });
+    });
+  });
+
 var products = [ 
     {id: 'product-1', name: 'Apple', calories: 64, quantity: null},
     {id: 'product-2', name: 'Avocado', calories: 175, quantity: null},
@@ -25,7 +34,7 @@ var products = [
 ];
 
 // Creates table rows and columns based on products data
-function createTable() {
+function createTable() {    
     var tableBody = document.getElementById('products');
 
     products.forEach(function(product) {
@@ -68,7 +77,7 @@ function createTable() {
 
   createTable();
 
-  // Calculates the sum of all product's quantity multiplied by product's calories
+// Calculates the sum of all product's quantity multiplied by product's calories
 function calculateCalories() {
     var sumElement = document.getElementById('sum');
 
@@ -92,3 +101,85 @@ function resetCalories() {
     sumElement.innerText = '';
 }
 
+$(function() {
+    var cssClasses = [
+      'rangeslider-is-lowest-or-highest-value',
+      'rangeslider-is-low-or-high-value',
+    ];
+    
+    $("input[type=range]").rangeslider({
+        polyfill: false
+      })
+      .on("input", function() {
+        var fractionMax = (this.max - this.value);
+        var fractionMin = (this.value - this.min);
+        if (fractionMax <= 10 || fractionMin <= 10) {
+          this.nextSibling.classList.add(cssClasses[0]);
+        } else if ((fractionMax <= 30 && fractionMax > 10) || (fractionMin <= 30 && fractionMin > 10)) {
+          this.nextSibling.classList.add(cssClasses[1]);
+        } else {
+            this.nextSibling.classList.remove(...cssClasses)
+          }
+      });
+  });
+
+  jQuery.validator.setDefaults({
+    debug: true,
+    success: "valid"
+  });
+  $("#recommended-intake-form").validate({
+    rules: {
+      field: {
+        required: true
+      }
+    }
+  });
+
+  $(function() {
+    $("#activity").selectmenu();
+  });
+
+  $(function() {
+    $("#weightInputId").change(function() {
+        var pId = $("#weightInputId").val();
+        $.get('updateProduct', {
+            productID: pId.trim()    
+        },
+        function(oninput) {    
+    $("#weight-value").val(oninput);
+        }
+);
+});
+});
+
+  $(function() {
+    $("#calculateRDCI-Button").click(function() {
+          var age = $("#age").val();
+          var gender = $("#gender").val();
+          var height = $("#height").val();
+          var weight = $("#weight").val();
+          var activity = $("#activity").val();
+          if ($("#activity") == "Little/No exercise") {
+              activity = 1.2;
+          }
+          else if ($("#activity") == "1-2 times per week") {
+              activity = 1.375;
+          }
+          else if ($("#activity") == "3-5 times per week") {
+            activity = 1.5;
+        }
+        else if ($("#activity") == "6-7 times per week") {
+            activity = 1.725;
+        }
+        else {
+            activity = 1.9;
+        }
+          var total = 0;
+          if ($(gender = "male")) {
+            var total = Math.round(((10 * weight) + (6.25 * height) - (5 * age) + 5) * activity);
+          } else {
+            var total = Math.round(((10 * weight) + (6.25 * height) - (5 * age) - 161) * activity);
+          }
+          $("span#result-RDCI").val(total);
+    });
+    });
