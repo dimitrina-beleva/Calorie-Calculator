@@ -80,29 +80,13 @@ html {
     position: relative;
 }
 
-#male, #female {
+.gender-image {
     width: 90px;
     height: 90px;
     border: solid 10px rgba(245, 168, 26, 0.829);
     border-radius: 50%;
     margin: 10px;
 }
-
-.rangeslider .rangeslider__fill {
-    transition: background 0.3s;
-  }
-  
-.rangeslider-is-low-or-high-value .rangeslider__fill{
-    background-color: rgb(248, 246, 136);
-  }
-  
-.rangeslider-is-lowest-or-highest-value .rangeslider__fill {
-    background-color: rgb(245, 122, 122);
-  }
-
-fieldset {
-    border: 0;
-  }
 
 label {
     display: block;
@@ -340,7 +324,7 @@ label {
     background-color: rgba(39, 107, 121, 0.596);
 }
         
-#resetCalories- button:active, #resetRDCI-button:avtive {
+#resetCalories- button:active, #resetRDCI-button:active {
     background-color: rgb(112, 122, 54);
     box-shadow: 0 5px rgb(119, 117, 117);
     transform: translateY(4px);

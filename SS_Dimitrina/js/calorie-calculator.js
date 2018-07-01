@@ -101,32 +101,11 @@ function resetCalories() {
     sumElement.innerText = '';
 }
 
-$(function() {
-    var cssClasses = [
-      'rangeslider-is-lowest-or-highest-value',
-      'rangeslider-is-low-or-high-value',
-    ];
-    
-    $("input[type=range]").rangeslider({
-        polyfill: false
-      })
-      .on("input", function() {
-        var fractionMax = (this.max - this.value);
-        var fractionMin = (this.value - this.min);
-        if (fractionMax <= 10 || fractionMin <= 10) {
-          this.nextSibling.classList.add(cssClasses[0]);
-        } else if ((fractionMax <= 30 && fractionMax > 10) || (fractionMin <= 30 && fractionMin > 10)) {
-          this.nextSibling.classList.add(cssClasses[1]);
-        } else {
-            this.nextSibling.classList.remove(...cssClasses)
-          }
-      });
-  });
-
   jQuery.validator.setDefaults({
     debug: true,
     success: "valid"
   });
+
   $("#recommended-intake-form").validate({
     rules: {
       field: {
@@ -136,26 +115,9 @@ $(function() {
   });
 
   $(function() {
-    $("#activity").selectmenu();
-  });
-
-  $(function() {
-    $("#weightInputId").change(function() {
-        var pId = $("#weightInputId").val();
-        $.get('updateProduct', {
-            productID: pId.trim()    
-        },
-        function(oninput) {    
-    $("#weight-value").val(oninput);
-        }
-);
-});
-});
-
-  $(function() {
     $("#calculateRDCI-Button").click(function() {
           var age = $("#age").val();
-          var gender = $("#gender").val();
+          var gender = $("#gender").val(); //isMale true/false
           var height = $("#height").val();
           var weight = $("#weight").val();
           var activity = $("#activity").val();
@@ -182,4 +144,4 @@ $(function() {
           }
           $("span#result-RDCI").val(total);
     });
-    });
+});

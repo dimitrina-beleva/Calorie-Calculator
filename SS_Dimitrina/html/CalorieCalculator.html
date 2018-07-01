@@ -5,12 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calorie Calculator</title>
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../libs/rangeslider.css">
-    <link rel="stylesheet" href="../libs/jquery-ui.min.css">
     <link rel="shortcut icon" href="../resources/iconTitle.ico" type="image/x-icon"/>
     <script src="../libs/jquery-3.3.1.min.js"></script>
-    <script src="../libs/rangeslider.min.js"></script>
-    <script src="../libs/jquery-ui.min.js"></script>
     <script src="../libs/jquery.validate.min.js"></script>
 </head>
 
@@ -100,53 +96,38 @@
     <br>
     <h4>Recommended Daily Calorie Intake - Calculator</h4>
     <div class="recommendedCalorieIntakeCalculator">
-    <form id="recommended-intake-form">
-        <div id="img-male-female" class="center">
-            <img id="male" src="../resources/male.gif" alt="male">
-            <img id="female" src="../resources/female.gif" alt="gemale">
-        </div>
-        <div class="center" id="gender">
-           <input class="container" type="radio" name="gender" value="male" checked> Male
-           <input class="container" type="radio" name="gender" value="female"> Female
-        </div>
-        <br>
-        <div class="center">
-            <label>Age</label>
-            <input type="number" name="age" min="13" max="80" id="age">
+        <form id="recommended-intake-form">
+            <div id="img-male-female" class="center">
+                <img class="gender-image" src="../resources/male.gif" alt="male">
+                <img class="gender-image" src="../resources/female.gif" alt="gemale">
             </div>
-            <br>
-            <br>
-            <div>
-            <label>Height (cm)</label><br>
-            <div class="height-container">
-                <input type="range" min="130" max="230" value="180" step="1" class="rangeslider" id="height" oninput="heightOutputId.value = heightInputId.value">
-                <span><output name="heightOutputName" id="heightOutputId"></output></span>
-                    <br>
+            <div class="center">
+                <input id="male" type="radio" name="gender" checked> Male
+                <input id="female"  type="radio" name="gender"> Female
+            </div>
+                <div class="center">
+                <label for="age">Age</label>
+                <input id="age" type="number" name="age" required>
                 </div>
-            <label>Weight (kg)</label><br>
-            <div class="weight-container">
-                    <input type="range" min="30" max="120" value="75" step="1" class="rangeslider" id="weight" oninput="weightOutputId.value = weightInputId.value">
-                    <output name="weightOutputName" id="weightOutputId"></output>
-                            <span id="weight-value"></span><br>
-                    </div>
-        </div>
-<div class="activity-drop-down">
-        <form action="#">
-          <fieldset>
-            <label for="activity">Select your individual exercise intensity levels</label>
-            <select name="activity" id="activity">
-             <option class="italic">Weekly exercise level</option>
-              <option>Little/No exercise</option>
-              <option>1-2 times per week</option>
-              <option>3-5 times per week</option>
-              <option>6-7 times per week</option>
-              <option>Twice daily or phisical job</option>
-            </select>
-        </fieldset>
+                <div>
+                <label>Height (cm)</label>
+                    <input id="height" type="number" name="height">
+                </div>
+                <div> 
+                <label>Weight (kg)</label>
+                    <input id="weight" type="number" name="weight">
+                </div>
+                <label for="activity">Select your individual exercise intensity levels</label>
+                <select name="activity" id="activity">
+                    <option class="italic">Weekly exercise level</option>
+                    <option>Little/No exercise</option>
+                    <option>1-2 times per week</option>
+                    <option>3-5 times per week</option>
+                    <option>6-7 times per week</option>
+                    <option>Twice daily or phisical job</option>
+                </select>
         </form>
-        </div>
-    </form>
-</div>
+    </div>
 <br>
 <button id="calculateRDCI-Button" onclick="calculateRDCI()">Calculate</button>
 <span id="result-RDCI"></span>
