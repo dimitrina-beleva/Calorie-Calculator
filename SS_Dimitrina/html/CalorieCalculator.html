@@ -6,8 +6,6 @@
     <title>Calorie Calculator</title>
     <link rel="stylesheet" href="../css/main.css">
     <link rel="shortcut icon" href="../resources/iconTitle.ico" type="image/x-icon"/>
-    <script src="../libs/jquery-3.3.1.min.js"></script>
-    <script src="../libs/jquery.validate.min.js"></script>
 </head>
 
 <body>
@@ -48,7 +46,6 @@
 
 <div class="paragraph">
     <h3>Calorie Calculator</h3>
-
     <p>
         Calorie calculator is an easy to use caloric counter which provides you with a way to count your daily caloric
         intake.
@@ -120,20 +117,19 @@
                 <label for="activity">Select your individual exercise intensity levels</label>
                 <select name="activity" id="activity">
                     <option class="italic">Weekly exercise level</option>
-                    <option>Little/No exercise</option>
-                    <option>1-2 times per week</option>
-                    <option>3-5 times per week</option>
-                    <option>6-7 times per week</option>
-                    <option>Twice daily or phisical job</option>
+                    <option value="1.2">Little/No exercise</option>
+                    <option value="1.375">1-2 times per week</option>
+                    <option value="1.5">3-5 times per week</option>
+                    <option value="1.725">6-7 times per week</option>
+                    <option value="1.9">Twice daily or phisical job</option>
                 </select>
+                <input type="submit" id="calculateRDCI-Button" onclick="calculateRDCI()" value="Calculate" name="calculate">
+                <span id="result-RDCI"></span>
+                <br><br>
+                <input type="reset" id="resetRDCI-button" onclick="resetRDCI()" value="Reset" name="reset">
+             <br>
         </form>
     </div>
-<br>
-<button id="calculateRDCI-Button" onclick="calculateRDCI()">Calculate</button>
-<span id="result-RDCI"></span>
-<br>
-<br>
-<button id="resetRDCI-button" onclick="resetRDCI()">Reset</button>
 <br>
 </div>
 </div>
@@ -154,7 +150,8 @@
     </div>
 </div>
 <!-- End Footer -->
-
+<script src="../libs/jquery-3.3.1.min.js"></script>
+<script src="../libs/jquery.validate.min.js"></script>
 <script src="../js/main.js"></script>
 <script src="../js/calorie-calculator.js"></script>
 </body>

@@ -115,33 +115,35 @@ function resetCalories() {
   });
 
   $(function() {
-    $("#calculateRDCI-Button").click(function() {
-          var age = $("#age").val();
-          var gender = $("#gender").val(); //isMale true/false
-          var height = $("#height").val();
-          var weight = $("#weight").val();
-          var activity = $("#activity").val();
-          if ($("#activity") == "Little/No exercise") {
-              activity = 1.2;
-          }
-          else if ($("#activity") == "1-2 times per week") {
-              activity = 1.375;
-          }
-          else if ($("#activity") == "3-5 times per week") {
-            activity = 1.5;
-        }
-        else if ($("#activity") == "6-7 times per week") {
-            activity = 1.725;
-        }
-        else {
-            activity = 1.9;
-        }
-          var total = 0;
-          if ($(gender = "male")) {
-            var total = Math.round(((10 * weight) + (6.25 * height) - (5 * age) + 5) * activity);
-          } else {
-            var total = Math.round(((10 * weight) + (6.25 * height) - (5 * age) - 161) * activity);
-          }
-          $("span#result-RDCI").val(total);
+    $("#recommended-intake-form").submit(function submit() {
+
+      var isMale = $("#gender").val() == "Male";
+      var weight = $("#weight").val();
+      var height = $("#weight").val();
+      var age = $("#age").val();
+      var total = 0;
+          
+      if ($(isMale)) {
+        total = Math.round(((10 * weight) + (6.25 * height) - (5 * age) + 5) * activity.value);
+      } else {
+        total = Math.round(((10 * weight) + (6.25 * height) - (5 * age) - 161) * activity.value);
+      }
+      var values = $("#recommended-intake-form").serialize();
+      $("#result-RDCI").text(values);
+      $("input[type='checkbox'], input[type='radio']").on("click", submit);
+      $("select").on("change", submit);
+      $("span#result-RDCI").text(total);
+      submit();
     });
+});
+
+(function() { 
+
+  //Reset handler that clears the form
+  $('form[name="recommended-intake-form"] input:reset').click(function () {
+      $('form[name="recommended-intake-form"]')
+          .find(":radio, :checkbox").removeAttr("checked").end()
+          .find("textarea, :text, select").val('')
+      return false;
+  });
 });
