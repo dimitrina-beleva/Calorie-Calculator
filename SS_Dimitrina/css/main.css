@@ -63,8 +63,13 @@ html {
 #searchInput {
     position: relative;
     width: 240px;
-    left: 100px;
     font-style: italic;
+    padding-left: 0px;
+}
+
+.search {
+margin-right: 0px;
+padding-left: 100px;
 }
 
 .recommendedCalorieIntakeCalculator {
@@ -100,24 +105,20 @@ label {
 #scrollButton {
     display: none;
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 50px;
+    right: 50px;
     z-index: 99; 
-    border: none;
     outline: none;
-    background-color:rgba(245, 168, 26, 0.829);
-    color:black; 
+    border: solid 10px rgba(245, 168, 26, 0.829);
+    background-color: rgba(245, 168, 26, 0.829);
     cursor: pointer; 
-    padding: 15px; 
-    border-radius: 10px; 
-    font-size: 18px; 
-    border-top: solid 2px black;
-    border-bottom: solid 2px black;
+    border-radius: 50%;
     opacity: 1;
 }
 
 #scrollButton:hover {
-    background-color: rgba(56, 247, 31, 0.644); 
+    border: solid 10px rgba(63, 175, 48, 0.644); 
+    background-color: rgba(63, 175, 48, 0.644);
     opacity: 0.9;
 }
 
@@ -412,4 +413,331 @@ p, ol, ul {
 img {
     max-width: 100%;
     height: auto;
+}
+
+.calc-wrapper img {
+	border:0;
+	vertical-align:top;
+	max-width:100%;
+	height:auto;
+}
+
+.calc-wrapper a {
+	color:rgb(159, 215, 223);
+	outline:none;
+}
+
+.calc-wrapper a:hover {
+    text-decoration:none;
+}
+
+.calc-wrapper form, .calc-wrapper fieldset {
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+.calc-wrapper input, .calc-wrapper textarea, .calc-wrapper select {
+	font:100% "Source Sans Pro", Arial, Helvetica, sans-serif;
+	vertical-align:middle;
+	outline:none;
+	color:rgb(65, 64, 66);
+}
+
+.calc-wrapper input, .calc-wrapper button,.calc-wrapper textarea {
+    -webkit-appearance:none;
+    box-sizing:border-box;
+}
+
+.calc-wrapper {
+	background:rgb(234, 234, 234);
+	overflow:hidden;
+	position:relative;
+    margin: -29px -42px;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.calc-area {
+	margin:0 auto;
+	max-width:932px;
+	padding: 0 10px;
+}
+
+.top-area-calc {
+	background:rgb(246, 246, 246);
+	position:relative;
+    overflow:hidden;
+    margin-left: 280px; 
+    margin-right: 270px; 
+}
+
+.top-area-calc .img {
+    max-width: 100%;
+    height: auto;
+}
+
+.calc-frame {
+    position: relative;
+    background:rgb(233, 233, 233);
+    margin-left: 280px; 
+    margin-right: 270px; 
+	overflow: hidden;
+}
+
+.calc-main-area .box {
+    display: none;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 15px;
+}
+
+.calc-main-area .box:first-child {
+    display:block;
+}
+
+.calc-frame .img {
+    max-width: 100%;
+    height: auto;
+}
+
+.calc-frame .text-box {
+	overflow:hidden;
+    padding:62px 0 3px 2px;
+    top: 15%;
+    right:25%;
+}
+
+.calc-frame .error-txt {
+	display:block;
+	color:rgb(237, 121, 84);
+	font-size:16px;
+	line-height:20px;
+	font-style:italic;
+	opacity:0;
+}
+
+.calc-frame h3 {
+	margin:0 0 20px;
+	font-size:18px;
+}
+
+.calc-frame .row {
+	overflow:hidden;
+	padding:0 0 39px;
+}
+
+.calc-frame .row input {
+	float:left;
+	width:100px;
+	margin:0 15px 0 0;
+	border:solid rgb(209, 211, 212);
+	border-width:2px 0 0 2px;
+	background:rgb(255, 255, 255);
+	font-size:26px;
+	height:24px;
+	padding:7px 15px;
+	text-align:center;
+}
+
+.calc-frame .row .txt {
+	float:left;
+	padding:10px 0 0;
+	font-size:22px;
+	line-height:26px;
+	font-weight:bold;
+}
+
+.btn-next {
+	display:block;
+	width:220px;
+	height:48px;
+	background:rgb(237, 121, 84);
+	text-decoration:none;
+	text-transform:uppercase;
+	color:rgb(255, 255, 255)!important;
+	font-weight:bold;
+	font-size:18px;
+	line-height:48px;
+	border-radius:10px;
+	text-align:center;
+	box-shadow:0 0 2px rgb(170, 170, 170);
+	-webkit-box-shadow:0 0 2px rgb(170, 170, 170);
+}
+
+.btn-next:hover {
+    opacity:0.8;
+    text-decoration: none!important;
+}
+
+.result-area-calc {
+	background:rgb(255, 255, 255);
+	box-shadow:0 0 3px rgb(170, 170, 170);
+	-webkit-box-shadow:0 0 3px rgb(170, 170, 170);
+	display:none;
+}
+
+.result-area-calc:first-child {
+    display:block;
+}
+
+.result-area-calc:after {
+	content:"";
+	clear:both;
+	display:block;
+}
+
+.result-area-calc .img-box {
+	max-width:355px;
+	float:left;
+	width:40%;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	position:relative;
+	text-align:center;
+	padding:72px 10px 15px;
+}
+
+.result-area-calc .img-box .title {
+	position:absolute;
+	top:-15px;
+	left:0;
+	width:100%;
+	text-align:center;
+}
+
+.result-area-calc .img-box .title h2 {
+	display:inline-block;
+	margin:0;
+	background:rgb(65, 64, 66)!important;
+	color:rgb(255, 255, 255);
+	padding:14px 28px;
+	font:bold 34px/39px "Oswald", Arial, Helvetica, sans-serif;
+}
+
+a.btn-next.calculate {
+text-decoration: none!important;
+}
+
+.result-area-calc .img-box .title h2:after {
+background:none;
+}
+
+.info-area h2 span {
+    background: none!important;
+    padding: 0px!important;
+}
+
+.result-area-calc .txt-box {
+	overflow:hidden;
+	background:rgb(246, 246, 246);
+	color:rgb(35, 31, 32);
+}
+
+.result-area-calc .top-lst-calc {
+	font-size:20px;
+	line-height:24px;
+	margin:0 0 25px;
+	padding:0 0 20px;
+	border-bottom:1px solid rgb(177, 178, 181);
+	list-style:none;
+}
+
+.result-area-calc .top-lst-calc li {
+    padding:0 0 10px;
+}
+
+.result-area-calc .txt-box .ttl { 
+	display:block;
+	font-size:20px;
+	line-height:28px;
+	padding:0 0 10px;
+}
+
+#result01.result-area-calc .txt-box .ttl .decor {
+    color:rgb(153, 186, 185);
+}
+
+#result02.result-area-calc .txt-box .ttl .decor {
+    color:rgb(166, 186, 82);
+}
+
+#result03.result-area-calc .txt-box .ttl .decor {
+    color:rgb(244, 180, 0);
+}
+
+#result04.result-area-calc .txt-box .ttl .decor {
+    color:rgb(230, 108, 107);
+}
+
+.result-area-calc .txt-box .add-text {
+	display:block;
+	color:rgb(230, 108, 107);
+	font-size:16px;
+	line-height:20px;
+	font-style:italic;
+	font-weight:normal;
+}
+
+.result-area-calc .txt-box p {
+	margin:0 0 26px;
+	font-size:16px;
+	line-height:24px;
+}
+
+.result-area-holder {
+	display:inline-block;
+	vertical-align:top;
+    padding: 15px 0px 15px;
+    margin-left: 280px; 
+    margin-right: 270px; 
+	color:rgb(75, 187, 201);
+	font-weight:bold;
+	font-size:16px;
+	line-height:22px;
+	text-decoration:none;
+}
+	
+.calc-wrapper {
+	margin:-29px -10px 0;
+}
+	
+.top-area-calc .img {
+	float:none;
+	width:auto;
+	margin:0;
+	max-width:none;
+	padding:0 20px 20px;
+}
+    
+.top-area-calc .txt-box {
+	padding:0 20px;
+	text-align:center;
+}
+    
+.calc-frame {
+     padding:36px 0;
+}
+
+.calc-frame .img {
+	float:none;
+	width:auto;
+	margin:0 auto;
+	padding:0 20px;
+}
+
+.calc-frame .text-box {
+	padding:15px 0 0;
+    max-width:230px;
+    margin:0 auto;
+}
+    
+.result-area-calc .img-box {
+	float:none;
+	width:auto;
+	margin:0 auto 15px;
+}
+
+.result-area-calc .txt-box {
+    padding:25px;
 }

@@ -16,7 +16,8 @@
     <h3>The best website for calculating daily calorie intake and body mass index!</h3>
 </div>
 <div id="calorieCalculator" class="tabcontent">
-    <h3>Use this amazing calculator to find out how many calories you intake per day</h3>
+<h3>Use this amazing calculator to see how many calories you may eat in order to maintaint weight
+and count your daily calorie intake</h3>
 </div>
 <div id="bmiCalculator" class="tabcontent">
     <h3>Calculate your Body Mass Index now by simply entering your weight and height</h3>
@@ -68,6 +69,166 @@
     <p>The formula we've listed below is the metric formula, using kilograms (for weight) and meters (for height).</p>
     <h4>BMI = weight (kg) ÷ height2 (m2)</h4>
     <br>
+</div>
+<div class="paragraph">
+        <h3>BMI Calculator</h3>
+        <p>Calculate your Body Mass Index (BMI) here:</p>
+        <div class="top-area-calc">
+         <div class="center">
+            <div class="img"> 
+                <img src="../resources/image01.gif" alt="Know Your BMI"> &nbsp;
+            </div>
+            <div class="txt-box">
+                <h4>Are you in the healthy range? Use this tool to calc​ulate your
+                Body Mass Index (BMI) now to know your health risk.</h4>
+            </div>
+        </div>
+        </div>
+        <div class="calc-main-area">
+            <div class="box" id="box01" style="display: block;">
+                <div class="calc-frame">
+                    <div class="img"> 
+                <img src="../resources/image02.gif" alt="Enter Weight"> &nbsp;​
+            </div>
+            <div class="text-box"> 
+                <span class="error-txt" style="opacity: 0;">*Please enter your weight</span> 
+                <h3>Enter your weight</h3>
+                <div class="row"> 
+                   <input type="text"> 
+                   <span class="txt">kg</span>
+                </div> 
+                <a href="#box02" class="btn-next">next</a>
+            </div>
+        </div>
+    </div>
+    <div class="box" id="box02" style="display: none;">
+        <div class="calc-frame">
+            <div class="img"> 
+                <img src="../resources/image03.gif" alt="Enter Height"> &nbsp;
+                ​</div>
+                <div class="text-box"> 
+                <span class="error-txt" style="opacity: 0;">*Please enter your height</span> 
+                <h3>Enter your height</h3>
+                <div class="row"> 
+                   <input type="text"> 
+                   <span class="txt">cm</span>
+                </div> 
+                <a href="#box03" class="btn-next">calculate</a>
+            </div>
+        </div>
+    </div>
+<div class="box" id="box03" style="display: none;">
+    <div class="result-area-holder">
+        <div id="result01" class="result-area-calc" style="display: none;">
+            <div class="img-box same-height-left">
+                <div class="title">
+                    <h2>Your Results</h2>
+                </div>
+            <div class="img"> 
+        <img src="../resources/image-risk01.gif" alt="Calculating Risk"> &nbsp;
+    </div>
+</div>
+<div class="txt-box same-height-right">
+    <ul class="top-lst-calc">
+        <li>
+           <strong>Your BMI:</strong>
+           <span class="final-bmi"></span>
+        </li>
+        <li>
+           <strong>Normal BMI:</strong> 20
+        </li>
+    </ul> 
+     <strong class="ttl">You are 
+        <span class="decor">AT LOW RISK*</span>
+        <span class="add-text">*But increased risk of other clinical problems</span>
+    </strong> 
+     <p>AT RISK of nutritional deficiency and osteoporosis.
+         You are encouraged to eat a balanced meal and to seek medical advice if necessary.
+    </p>
+     <a href="#box01" class="btn-next back">back to calculator</a>
+    </div>
+</div>
+<div id="result02" class="result-area-calc" style="display: none;">
+    <div class="img-box same-height-left"><div class="title">
+        <h2>Your Results</h2></div><div class="img"> 
+        <img src="../resources/image-risk02.gif" alt="Low Risk"> &nbsp;​​
+    </div>
+</div>
+<div class="txt-box same-height-right">
+    <ul class="top-lst-calc">
+        <li>
+           <strong>Your BMI:</strong>
+           <span class="final-bmi"></span>
+        </li>
+        <li>
+           <strong>Normal BMI:</strong> 20
+        </li>
+    </ul> 
+     <strong class="ttl">You are 
+        <span class="decor">AT LOW RISK</span>
+    </strong> 
+     <p>Achieve a healthy weight by balancing your caloric input (diet) and output (physical activity).</p>
+     <a href="#box01" class="btn-next back">back to calculator</a>
+    </div>
+</div>
+<div id="result03" class="result-area-calc" style="display: block;">
+    <div class="img-box same-height-left">
+        <div class="title">
+        <h2>Your Results</h2></div><div class="img"> 
+        <img src="../resources/image-risk03.gif" alt="Moderate Risk"> &nbsp;
+        </div>
+    </div>
+    <div class="txt-box same-height-right">
+        <ul class="top-lst-calc">
+            <li>
+           <strong>Your BMI:</strong>
+           <span class="final-bmi"></span>
+        </li>
+        <li>
+           <strong>Normal BMI:</strong> 20
+        </li>
+    </ul> 
+     <strong class="ttl">You are 
+        <span class="decor">AT MODERATE RISK</span>
+    </strong> 
+     <p>Aim to lose 5% to 10% of your body weight over 6 to 12 months by increasing physical activity and reducing caloric intake</p>
+     <a href="#box01" class="btn-next back">back to calculator</a>
+     </div>
+    </div>
+    <div id="result04" class="result-area-calc" style="display: none;">
+         <div class="img-box same-height-left">
+             <div class="title">
+             <h2>Your Results</h2></div><div class="img"> 
+        <img src="../resources/image-risk04.gif" alt="High Risk"> &nbsp;
+    </div>
+</div>
+<div class="txt-box same-height-right">
+    <ul class="top-lst-calc">
+        <li>
+           <strong>Your BMI:</strong>
+           <span class="final-bmi"></span>
+        </li>
+        <li>
+           <strong>Normal BMI:</strong> 20
+        </li>
+    </ul> 
+     <strong class="ttl">You are 
+        <span class="decor">AT HIGH RISK</span>
+    </strong> 
+     <p>
+        Aim to lose 5% to 10% of your body weight over 6 to 12 months by increasing physical activity and reducing caloric intake.
+        Go for regular health screening to keep co-morbid conditions* in check.
+        <br><br> 
+        *Cardiovascular risks of metabolic syndrome,
+        including Type 2 Diabetes, Hypertension and Hyperlipidemia.
+    </p>
+     <a href="#box01" class="btn-next back">back to calculator</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div class="paragraph">
     <h3>BMI Table</h3>
@@ -135,6 +296,7 @@
 
 <script src="../libs/jquery-3.3.1.min.js"></script>
 <script src="../js/main.js"></script>
+<script src="../js/bmi-calculator.js"></script>
 <script>openTab('bmiCalculator', document.getElementById("bmiCalculator-button"), 'rgb(194, 240, 248)')</script>
 </body>
 </html> 

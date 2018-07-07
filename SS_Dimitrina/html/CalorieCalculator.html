@@ -16,7 +16,8 @@
     <h3>The best website for calculating daily calorie intake and body mass index!</h3>
 </div>
 <div id="calorieCalculator" class="tabcontent">
-    <h3>Use this amazing calculator to find out how many calories you intake per day</h3>
+<h3>Use this amazing calculator to see how many calories you may eat in order to maintaint weight
+and count your daily calorie intake</h3>
 </div>
 <div id="bmiCalculator" class="tabcontent">
     <h3>Calculate your Body Mass Index now by simply entering your weight and height</h3>
@@ -45,6 +46,54 @@
 <!-- End Header -->
 
 <div class="paragraph">
+        <h3>How Many Calories Should You Intake?</h3>
+        <p>To accurately determine your daily calorie amount, simply enter your current weight, height, age and gender below. 
+            Do your best estimate of how much exercise you will be doing.
+            The results will show how many calories you may eat in order to maintain your weight. 
+            Daily calorie deficit of 500 should result in 1-2 kg per week fat loss.</p>
+        <br>
+        <h4>Recommended Daily Calorie Intake - Calculator</h4>
+        <div class="recommendedCalorieIntakeCalculator">
+            <form id="recommended-intake-form">
+                <div id="img-male-female" class="center">
+                    <img class="gender-image" src="../resources/male.gif" alt="male">
+                    <img class="gender-image" src="../resources/female.gif" alt="gemale">
+                </div>
+                <div class="center">
+                    <input id="male" type="radio" name="gender" checked> Male
+                    <input id="female"  type="radio" name="gender"> Female
+                </div>
+                    <div class="center">
+                    <label for="age">Age</label>
+                    <input id="age" type="number" name="age" required>
+                    </div>
+                    <div>
+                    <label>Height (cm)</label>
+                        <input id="height" type="number" name="height">
+                    </div>
+                    <div> 
+                    <label>Weight (kg)</label>
+                        <input id="weight" type="number" name="weight">
+                    </div>
+                    <label for="activity">Select your individual exercise intensity levels</label>
+                    <select name="activity" id="activity">
+                        <option class="italic">Weekly exercise level</option>
+                        <option value="1.2">Little/No exercise</option>
+                        <option value="1.375">1-2 times per week</option>
+                        <option value="1.5">3-5 times per week</option>
+                        <option value="1.725">6-7 times per week</option>
+                        <option value="1.9">Twice daily or phisical job</option>
+                    </select>
+                    <input type="submit" id="calculateRDCI-Button" value="Calculate" name="calculate">
+                    <span id="result-RDCI"></span>
+                    <br><br>
+                    <input type="reset" id="resetRDCI-button" value="Reset" name="reset">
+                 <br>
+            </form>
+        </div>
+    <br>
+</div>
+<div class="paragraph">
     <h3>Calorie Calculator</h3>
     <p>
         Calorie calculator is an easy to use caloric counter which provides you with a way to count your daily caloric
@@ -61,7 +110,10 @@
         Use the table below to enter quantities of foods and drinks and calculate the total calories you have consumed.
     </p>
     <p class="italic">Type key word in the input field below to search in the table for specific food or drink.</p>  
+    <div class="search">
+    <img src="../resources/search.png" alt="Search">
     <input id="searchInput" type="text" placeholder="Search for specific food or drink...">
+    </div>
     <br><br>
     <!-- Table with Foods and Drinks and their calorie content per 100g / 100ml -->
     <table id="table-products" class="tableCalculator">
@@ -83,55 +135,6 @@
     <button id="resetCalories-button" onclick="resetCalories()">Reset</button>
     <br>
     <br>
-</div>
-<div class="paragraph">
-    <h3>How Many Calories Should You Intake?</h3>
-    <p>To accurately determine your daily calorie amount, simply enter your current weight, height, age and gender below. 
-        Do your best estimate of how much exercise you will be doing.
-        The results will show how many calories you may eat in order to maintain your weight. 
-        Daily calorie deficit of 500 should result in 1-2 kg per week fat loss.</p>
-    <br>
-    <h4>Recommended Daily Calorie Intake - Calculator</h4>
-    <div class="recommendedCalorieIntakeCalculator">
-        <form id="recommended-intake-form">
-            <div id="img-male-female" class="center">
-                <img class="gender-image" src="../resources/male.gif" alt="male">
-                <img class="gender-image" src="../resources/female.gif" alt="gemale">
-            </div>
-            <div class="center">
-                <input id="male" type="radio" name="gender" checked> Male
-                <input id="female"  type="radio" name="gender"> Female
-            </div>
-                <div class="center">
-                <label for="age">Age</label>
-                <input id="age" type="number" name="age" required>
-                </div>
-                <div>
-                <label>Height (cm)</label>
-                    <input id="height" type="number" name="height">
-                </div>
-                <div> 
-                <label>Weight (kg)</label>
-                    <input id="weight" type="number" name="weight">
-                </div>
-                <label for="activity">Select your individual exercise intensity levels</label>
-                <select name="activity" id="activity">
-                    <option class="italic">Weekly exercise level</option>
-                    <option value="1.2">Little/No exercise</option>
-                    <option value="1.375">1-2 times per week</option>
-                    <option value="1.5">3-5 times per week</option>
-                    <option value="1.725">6-7 times per week</option>
-                    <option value="1.9">Twice daily or phisical job</option>
-                </select>
-                <input type="submit" id="calculateRDCI-Button" value="Calculate" name="calculate">
-                <span id="result-RDCI"></span>
-                <br><br>
-                <input type="reset" id="resetRDCI-button" value="Reset" name="reset">
-             <br>
-        </form>
-    </div>
-<br>
-</div>
 </div>
 <div class="break">
 </div>
