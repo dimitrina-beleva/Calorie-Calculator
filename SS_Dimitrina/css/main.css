@@ -324,10 +324,42 @@ label {
     background-color: rgba(39, 107, 121, 0.596);
 }
         
-#resetCalories- button:active, #resetRDCI-button:active {
+#resetCalories-button:active, #resetRDCI-button:active {
     background-color: rgb(112, 122, 54);
     box-shadow: 0 5px rgb(119, 117, 117);
     transform: translateY(4px);
+}
+
+.read-more {      
+    margin-left: 65%; 
+    padding: 3px 10px;
+    color: rgb(103, 58, 117); 
+    cursor: pointer;
+}
+
+.read-more:hover, .read-less:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.hidden-info {
+    visibility: hidden;
+    display: none;
+    color: black;
+}
+
+.read-less {       
+    margin-left: 65%; 
+    padding: 3px 10px;
+    color: rgb(103, 58, 117); 
+    visibility: hidden;
+    display: none;
+    cursor: pointer;
+}
+
+.margin {
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 #sum {

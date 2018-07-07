@@ -119,7 +119,7 @@ function resetCalories() {
 
       var isMale = $("#gender").val() == "Male";
       var weight = $("#weight").val();
-      var height = $("#weight").val();
+      var height = $("#height").val();
       var age = $("#age").val();
       var total = 0;
           
@@ -137,7 +137,7 @@ function resetCalories() {
     });
 });
 
-(function() { 
+$(function() { 
 
   //Reset handler that clears the form
   $('form[name="recommended-intake-form"] input:reset').click(function () {
