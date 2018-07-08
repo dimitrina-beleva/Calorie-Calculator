@@ -1,3 +1,5 @@
+openTab('bmiCalculator', document.getElementById("bmiCalculator-button"), 'rgb(194, 240, 248)');
+
 $(function(){
 	$('.calc-frame .row input').keyup(function(e){
 		if (e.keyCode == 13) {

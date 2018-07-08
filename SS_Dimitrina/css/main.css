@@ -135,13 +135,6 @@ label {
     box-sizing: border-box;
 }
 
-.images-rows {
-    border: solid 2px rgb(165, 165, 165);
-    padding: 10px;
-    background-color: rgba(248, 211, 211, 0.26);
-    border-radius: 10px;
-}
-
 .recipe-images {
     position: relative;
     opacity: 0.80;
@@ -155,17 +148,9 @@ label {
     filter: saturate(150%);
 }
 
-.recipes {
-    position: relative;
-    margin-left: 80px; 
-    margin-right: 70px; 
-    border: solid 2px rgb(165, 165, 165);
-    padding: 10px;
-    background-color:rgba(196, 245, 237, 0.342);
-}
-
 .recipe {
-    position: relative;
+    visibility: hidden;
+    display: none;
     border: solid 2px rgb(125, 127, 129);
     background-color: rgba(248, 183, 183, 0.432);
     padding: 10px;
@@ -213,6 +198,115 @@ label {
     top: 10px;
     left: 10px;
     padding: 10px;
+}
+
+.carousel {
+    position: relative;
+    margin-top: 26px;
+    padding-left: 180px;
+    padding-right: 180px;
+}
+
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 500px;
+    background-color: rgb(240, 224, 173);
+    border-radius: 20%;
+    border: solid 2px black;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 40px 0 rgba(0,0,0,0.19);
+
+}
+
+.carousel-open:checked + .carousel-item {
+    position: static;
+    opacity: 100;
+}
+
+.carousel-item {
+    position: absolute;
+    opacity: 0;
+}
+
+.carousel-item img {
+    height: auto;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 40%;
+}
+
+.carousel-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+
+.carousel-control.prev {
+    left: 2%;
+}
+
+.carousel-control.next {
+    right: 2%;
+}
+
+.carousel-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: rgb(170, 170, 170);
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+    display: block;
+}
+
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.carousel-bullet {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+
+.carousel-bullet:hover {
+    color: rgb(170, 170, 170);
+}
+
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+    color: rgb(66, 139, 202);
 }
 
 .tableBMI {
@@ -282,7 +376,6 @@ label {
     color: black;
     font-size: 16px;
 }
-
 
 #calculateCalories-Button, #calculateRDCI-Button {
     position: relative;
