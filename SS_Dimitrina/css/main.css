@@ -75,7 +75,8 @@ padding-left: 100px;
 .recommendedCalorieIntakeCalculator {
     background-color:rgb(210, 250, 151); 
     position: relative;
-    border: solid 2px black;
+    box-shadow: 0 0 15px rgb(116, 115, 115);
+    -webkit-box-shadow: 0 0 15px rgb(116, 115, 115);
     padding: 20px;
     width: 400px;
     margin-left: 100px;
@@ -379,13 +380,12 @@ label {
 
 #calculateCalories-Button, #calculateRDCI-Button {
     position: relative;
-    background-color: rgba(70, 197, 123, 0.849);
+    background-color: rgba(63, 175, 48, 0.644);
     width: 140px;
     font-size: 16px;
     padding: 14px 40px;
     border-radius: 10px;
     color: black;
-    font: bold;
     margin-left: 130px; 
     transition-duration: 0.4s;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
@@ -403,7 +403,7 @@ label {
 
 #resetCalories-button, #resetRDCI-button {
     position: relative;
-    background-color: rgba(255, 253, 142, 0.89);
+    background-color: rgba(245, 168, 26, 0.829);
     width: 140px;
     font-size: 16px;
     padding: 14px 40px;
@@ -499,49 +499,6 @@ img {
     height: auto;
 }
 
-.calc-wrapper img {
-	border:0;
-	vertical-align:top;
-	max-width:100%;
-	height:auto;
-}
-
-.calc-wrapper a {
-	color:rgb(159, 215, 223);
-	outline:none;
-}
-
-.calc-wrapper a:hover {
-    text-decoration:none;
-}
-
-.calc-wrapper form, .calc-wrapper fieldset {
-	margin:0;
-	padding:0;
-	border:0;
-}
-
-.calc-wrapper input, .calc-wrapper textarea, .calc-wrapper select {
-	font:100% "Source Sans Pro", Arial, Helvetica, sans-serif;
-	vertical-align:middle;
-	outline:none;
-	color:rgb(65, 64, 66);
-}
-
-.calc-wrapper input, .calc-wrapper button,.calc-wrapper textarea {
-    -webkit-appearance:none;
-    box-sizing:border-box;
-}
-
-.calc-wrapper {
-	background:rgb(234, 234, 234);
-	overflow:hidden;
-	position:relative;
-    margin: -29px -42px;
-    max-width: 850px;
-    margin: 0 auto;
-}
-
 .calc-area {
 	margin:0 auto;
 	max-width:932px;
@@ -552,8 +509,11 @@ img {
 	background:rgb(246, 246, 246);
 	position:relative;
     overflow:hidden;
-    margin-left: 280px; 
-    margin-right: 270px; 
+    box-shadow: 0 0 15px rgb(116, 115, 115);
+    -webkit-box-shadow: 0 0 15px rgb(116, 115, 115);
+    padding: 5px;
+    margin-left: 100px;
+    width: 690px;
 }
 
 .top-area-calc .img {
@@ -564,8 +524,11 @@ img {
 .calc-frame {
     position: relative;
     background:rgb(233, 233, 233);
-    margin-left: 280px; 
-    margin-right: 270px; 
+    box-shadow: 0 0 15px rgb(116, 115, 115);
+    -webkit-box-shadow: 0 0 15px rgb(116, 115, 115);
+    padding: 5px;
+    margin-left: 100px;
+    width: 700px;
 	overflow: hidden;
 }
 
@@ -574,10 +537,6 @@ img {
     position: relative;
     overflow: hidden;
     padding-bottom: 15px;
-}
-
-.calc-main-area .box:first-child {
-    display:block;
 }
 
 .calc-frame .img {
@@ -603,7 +562,7 @@ img {
 
 .calc-frame h3 {
 	margin:0 0 20px;
-	font-size:18px;
+	font-size:17px;
 }
 
 .calc-frame .row {
@@ -613,13 +572,13 @@ img {
 
 .calc-frame .row input {
 	float:left;
-	width:100px;
+	width:76px;
 	margin:0 15px 0 0;
 	border:solid rgb(209, 211, 212);
 	border-width:2px 0 0 2px;
 	background:rgb(255, 255, 255);
 	font-size:26px;
-	height:24px;
+	height:20px;
 	padding:7px 15px;
 	text-align:center;
 }
@@ -627,16 +586,16 @@ img {
 .calc-frame .row .txt {
 	float:left;
 	padding:10px 0 0;
-	font-size:22px;
+	font-size:17px;
 	line-height:26px;
 	font-weight:bold;
 }
 
 .btn-next {
 	display:block;
-	width:220px;
+	width:146px;
 	height:48px;
-	background:rgb(237, 121, 84);
+	background:rgba(245, 168, 26, 0.829);
 	text-decoration:none;
 	text-transform:uppercase;
 	color:rgb(255, 255, 255)!important;
@@ -645,8 +604,8 @@ img {
 	line-height:48px;
 	border-radius:10px;
 	text-align:center;
-	box-shadow:0 0 2px rgb(170, 170, 170);
-	-webkit-box-shadow:0 0 2px rgb(170, 170, 170);
+    box-shadow: 0 0 3px rgb(116, 115, 115);
+    -webkit-box-shadow: 0 0 3px rgb(116, 115, 115);
 }
 
 .btn-next:hover {
@@ -656,9 +615,9 @@ img {
 
 .result-area-calc {
 	background:rgb(255, 255, 255);
-	box-shadow:0 0 3px rgb(170, 170, 170);
-	-webkit-box-shadow:0 0 3px rgb(170, 170, 170);
-	display:none;
+    box-shadow: 0 0 15px rgb(116, 115, 115);
+    -webkit-box-shadow: 0 0 15px rgb(116, 115, 115);
+    display:none;
 }
 
 .result-area-calc:first-child {
@@ -691,12 +650,9 @@ img {
 }
 
 .result-area-calc .img-box .title h2 {
-	display:inline-block;
-	margin:0;
 	background:rgb(65, 64, 66)!important;
 	color:rgb(255, 255, 255);
-	padding:14px 28px;
-	font:bold 34px/39px "Oswald", Arial, Helvetica, sans-serif;
+	font:bold 24px/29px "Oswald", Arial, Helvetica, sans-serif;
 }
 
 a.btn-next.calculate {
@@ -715,7 +671,9 @@ background:none;
 .result-area-calc .txt-box {
 	overflow:hidden;
 	background:rgb(246, 246, 246);
-	color:rgb(35, 31, 32);
+    color:rgb(35, 31, 32);
+    margin-left: 0px;
+    display:block;
 }
 
 .result-area-calc .top-lst-calc {
@@ -757,71 +715,70 @@ background:none;
 .result-area-calc .txt-box .add-text {
 	display:block;
 	color:rgb(230, 108, 107);
-	font-size:16px;
-	line-height:20px;
+	font-size:14px;
+	line-height:18px;
 	font-style:italic;
 	font-weight:normal;
 }
 
 .result-area-calc .txt-box p {
-	margin:0 0 26px;
-	font-size:16px;
-	line-height:24px;
+	margin:0 0 20px;
+	font-size:14px;
+	line-height:18px;
 }
 
 .result-area-holder {
 	display:inline-block;
 	vertical-align:top;
-    padding: 15px 0px 15px;
-    margin-left: 280px; 
-    margin-right: 270px; 
 	color:rgb(75, 187, 201);
 	font-weight:bold;
 	font-size:16px;
 	line-height:22px;
-	text-decoration:none;
-}
-	
-.calc-wrapper {
-	margin:-29px -10px 0;
+    text-decoration:none;
+    margin-left: 100px;
+    width: 700px;
+    display:inline-block;
+    position: relative;
 }
 	
 .top-area-calc .img {
-	float:none;
 	width:auto;
 	margin:0;
 	max-width:none;
-	padding:0 20px 20px;
+    float: left;
 }
     
 .top-area-calc .txt-box {
 	padding:0 20px;
-	text-align:center;
+    text-align:center;
+    left:0;
 }
     
 .calc-frame {
-     padding:36px 0;
+     padding:5px 0;
 }
 
 .calc-frame .img {
-	float:none;
 	width:auto;
-	margin:0 auto;
-	padding:0 20px;
+	margin:0;
+	max-width:none;
+    float: left;
 }
 
 .calc-frame .text-box {
-	padding:15px 0 0;
     max-width:230px;
     margin:0 auto;
+    padding:70px 0;
 }
     
 .result-area-calc .img-box {
 	float:none;
 	width:auto;
-	margin:0 auto 15px;
+    float: left;
 }
 
 .result-area-calc .txt-box {
     padding:25px;
+    margin:0 auto;
+    width:auto;
 }
