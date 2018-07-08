@@ -1,56 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calorie Calculator</title>
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="shortcut icon" href="../resources/iconTitle.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="../resources/iconTitle.ico" type="image/x-icon">
 </head>
 
 <body>
-    
-<!-- Header -->
-<a href="../index.html"><img id="logo" src="../resources/logo.jpg" alt="logo"></a>
-<div id="homePage" class="tabcontent">
-    <h3>The best website for calculating daily calorie intake and body mass index!</h3>
-</div>
-<div id="calorieCalculator" class="tabcontent">
-<h3>Use this amazing calculator to see how many calories you may eat in order to maintaint weight
-and count your daily calorie intake</h3>
-</div>
-<div id="bmiCalculator" class="tabcontent">
-    <h3>Calculate your Body Mass Index now by simply entering your weight and height</h3>
-</div>
-<div id="recommendations" class="tabcontent">
-    <h3>Tips and tricks for better life</h3>
-</div>
-<div id="recipes" class="tabcontent">
-    <h3>The most delicious, healthy and easy recipes you have to try</h3>
-</div>
-<button id="homePage-button" class="tablink" onclick="loadPage('../index.html')">Home</button>
-<button id="calorieCalculator-button" class="tablink" onclick="loadPage('../html/CalorieCalculator.html')">Calorie
-    Calculator
-</button>
-<button id="bmiCalculator-button" class="tablink" onclick="loadPage('../html/BMI.html')">Body Mass Index</button>
-<button id="recommendations-button" class="tablink" onclick="loadPage('../html/Recommendations.html')">Key
-    Recommendations
-</button>
-<button id="recipes-button" class="tablink" onclick="loadPage('../html/Recipes.html')">Recipes</button>
-<div class="break">
-</div>
-<div class="center">
-    <img id="wall" src="../resources/my_wall.jpg" alt="Wall">
-</div>
-<br>
-<!-- End Header -->
 
-<div class="paragraph">
+    <!-- Header -->
+    <a href="../index.html">
+        <img id="logo" src="../resources/logo.jpg" alt="logo">
+    </a>
+    <div id="homePage" class="tabcontent">
+        <h3>The best website for calculating daily calorie intake and body mass index!</h3>
+    </div>
+    <div id="calorieCalculator" class="tabcontent">
+        <h3>Use this amazing calculator to see how many calories you may eat in order to maintaint weight and count your daily
+            calorie intake</h3>
+    </div>
+    <div id="bmiCalculator" class="tabcontent">
+        <h3>Calculate your Body Mass Index now by simply entering your weight and height</h3>
+    </div>
+    <div id="recommendations" class="tabcontent">
+        <h3>Tips and tricks for better life</h3>
+    </div>
+    <div id="recipes" class="tabcontent">
+        <h3>The most delicious, healthy and easy recipes you have to try</h3>
+    </div>
+    <button id="homePage-button" class="tablink" onclick="loadPage('../index.html')">Home</button>
+    <button id="calorieCalculator-button" class="tablink" onclick="loadPage('../html/CalorieCalculator.html')">Calorie Calculator
+    </button>
+    <button id="bmiCalculator-button" class="tablink" onclick="loadPage('../html/BMI.html')">Body Mass Index</button>
+    <button id="recommendations-button" class="tablink" onclick="loadPage('../html/Recommendations.html')">Key Recommendations
+    </button>
+    <button id="recipes-button" class="tablink" onclick="loadPage('../html/Recipes.html')">Recipes</button>
+    <div class="break">
+    </div>
+    <div class="center">
+        <img id="wall" src="../resources/my_wall.jpg" alt="Wall">
+    </div>
+    <br>
+    <!-- End Header -->
+
+    <div class="paragraph">
         <h3>How Many Calories Should You Intake?</h3>
-        <p>To accurately determine your daily calorie amount, simply enter your current weight, height, age and gender below. 
-            Do your best estimate of how much exercise you will be doing.
-            The results will show how many calories you may eat in order to maintain your weight. 
-            Daily calorie deficit of 500 should result in 1-2 kg per week fat loss.</p>
+        <p>To accurately determine your daily calorie amount, simply enter your current weight, height, age and gender below.
+            Do your best estimate of how much exercise you will be doing. The results will show how many calories you may
+            eat in order to maintain your weight. Daily calorie deficit of 500 should result in 1-2 kg per week fat loss.</p>
         <br>
         <h4>Recommended Daily Calorie Intake - Calculator</h4>
         <div class="recommendedCalorieIntakeCalculator">
@@ -61,101 +61,103 @@ and count your daily calorie intake</h3>
                 </div>
                 <div class="center">
                     <input id="male" type="radio" name="gender" checked> Male
-                    <input id="female"  type="radio" name="gender"> Female
+                    <input id="female" type="radio" name="gender"> Female
                 </div>
-                    <div class="center">
+                <div class="center">
                     <label for="age">Age</label>
                     <input id="age" type="number" name="age" required>
-                    </div>
-                    <div>
+                </div>
+                <div>
                     <label>Height (cm)</label>
-                        <input id="height" type="number" name="height">
-                    </div>
-                    <div> 
+                    <input id="height" type="number" name="height">
+                </div>
+                <div>
                     <label>Weight (kg)</label>
-                        <input id="weight" type="number" name="weight">
-                    </div>
-                    <label for="activity">Select your individual exercise intensity levels</label>
-                    <select name="activity" id="activity">
-                        <option class="italic">Weekly exercise level</option>
-                        <option value="1.2">Little/No exercise</option>
-                        <option value="1.375">1-2 times per week</option>
-                        <option value="1.5">3-5 times per week</option>
-                        <option value="1.725">6-7 times per week</option>
-                        <option value="1.9">Twice daily or phisical job</option>
-                    </select>
-                    <input type="submit" id="calculateRDCI-Button" value="Calculate" name="calculate">
-                    <span id="result-RDCI"></span>
-                    <br><br>
-                    <input type="reset" id="resetRDCI-button" value="Reset" name="reset">
-                 <br>
+                    <input id="weight" type="number" name="weight">
+                </div>
+                <label for="activity">Select your individual exercise intensity levels</label>
+                <select name="activity" id="activity">
+                    <option class="italic">Weekly exercise level</option>
+                    <option value="1.2">Little/No exercise</option>
+                    <option value="1.375">1-2 times per week</option>
+                    <option value="1.5">3-5 times per week</option>
+                    <option value="1.725">6-7 times per week</option>
+                    <option value="1.9">Twice daily or phisical job</option>
+                </select>
+                <input type="submit" id="calculateRDCI-Button" value="Calculate" name="calculate">
+                <span id="result-RDCI"></span>
+                <br>
+                <br>
+                <input type="reset" id="resetRDCI-button" value="Reset" name="reset">
+                <br>
             </form>
         </div>
-    <br>
-</div>
-<div class="paragraph">
-    <h3>Calorie Calculator</h3>
-    <p>
-        Calorie calculator is an easy to use caloric counter which provides you with a way to count your daily caloric
-        intake.
-        Calorie counting is an easy way for you to manage your weight.
-        Calorie calculator is incredibly useful if you are trying to lose, maintain or even gain weight.
-    </p>
-    <p>
-        Keeping track of what you eat may help you lose or gain weight faster or just to maintain your weight
-        constantly.
-    </p>
-    <p>
-        This is a simple but highly accurate scientific calorie calculator.
-        Use the table below to enter quantities of foods and drinks and calculate the total calories you have consumed.
-    </p>
-    <p class="italic">Type key word in the input field below to search in the table for specific food or drink.</p>  
-    <div class="search">
-    <img src="../resources/search.png" alt="Search">
-    <input id="searchInput" type="text" placeholder="Search for specific food or drink...">
+        <br>
     </div>
-    <br><br>
-    <!-- Table with Foods and Drinks and their calorie content per 100g / 100ml -->
-    <table id="table-products" class="tableCalculator">
-        <tbody id="products">
-        <tr>
-            <div id="table-header">
-                <th>Food/Drink</th>
-                <th>Kcal per 100g (ml)</th>
-                <th>Quantity (g/ml)</th>
-            </div>
-        </tr>
-        </tbody>
-    </table>
-    <br>
-    <button id="calculateCalories-Button" onclick="calculateCalories()">Calculate</button>
-    <span id="sum"></span>
-    <br>
-    <br>
-    <button id="resetCalories-button" onclick="resetCalories()">Reset</button>
-    <br>
-    <br>
-</div>
-<div class="break">
-</div>
+    <div class="paragraph">
+        <h3>Calorie Calculator</h3>
+        <p>
+            Calorie calculator is an easy to use caloric counter which provides you with a way to count your daily caloric intake. Calorie
+            counting is an easy way for you to manage your weight. Calorie calculator is incredibly useful if you are trying
+            to lose, maintain or even gain weight.
+        </p>
+        <p>
+            Keeping track of what you eat may help you lose or gain weight faster or just to maintain your weight constantly.
+        </p>
+        <p>
+            This is a simple but highly accurate scientific calorie calculator. Use the table below to enter quantities of foods and
+            drinks and calculate the total calories you have consumed.
+        </p>
+        <p class="italic">Type key word in the input field below to search in the table for specific food or drink.</p>
+        <div class="search">
+            <img src="../resources/search.png" alt="Search">
+            <input id="searchInput" type="text" placeholder="Search for specific food or drink...">
+        </div>
+        <br>
+        <br>
+        <!-- Table with Foods and Drinks and their calorie content per 100g / 100ml -->
+        <table id="table-products" class="tableCalculator">
+            <tbody id="products">
+                    <tr id="table-header">
+                        <th>Food/Drink</th>
+                        <th>Kcal per 100g (ml)</th>
+                        <th>Quantity (g/ml)</th>
+                    </tr>
+            </tbody>
+        </table>
+        <br>
+        <button id="calculateCalories-Button" onclick="calculateCalories()">Calculate</button>
+        <span id="sum"></span>
+        <br>
+        <br>
+        <button id="resetCalories-button" onclick="resetCalories()">Reset</button>
+        <br>
+        <br>
+    </div>
+    <div class="break">
+    </div>
 
-<!-- Footer -->
-<div class="center">
-    <small>&copy; 2018 Calorie-Calculator/SS_Dimitrina</small>
-    <br>
-    <div>
-        <a target="_blank" href="https://www.facebook.com/dimitrina.beleva"><img src="../resources/facebook.jpg"
-                                                                                          alt="facebook-icon"></a>
-        <a target="_blank" href="https://www.linkedin.com/in/dimitrina-beleva-0bbb1076/"><img
-                    src="../resources/linkedin.jpg" alt="linked-icon"></a>
-        <a target="_blank" href="https://github.com/dimitrina-beleva/Calorie-Calculator"><img
-                    src="../resources/github.jpg" alt="github-icon"></a>
+    <!-- Footer -->
+    <div class="center">
+        <small>&copy; 2018 Calorie-Calculator/SS_Dimitrina</small>
+        <br>
+        <div>
+            <a target="_blank" href="https://www.facebook.com/dimitrina.beleva">
+                <img src="../resources/facebook.jpg" alt="facebook-icon">
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/dimitrina-beleva-0bbb1076/">
+                <img src="../resources/linkedin.jpg" alt="linked-icon">
+            </a>
+            <a target="_blank" href="https://github.com/dimitrina-beleva/Calorie-Calculator">
+                <img src="../resources/github.jpg" alt="github-icon">
+            </a>
+        </div>
     </div>
-</div>
-<!-- End Footer -->
-<script src="../libs/jquery-3.3.1.min.js"></script>
-<script src="../libs/jquery.validate.min.js"></script>
-<script src="../js/main.js"></script>
-<script src="../js/calorie-calculator.js"></script>
+    <!-- End Footer -->
+    <script src="../libs/jquery-3.3.1.min.js"></script>
+    <script src="../libs/jquery.validate.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/calorie-calculator.js"></script>
 </body>
-</html> 
+
+</html>

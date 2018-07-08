@@ -1,14 +1,5 @@
 openTab('calorieCalculator', document.getElementById("calorieCalculator-button"), 'rgb(210, 250, 151)');
 
-$(document).ready(function(){
-    $("#searchInput").on("keyup", function() {
-      var value = $(this).val().toLowerCase();
-      $("#table-products tr").filter(function() {
-        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-      });
-    });
-  });
-
 var products = [ 
     {id: 'product-1', name: 'Apple', calories: 64, quantity: null},
     {id: 'product-2', name: 'Avocado', calories: 175, quantity: null},
@@ -76,6 +67,16 @@ function createTable() {
   }
 
   createTable();
+
+  //Searches for a product from the array and sets a filter
+  $(function(){
+    $("#searchInput").on("keyup", function() {
+      var value = $(this).val().toLowerCase();
+      $("#table-products tr").filter(function() {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+      });
+    });
+  });
 
 // Calculates the sum of all product's quantity multiplied by product's calories
 function calculateCalories() {

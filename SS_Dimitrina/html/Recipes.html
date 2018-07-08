@@ -1,344 +1,389 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calorie Calculator</title>
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="shortcut icon" href="../resources/iconTitle.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="../resources/iconTitle.ico" type="image/x-icon">
 </head>
 
 <body>
-    
-<!-- Header -->
-<a href="../index.html"><img id="logo" src="../resources/logo.jpg" alt="logo"></a>
-<div id="homePage" class="tabcontent">
-    <h3>The best website for calculating daily calorie intake and body mass index!</h3>
-</div>
-<div id="calorieCalculator" class="tabcontent">
-<h3>Use this amazing calculator to see how many calories you may eat in order to maintaint weight
-and count your daily calorie intake</h3>
-</div>
-<div id="bmiCalculator" class="tabcontent">
-    <h3>Calculate your Body Mass Index now by simply entering your weight and height</h3>
-</div>
-<div id="recommendations" class="tabcontent">
-    <h3>Tips and tricks for better life</h3>
-</div>
-<div id="recipes" class="tabcontent">
-    <h3>The most delicious, healthy and easy recipes you have to try</h3>
-</div>
-<button id="homePage-button" class="tablink" onclick="loadPage('../index.html')">Home</button>
-<button id="calorieCalculator-button" class="tablink" onclick="loadPage('../html/CalorieCalculator.html')">Calorie
-    Calculator
-</button>
-<button id="bmiCalculator-button" class="tablink" onclick="loadPage('../html/BMI.html')">Body Mass Index</button>
-<button id="recommendations-button" class="tablink" onclick="loadPage('../html/Recommendations.html')">Key
-    Recommendations
-</button>
-<button id="recipes-button" class="tablink" onclick="loadPage('../html/Recipes.html')">Recipes</button>
-<div class="break">
-</div>
-<div class="center">
-    <img id="wall" src="../resources/my_wall.jpg" alt="Wall">
-</div>
-<br>
-<!-- End Header -->
 
-<img id="scrollButton" onclick="topFunction()" src="../resources/back-to-top.png" title="Go to top">
-<div class="paragraph">
-    <h4>Discover the best healthy recipes, including healthy breakfasts, lunches, dinners and snacks. Find dishes to fit
-        in with special diets.</h4>
-    <p>The section below includes delicious and easy recipes with photos, with exactly the calories you need based on
-        your calorie intake plan.</p>
-    <p>A variety of reduced-calorie daily menus are provided to help make it easier for you to eat right and lose
-        weight. The sample menus include ideas for amazing meals.</p>
-    <br>
-</div>
-<br>
-<div class="block-images">
-    <div class="images-rows">
-        <div class="images-row1">
-            <a class="recipe-images" href="#Recipe1"><img src="../resources/Breakfast-Smoothie.jpg"
-                                                          alt="Breakfast smoothie"></a>
-            <a class="recipe-images" href="#Recipe2"><img src="../resources/Omelette-Wedges.jpg" alt="Omelette wedges"></a>
-            <a class="recipe-images" href="#Recipe3"><img
-                    src="../resources/Poached-Eggs-with-Smashed-Avocado-and-Tomatoes.jpg"
-                    alt="Poached eggs with smashed avocado and tomatoes"></a>
-        </div>
-        <div class="images-row2">
-            <a class="recipe-images" href="#Recipe4"><img src="../resources/Spicy-Yogurt-Chicken.jpg"
-                                                          alt="Spicy-yogurt-chicken"></a>
-            <a class="recipe-images" href="#Recipe5"><img src="../resources/Smoked-Salmon-and-Lemon-Scramled-Eggs.jpg"
-                                                          alt="Smoked salmon and lemon scrambled eggs"></a>
-            <a class="recipe-images" href="#Recipe6"><img src="../resources/Thai-Squash-Soup.jpg"
-                                                          alt="Thai squash soup"></a>
-        </div>
+    <!-- Header -->
+    <a href="../index.html">
+        <img id="logo" src="../resources/logo.jpg" alt="logo">
+    </a>
+    <div id="homePage" class="tabcontent">
+        <h3>The best website for calculating daily calorie intake and body mass index!</h3>
     </div>
-</div>
-<br>
-<div class="center">
-    <h2>Recipe Book</h2>
-</div>
-<div class="recipes">
-    <div class="recipe">
-        <a id="Recipe1"><h3>Breakfast smoothie</h3></a>
-        <br>
-        <div class="recipe-details">
-            <div class="images">
-                <img src="../resources/Breakfast-Smoothie.jpg" alt="Breakfast smoothie">
-            </div>
-            <div class="ingredients">
-                <p><b>Ingredients:</b></p>
-                <ul>
-                    <li>1 small ripe banana</li>
-                    <li>about 140g blackberries, blueberries, raspberries or strawberries(or use a mix)</li>
-                    <li>apple juice or mineral water (optional)</li>
-                    <li>honey</li>
-                </ul>
-            </div>
-            <div class="method">
-                <p><b>Method:</b></p>
-                <ol>
-                    <li>Slice the banana into your blender or food processor and add the berries of your choice. Whizz until
-                            smooth. With the blades whirring, pour in juice or water to make the consistency you like. Toss a
-                            few extra fruits on top, drizzle with honey and serve.
-                    </li>
-                </ol>
-            </div>
-        </div>
-        <div class="preparation">
-            <p>Prep: 5min</p>
-            <p>Kcal: 165 per 100g</p>
-        </div>
+    <div id="calorieCalculator" class="tabcontent">
+        <h3>Use this amazing calculator to see how many calories you may eat in order to maintaint weight and count your daily
+            calorie intake</h3>
+    </div>
+    <div id="bmiCalculator" class="tabcontent">
+        <h3>Calculate your Body Mass Index now by simply entering your weight and height</h3>
+    </div>
+    <div id="recommendations" class="tabcontent">
+        <h3>Tips and tricks for better life</h3>
+    </div>
+    <div id="recipes" class="tabcontent">
+        <h3>The most delicious, healthy and easy recipes you have to try</h3>
+    </div>
+    <button id="homePage-button" class="tablink" onclick="loadPage('../index.html')">Home</button>
+    <button id="calorieCalculator-button" class="tablink" onclick="loadPage('../html/CalorieCalculator.html')">Calorie Calculator
+    </button>
+    <button id="bmiCalculator-button" class="tablink" onclick="loadPage('../html/BMI.html')">Body Mass Index</button>
+    <button id="recommendations-button" class="tablink" onclick="loadPage('../html/Recommendations.html')">Key Recommendations
+    </button>
+    <button id="recipes-button" class="tablink" onclick="loadPage('../html/Recipes.html')">Recipes</button>
+    <div class="break">
+    </div>
+    <div class="center">
+        <img id="wall" src="../resources/my_wall.jpg" alt="Wall">
+    </div>
+    <br>
+    <!-- End Header -->
+
+    <img id="scrollButton" onclick="topFunction()" src="../resources/back-to-top.png" title="Go to top" alt="Go to top">
+    <div class="paragraph">
+        <h4>Discover the best healthy recipes, including healthy breakfasts, lunches, dinners and snacks. Find dishes to fit
+            in with special diets.</h4>
+        <p>The section below includes delicious and easy recipes with photos, with exactly the calories you need based on your
+            calorie intake plan.</p>
+        <p>A variety of reduced-calorie daily menus are provided to help make it easier for you to eat right and lose weight.
+            The sample menus include ideas for amazing meals.</p>
         <br>
     </div>
     <br>
-    <div class="recipe">
-        <a id="Recipe2"><h3>Omelette Wedges</h3></a>
-        <div class="recipe-details">
-            <div class="images">
-                <img src="../resources/Omelette-Wedges.jpg" alt="Omelette wedges">
+    <div class="block-images">
+        <div class="images-rows">
+            <div class="images-row1">
+                <a class="recipe-images" href="#Recipe1">
+                    <img src="../resources/Breakfast-Smoothie.jpg" alt="Breakfast smoothie">
+                </a>
+                <a class="recipe-images" href="#Recipe2">
+                    <img src="../resources/Omelette-Wedges.jpg" alt="Omelette wedges">
+                </a>
+                <a class="recipe-images" href="#Recipe3">
+                    <img src="../resources/Poached-Eggs-with-Smashed-Avocado-and-Tomatoes.jpg" alt="Poached eggs with smashed avocado and tomatoes">
+                </a>
             </div>
-            <div class="ingredients">
-                <p><b>Ingredients:</b></p>
-                <ul>
-                    <li>3 spring onions</li>
-                    <li>200g potatoes</li>
-                    <li>4 rashers smoked bacon</li>
-                    <li>2 tbsp sunflower oil</li>
-                    <li>8 eggs</li>
-                    <li>1 tsp mustard</li>
-                    <li>85g cheddar</li>
-                    <li>2 tomatoes</li>
-                </ul>
-            </div>
-            <div class="method">
-                    <p><b>Method:</b></p>
-                <ol>
-                    <li>Chop the onions and set aside. Slice the potatoes, then boil in a pan of salted water for 10 mins
-                            until just tender. Drain.
-                    </li>
-                    <li>Snip the bacon into pieces with scissors. Heat a frying pan with 1 tsp oil, then stir-fry the bacon
-                            until it turns pink. Add onions to the pan, stir briefly for a couple of secs to slightly soften,
-                            then tip the bacon and onion into a bowl. Wash and dry the frying pan.
-                    </li>
-                    <li>Break the eggs into a bowl, then whisk with the mustard and a little salt and pepper.</li>
-                    <li>Grate the cheese and add half to the egg mixture with the cooked bacon, onions and potatoes. Gently
-                            stir to mix everything. Heat 2 tbsp oil in the pan, pour in the mixture.
-                    </li>
-                    <li>Turn on the grill so it has time to heat up. Leave the omelette to cook, undisturbed, over a low
-                            heat for about 6 mins. Meanwhile, cut the tomatoes into wedges, scatter over the omelette and
-                            sprinkle with the grated cheese.
-                    </li>
-                    <li>Put the frying pan under the grill to cook the last of the egg mixture and melt the cheese. Cut into
-                            wedges and serve.
-                    </li>
-                </ol>
+            <div class="images-row2">
+                <a class="recipe-images" href="#Recipe4">
+                    <img src="../resources/Spicy-Yogurt-Chicken.jpg" alt="Spicy-yogurt-chicken">
+                </a>
+                <a class="recipe-images" href="#Recipe5">
+                    <img src="../resources/Smoked-Salmon-and-Lemon-Scramled-Eggs.jpg" alt="Smoked salmon and lemon scrambled eggs">
+                </a>
+                <a class="recipe-images" href="#Recipe6">
+                    <img src="../resources/Thai-Squash-Soup.jpg" alt="Thai squash soup">
+                </a>
             </div>
         </div>
-        <div class="preparation">
-            <p>Prep: 10min</p>
-            <p>Cook: 10min</p>
-            <p>Kcal: 275 per 100g</p>
-        </div>
-        <br>
-    </div>
-    <br>
-    <div class="recipe">
-        <a id="Recipe3"><h3>Poached eggs with smashed avocado and tomatoes</h3></a>
-        <div class="recipe-details">
-            <div class="images">
-                <img src="../resources/Poached-Eggs-with-Smashed-Avocado-and-Tomatoes.jpg"
-                     alt="Poached eggs with smashed avocado and tomatoes">
-            </div>
-            <div class="ingredients">
-                <p><b>Ingredients:</b></p>
-                <ul>
-                    <li>2 tomatoes, halved</li>
-                    <li>½ tsp rapeseed oil</li>
-                    <li>2 eggs</li>
-                    <li>1 small ripe avocado</li>
-                    <li>2 slices seeded wholemeal soda bread</li>
-                    <li>2 handfuls rocket</li>
-                </ul>
-            </div>
-            <div class="method">
-                <p><b>Method:</b></p>
-                <ol>
-                    <li>Heat a non-stick frying pan, very lightly brush the cut surface of the tomatoes with a little oil,
-                            then cook them, cut-side down, in the pan until they have softened and slightly caramelised.
-                            Meanwhile, heat a pan of water, carefully break in the eggs and leave to poach for 1-2 mins until
-                            the whites are firm but the yolks are still runny.
-                    </li>
-                    <li>Halve and stone the avocado, then scoop out the flesh and smash onto the bread. Add the eggs, grind
-                            over black pepper and add a handful of rocket to each portion. Serve the tomatoes on the side.
-                    </li>
-                </ol>
-            </div>
-        </div>
-        <div class="preparation">
-            <p>Prep: 10min</p>
-            <p>Cook: 10min</p>
-            <p>Kcal: 411 per 100g</p>
-        </div>
-        <br>
-    </div>
-    <br>
-    <div class="recipe">
-        <a id="Recipe4"><h3>Spicy yogurt chicken</h3></a>
-        <div class="recipe-details">
-            <div class="images">
-                <img src="../resources/Spicy-Yogurt-Chicken.jpg" alt="Spicy yogurt chicken">
-            </div>
-            <div class="ingredients">
-                <p><b>Ingredients:</b></p>
-                <ul>
-                    <li>8 skinless chicken drumsticks</li>
-                    <li>150ml pot natural yogurt</li>
-                    <li>1 tsp chilli powder</li>
-                    <li>1 tbsp ground cumin</li>
-                    <li>1 tbsp ground coriander</li>
-                    <li>2 tsp ground turmeric</li>
-                </ul>
-            </div>
-            <div class="method">
-                <p><b>Method:</b></p>
-                <ol>
-                    <li>With a sharp knife, make a few slashes in each drumstick. Mix the remaining ingredients in a bowl,
-                            season to taste. Add the drumsticks, rubbing the mixture well into the meat. If you have time, cover
-                            and chill for 5 mins.
-                    </li>
-                    <li>Remove the drumsticks from the marinade, shaking off the excess. Cook them on the barbecue for 20
-                            mins, turning occasionally, until cooked through.
-                    </li>
-                </ol>
-            </div>
-        </div>
-        <div class="preparation">
-            <p>Prep: 5min</p>
-            <p>Cook: 20min</p>
-            <p>Kcal: 394 per 100g</p>
-        </div>
-        <br>
-    </div>
-    <br>
-    <div class="recipe">
-        <a id="Recipe5"><h3>Smoked salmon and lemon scrambled eggs</h3></a>
-        <div class="recipe-details">
-            <div class="images">
-                <img src="../resources/Smoked-Salmon-and-Lemon-Scramled-Eggs.jpg"
-                     alt="Smoked salmon and lemon scrambled eggs">
-            </div>
-            <div class="ingredients">
-                <p><b>Ingredients:</b></p>
-                <ul>
-                    <li>1 bagel</li>
-                    <li>1 slice smoked salmon</li>
-                    <li>black pepper</li>
-                    <li>a wedge of lemon</li>
-                    <li>scrambled eggs</li>
-                </ul>
-            </div>
-            <div class="method">
-                <p><b>Method:</b></p>
-                <ol>
-                    <li>Halve, toast and butter a bagel. Drape a slice of smoked salmon on each half and spoon over the
-                            scrambled egg. Grind over black pepper and serve with a wedge of lemon on the side.
-                    </li>
-                </ol>
-            </div>
-        </div>
-        <div class="preparation">
-            <p>Prep: 10min</p>
-            <p>Kcal: 366 per 100g</p>
-        </div>
-        <br>
-    </div>
-    <br>
-    <div class="recipe">
-        <a id="Recipe6"><h3>Thai squash soup</h3></a>
-        <div class="recipe-details">
-            <div class="images">
-                <img src="../resources/Thai-Squash-Soup.jpg" alt="Thai squash soup">
-            </div>
-            <div class="ingredients">
-                <p><b>Ingredients:</b></p>
-                <ul>
-                    <li>1 onion, chopped</li>
-                    <li>1 lemongrass stalk, bashed and shredded</li>
-                    <li>1-2 red chillies, roughly chopped</li>
-                    <li>1kg butternut squash, peeled and diced juice 1 lime</li>
-                    <li>125ml coconut milk</li>
-                    <li>small bunch coriander, leaves picked</li>
-                </ul>
-            </div>
-            <div class="method">
-                <p><b>Method:</b></p>
-                <ol>
-                    <li>Fry the onion, lemongrass and most of the chilli in a large pan with a splash of water for 2-3 mins
-                            until softened – add more water if it starts to catch. Tip in the squash and stir. Cover with 1
-                            litre water, bring to the boil and simmer for 15 mins until the squash is tender. Add lime juice,
-                            remove from the heat and blitz with a hand blender until smooth.
-                    </li>
-                    <li>Pour in the coconut milk, season, then return to the heat to gently warm through. Ladle into bowls
-                            and serve with coriander and the remaining chilli.
-                    </li>
-                </ol>
-            </div>
-        </div>
-        <div class="preparation">
-            <p>Prep: 15min</p>
-            <p>Cook: 20min</p>
-            <p>Kcal: 178 per 100g</p>
-        </div>
-        <br>
     </div>
     <br>
     <div class="center">
-        <img src="../resources/recipe-book.gif" alt="Recipe book">
+        <h2>Recipe Book</h2>
     </div>
-</div>
+    <div class="recipes">
+        <div class="recipe">
+            <a id="Recipe1">
+                <h3>Breakfast smoothie</h3>
+            </a>
+            <br>
+            <div class="recipe-details">
+                <div class="images">
+                    <img src="../resources/Breakfast-Smoothie.jpg" alt="Breakfast smoothie">
+                </div>
+                <div class="ingredients">
+                    <p>
+                        <b>Ingredients:</b>
+                    </p>
+                    <ul>
+                        <li>1 small ripe banana</li>
+                        <li>about 140g blackberries, blueberries, raspberries or strawberries(or use a mix)</li>
+                        <li>apple juice or mineral water (optional)</li>
+                        <li>honey</li>
+                    </ul>
+                </div>
+                <div class="method">
+                    <p>
+                        <b>Method:</b>
+                    </p>
+                    <ol>
+                        <li>Slice the banana into your blender or food processor and add the berries of your choice. Whizz until
+                            smooth. With the blades whirring, pour in juice or water to make the consistency you like. Toss
+                            a few extra fruits on top, drizzle with honey and serve.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="preparation">
+                <p>Prep: 5min</p>
+                <p>Kcal: 165 per 100g</p>
+            </div>
+            <br>
+        </div>
+        <br>
+        <div class="recipe">
+            <a id="Recipe2">
+                <h3>Omelette Wedges</h3>
+            </a>
+            <div class="recipe-details">
+                <div class="images">
+                    <img src="../resources/Omelette-Wedges.jpg" alt="Omelette wedges">
+                </div>
+                <div class="ingredients">
+                    <p>
+                        <b>Ingredients:</b>
+                    </p>
+                    <ul>
+                        <li>3 spring onions</li>
+                        <li>200g potatoes</li>
+                        <li>4 rashers smoked bacon</li>
+                        <li>2 tbsp sunflower oil</li>
+                        <li>8 eggs</li>
+                        <li>1 tsp mustard</li>
+                        <li>85g cheddar</li>
+                        <li>2 tomatoes</li>
+                    </ul>
+                </div>
+                <div class="method">
+                    <p>
+                        <b>Method:</b>
+                    </p>
+                    <ol>
+                        <li>Chop the onions and set aside. Slice the potatoes, then boil in a pan of salted water for 10 mins
+                            until just tender. Drain.
+                        </li>
+                        <li>Snip the bacon into pieces with scissors. Heat a frying pan with 1 tsp oil, then stir-fry the bacon
+                            until it turns pink. Add onions to the pan, stir briefly for a couple of secs to slightly soften,
+                            then tip the bacon and onion into a bowl. Wash and dry the frying pan.
+                        </li>
+                        <li>Break the eggs into a bowl, then whisk with the mustard and a little salt and pepper.</li>
+                        <li>Grate the cheese and add half to the egg mixture with the cooked bacon, onions and potatoes. Gently
+                            stir to mix everything. Heat 2 tbsp oil in the pan, pour in the mixture.
+                        </li>
+                        <li>Turn on the grill so it has time to heat up. Leave the omelette to cook, undisturbed, over a low
+                            heat for about 6 mins. Meanwhile, cut the tomatoes into wedges, scatter over the omelette and
+                            sprinkle with the grated cheese.
+                        </li>
+                        <li>Put the frying pan under the grill to cook the last of the egg mixture and melt the cheese. Cut into
+                            wedges and serve.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="preparation">
+                <p>Prep: 10min</p>
+                <p>Cook: 10min</p>
+                <p>Kcal: 275 per 100g</p>
+            </div>
+            <br>
+        </div>
+        <br>
+        <div class="recipe">
+            <a id="Recipe3">
+                <h3>Poached eggs with smashed avocado and tomatoes</h3>
+            </a>
+            <div class="recipe-details">
+                <div class="images">
+                    <img src="../resources/Poached-Eggs-with-Smashed-Avocado-and-Tomatoes.jpg" alt="Poached eggs with smashed avocado and tomatoes">
+                </div>
+                <div class="ingredients">
+                    <p>
+                        <b>Ingredients:</b>
+                    </p>
+                    <ul>
+                        <li>2 tomatoes, halved</li>
+                        <li>½ tsp rapeseed oil</li>
+                        <li>2 eggs</li>
+                        <li>1 small ripe avocado</li>
+                        <li>2 slices seeded wholemeal soda bread</li>
+                        <li>2 handfuls rocket</li>
+                    </ul>
+                </div>
+                <div class="method">
+                    <p>
+                        <b>Method:</b>
+                    </p>
+                    <ol>
+                        <li>Heat a non-stick frying pan, very lightly brush the cut surface of the tomatoes with a little oil,
+                            then cook them, cut-side down, in the pan until they have softened and slightly caramelised.
+                            Meanwhile, heat a pan of water, carefully break in the eggs and leave to poach for 1-2 mins until
+                            the whites are firm but the yolks are still runny.
+                        </li>
+                        <li>Halve and stone the avocado, then scoop out the flesh and smash onto the bread. Add the eggs, grind
+                            over black pepper and add a handful of rocket to each portion. Serve the tomatoes on the side.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="preparation">
+                <p>Prep: 10min</p>
+                <p>Cook: 10min</p>
+                <p>Kcal: 411 per 100g</p>
+            </div>
+            <br>
+        </div>
+        <br>
+        <div class="recipe">
+            <a id="Recipe4">
+                <h3>Spicy yogurt chicken</h3>
+            </a>
+            <div class="recipe-details">
+                <div class="images">
+                    <img src="../resources/Spicy-Yogurt-Chicken.jpg" alt="Spicy yogurt chicken">
+                </div>
+                <div class="ingredients">
+                    <p>
+                        <b>Ingredients:</b>
+                    </p>
+                    <ul>
+                        <li>8 skinless chicken drumsticks</li>
+                        <li>150ml pot natural yogurt</li>
+                        <li>1 tsp chilli powder</li>
+                        <li>1 tbsp ground cumin</li>
+                        <li>1 tbsp ground coriander</li>
+                        <li>2 tsp ground turmeric</li>
+                    </ul>
+                </div>
+                <div class="method">
+                    <p>
+                        <b>Method:</b>
+                    </p>
+                    <ol>
+                        <li>With a sharp knife, make a few slashes in each drumstick. Mix the remaining ingredients in a bowl,
+                            season to taste. Add the drumsticks, rubbing the mixture well into the meat. If you have time,
+                            cover and chill for 5 mins.
+                        </li>
+                        <li>Remove the drumsticks from the marinade, shaking off the excess. Cook them on the barbecue for 20
+                            mins, turning occasionally, until cooked through.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="preparation">
+                <p>Prep: 5min</p>
+                <p>Cook: 20min</p>
+                <p>Kcal: 394 per 100g</p>
+            </div>
+            <br>
+        </div>
+        <br>
+        <div class="recipe">
+            <a id="Recipe5">
+                <h3>Smoked salmon and lemon scrambled eggs</h3>
+            </a>
+            <div class="recipe-details">
+                <div class="images">
+                    <img src="../resources/Smoked-Salmon-and-Lemon-Scramled-Eggs.jpg" alt="Smoked salmon and lemon scrambled eggs">
+                </div>
+                <div class="ingredients">
+                    <p>
+                        <b>Ingredients:</b>
+                    </p>
+                    <ul>
+                        <li>1 bagel</li>
+                        <li>1 slice smoked salmon</li>
+                        <li>black pepper</li>
+                        <li>a wedge of lemon</li>
+                        <li>scrambled eggs</li>
+                    </ul>
+                </div>
+                <div class="method">
+                    <p>
+                        <b>Method:</b>
+                    </p>
+                    <ol>
+                        <li>Halve, toast and butter a bagel. Drape a slice of smoked salmon on each half and spoon over the scrambled
+                            egg. Grind over black pepper and serve with a wedge of lemon on the side.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="preparation">
+                <p>Prep: 10min</p>
+                <p>Kcal: 366 per 100g</p>
+            </div>
+            <br>
+        </div>
+        <br>
+        <div class="recipe">
+            <a id="Recipe6">
+                <h3>Thai squash soup</h3>
+            </a>
+            <div class="recipe-details">
+                <div class="images">
+                    <img src="../resources/Thai-Squash-Soup.jpg" alt="Thai squash soup">
+                </div>
+                <div class="ingredients">
+                    <p>
+                        <b>Ingredients:</b>
+                    </p>
+                    <ul>
+                        <li>1 onion, chopped</li>
+                        <li>1 lemongrass stalk, bashed and shredded</li>
+                        <li>1-2 red chillies, roughly chopped</li>
+                        <li>1kg butternut squash, peeled and diced juice 1 lime</li>
+                        <li>125ml coconut milk</li>
+                        <li>small bunch coriander, leaves picked</li>
+                    </ul>
+                </div>
+                <div class="method">
+                    <p>
+                        <b>Method:</b>
+                    </p>
+                    <ol>
+                        <li>Fry the onion, lemongrass and most of the chilli in a large pan with a splash of water for 2-3 mins
+                            until softened – add more water if it starts to catch. Tip in the squash and stir. Cover with
+                            1 litre water, bring to the boil and simmer for 15 mins until the squash is tender. Add lime
+                            juice, remove from the heat and blitz with a hand blender until smooth.
+                        </li>
+                        <li>Pour in the coconut milk, season, then return to the heat to gently warm through. Ladle into bowls
+                            and serve with coriander and the remaining chilli.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="preparation">
+                <p>Prep: 15min</p>
+                <p>Cook: 20min</p>
+                <p>Kcal: 178 per 100g</p>
+            </div>
+            <br>
+        </div>
+        <br>
+        <div class="center">
+            <img src="../resources/recipe-book.gif" alt="Recipe book">
+        </div>
+    </div>
     <div class="break">
     </div>
 
-<!-- Footer -->
-<div class="center">
-    <small>&copy; 2018 Calorie-Calculator/SS_Dimitrina</small>
-    <br>
-    <div>
-        <a target="_blank" href="https://www.facebook.com/dimitrina.beleva"><img src="../resources/facebook.jpg"
-                                                                                                  alt="facebook-icon"></a>
-        <a target="_blank" href="https://www.linkedin.com/in/dimitrina-beleva-0bbb1076/"><img
-                            src="../resources/linkedin.jpg" alt="linked-icon"></a>
-        <a target="_blank" href="https://github.com/dimitrina-beleva/Calorie-Calculator"><img
-                            src="../resources/github.jpg" alt="github-icon"></a>
+    <!-- Footer -->
+    <div class="center">
+        <small>&copy; 2018 Calorie-Calculator/SS_Dimitrina</small>
+        <br>
+        <div>
+            <a target="_blank" href="https://www.facebook.com/dimitrina.beleva">
+                <img src="../resources/facebook.jpg" alt="facebook-icon">
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/dimitrina-beleva-0bbb1076/">
+                <img src="../resources/linkedin.jpg" alt="linked-icon">
+            </a>
+            <a target="_blank" href="https://github.com/dimitrina-beleva/Calorie-Calculator">
+                <img src="../resources/github.jpg" alt="github-icon">
+            </a>
+        </div>
     </div>
-</div>
-<!-- End Footer -->
+    <!-- End Footer -->
 
-<script src="../libs/jquery-3.3.1.min.js"></script>
-<script src="../js/main.js"></script>
-<script>openTab('recipes', document.getElementById("recipes-button"), 'rgb(252, 202, 137)')</script>
+    <script src="../libs/jquery-3.3.1.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script>openTab('recipes', document.getElementById("recipes-button"), 'rgb(252, 202, 137)')</script>
 </body>
-</html> 
+
+</html>

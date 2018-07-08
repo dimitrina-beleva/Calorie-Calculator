@@ -338,7 +338,7 @@ label {
     cursor: pointer;
 }
 
-.read-more:hover, .read-less:hover {
+.read-more:hover {
     color: blue;
     text-decoration: underline;
 }
@@ -347,15 +347,6 @@ label {
     visibility: hidden;
     display: none;
     color: black;
-}
-
-.read-less {       
-    margin-left: 65%; 
-    padding: 3px 10px;
-    color: rgb(103, 58, 117); 
-    visibility: hidden;
-    display: none;
-    cursor: pointer;
 }
 
 .margin {

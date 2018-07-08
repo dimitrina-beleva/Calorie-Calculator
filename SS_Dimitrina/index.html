@@ -1,107 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calorie Calculator</title>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="shortcut icon" href="resources/iconTitle.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="resources/iconTitle.ico" type="image/x-icon">
 </head>
 
 <body>
 
-<!-- Header -->
-<a href="index.html"><img id="logo" src="resources/logo.jpg" alt="logo"></a>
-<div id="homePage" class="tabcontent">
-    <h3>The best website for calculating daily calorie intake and body mass index!</h3>
-</div>
-<div id="calorieCalculator" class="tabcontent">
-    <h3>Use this amazing calculator to see how many calories you may eat in order to maintaint weight
-        and count your daily calorie intake</h3>
-</div>
-<div id="bmiCalculator" class="tabcontent">
-    <h3>Calculate your Body Mass Index now by simply entering your weight and height</h3>
-</div>
-<div id="recommendations" class="tabcontent">
-    <h3>Tips and tricks for better life</h3>
-</div>
-<div id="recipes" class="tabcontent">
-    <h3>The most delicious, healthy and easy recipes you have to try</h3>
-</div>
-<button id="homePage-button" class="tablink" onclick="loadPage('index.html')">Home</button>
-<button id="calorieCalculator-button" class="tablink" onclick="loadPage('html/CalorieCalculator.html')">Calorie
-    Calculator
-</button>
-<button id="bmiCalculator-button" class="tablink" onclick="loadPage('html/BMI.html')">Body Mass Index</button>
-<button id="recommendations-button" class="tablink" onclick="loadPage('html/Recommendations.html')">Key
-    Recommendations
-</button>
-<button id="recipes-button" class="tablink" onclick="loadPage('html/Recipes.html')">Recipes</button>
-<div class="break">
-</div>
-<div class="center">
-    <img id="wall" src="resources/my_wall.jpg" alt="Wall">
-</div>
-<br>
-
-<!-- End Header -->
-
-<div class="paragraph">
-    <h3>Calculate Your Caloric Intake</h3>
-    <p>To create your own personal program you need to calculate your daily calorie requirements.
-        Not everybody needs 2,000 calories a day - your needs are highly individual and determined by much more than
-        your workouts.
-    </p>
-    <p>This depends on numerous factors. These include age, height, current weight, activity levels, metabolic health
-        and several others.
-    </p>
-</div>
-<br>
-<br>
-<div class="paragraph">
-    <h3>Body Mass Index</h3>
-    <p>The index of body mass gives you a general idea of where body weight should be, determining a healthy body
-        weight.</p>
-    <p>Basically the BMI assumes a "normal" body weight for men and women of average height and average fitness or
-        activity level.</p>
-    <p>It is important to take all this into account when trying to understand your BMI reading and also speak with a
-        doctor
-        or nutritionist before undergoing any new fitness routine or diet. One last thing to remember is that the
-        "overweight", "underweight"
-        readings shown in this BMI calculator are relative to a pre-defined average "normal" body weight. This means
-        that for bodybuilders and
-        very fit people, sometimes it’s better being "overweight" because to them the BMI is stating they are heavier
-        than "normal" people, which
-        is in fact the goal most bodybuilders want to obtain.</p>
-</div>
-<br>
-<br>
-<div class="paragraph">
-    <h3>Calorie Counted Healthy Recipes</h3>
-    <p>Need some help deciding what to choose? Take a look at our most popular and inspirational recipes or check out
-        the latest dishes we’ve added to the site. Whether you’re looking for new healthy recipes or you're on a low-calorie diet, we’ve lots of tested recipes to
-        choose from, so for sure you will find the perfect dish. The nutrition facts label is useful if you're tracking calories or just want to be more informed about your diet,
-        but this also helps us to make smarter food decisions.</p>
-</div>
-<div class="break">
-</div>
-
-<!-- Footer -->
-<div class="center">
-        <small>&copy; 2018 Calorie-Calculator/SS_Dimitrina </small>
+    <!-- Header -->
+    <a href="index.html">
+        <img id="logo" src="resources/logo.jpg" alt="logo">
+    </a>
+    <div id="homePage" class="tabcontent">
+        <h3>The best website for calculating daily calorie intake and body mass index!</h3>
+    </div>
+    <div id="calorieCalculator" class="tabcontent">
+        <h3>Use this amazing calculator to see how many calories you may eat in order to maintaint weight and count your daily
+            calorie intake</h3>
+    </div>
+    <div id="bmiCalculator" class="tabcontent">
+        <h3>Calculate your Body Mass Index now by simply entering your weight and height</h3>
+    </div>
+    <div id="recommendations" class="tabcontent">
+        <h3>Tips and tricks for better life</h3>
+    </div>
+    <div id="recipes" class="tabcontent">
+        <h3>The most delicious, healthy and easy recipes you have to try</h3>
+    </div>
+    <button id="homePage-button" class="tablink" onclick="loadPage('index.html')">Home</button>
+    <button id="calorieCalculator-button" class="tablink" onclick="loadPage('html/CalorieCalculator.html')">Calorie Calculator
+    </button>
+    <button id="bmiCalculator-button" class="tablink" onclick="loadPage('html/BMI.html')">Body Mass Index</button>
+    <button id="recommendations-button" class="tablink" onclick="loadPage('html/Recommendations.html')">Key Recommendations
+    </button>
+    <button id="recipes-button" class="tablink" onclick="loadPage('html/Recipes.html')">Recipes</button>
+    <div class="break">
+    </div>
+    <div class="center">
+        <img id="wall" src="resources/my_wall.jpg" alt="Wall">
+    </div>
     <br>
-    <div>
-        <a target="_blank" href="https://www.facebook.com/dimitrina.beleva"><img src="resources/facebook.jpg"
-                                                                                      alt="facebook-icon"></a>
-        <a target="_blank" href="https://www.linkedin.com/in/dimitrina-beleva-0bbb1076/"><img
-                src="resources/linkedin.jpg" alt="linked-icon"></a>
-        <a target="_blank" href="https://github.com/dimitrina-beleva/Calorie-Calculator"><img
-                src="resources/github.jpg" alt="github-icon"></a>
-     </div>
-</div>
-<!-- End Footer -->
 
-<script src="js/main.js"></script>
-<script>openTab('homePage', document.getElementById("homePage-button"), 'rgb(218, 214, 214)')</script>
+    <!-- End Header -->
+
+    <div class="paragraph">
+        <h3>Calculate Your Caloric Intake</h3>
+        <p>To create your own personal program you need to calculate your daily calorie requirements. Not everybody needs 2,000
+            calories a day - your needs are highly individual and determined by much more than your workouts.
+        </p>
+        <p>This depends on numerous factors. These include age, height, current weight, activity levels, metabolic health and
+            several others.
+        </p>
+    </div>
+    <br>
+    <br>
+    <div class="paragraph">
+        <h3>Body Mass Index</h3>
+        <p>The index of body mass gives you a general idea of where body weight should be, determining a healthy body weight.
+        </p>
+        <p>Basically the BMI assumes a "normal" body weight for men and women of average height and average fitness or activity
+            level.
+        </p>
+        <p>It is important to take all this into account when trying to understand your BMI reading and also speak with a doctor
+            or nutritionist before undergoing any new fitness routine or diet. One last thing to remember is that the "overweight",
+            "underweight" readings shown in this BMI calculator are relative to a pre-defined average "normal" body weight.
+            This means that for bodybuilders and very fit people, sometimes it’s better being "overweight" because to them
+            the BMI is stating they are heavier than "normal" people, which is in fact the goal most bodybuilders want to
+            obtain.
+        </p>
+    </div>
+    <br>
+    <br>
+    <div class="paragraph">
+        <h3>Calorie Counted Healthy Recipes</h3>
+        <p>Need some help deciding what to choose? Take a look at our most popular and inspirational recipes or check out the
+            latest dishes we’ve added to the site. Whether you’re looking for new healthy recipes or you're on a low-calorie
+            diet, we’ve lots of tested recipes to choose from, so for sure you will find the perfect dish. The nutrition
+            facts label is useful if you're tracking calories or just want to be more informed about your diet, but this
+            also helps us to make smarter food decisions.</p>
+    </div>
+    <div class="break">
+    </div>
+
+    <!-- Footer -->
+    <div class="center">
+        <small>&copy; 2018 Calorie-Calculator/SS_Dimitrina </small>
+        <br>
+        <div>
+            <a target="_blank" href="https://www.facebook.com/dimitrina.beleva">
+                <img src="resources/facebook.jpg" alt="facebook-icon">
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/dimitrina-beleva-0bbb1076/">
+                <img src="resources/linkedin.jpg" alt="linked-icon">
+            </a>
+            <a target="_blank" href="https://github.com/dimitrina-beleva/Calorie-Calculator">
+                <img src="resources/github.jpg" alt="github-icon">
+            </a>
+        </div>
+    </div>
+    <!-- End Footer -->
+
+    <script src="js/main.js"></script>
+    <script>openTab('homePage', document.getElementById("homePage-button"), 'rgb(218, 214, 214)')</script>
 </body>
-</html> 
+
+</html>
