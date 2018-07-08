@@ -1,5 +1,7 @@
+// Changes styling of the tab content on open tab
 openTab('calorieCalculator', document.getElementById("calorieCalculator-button"), 'rgb(210, 250, 151)');
 
+//Array with products
 var products = [ 
     {id: 'product-1', name: 'Apple', calories: 64, quantity: null},
     {id: 'product-2', name: 'Avocado', calories: 175, quantity: null},

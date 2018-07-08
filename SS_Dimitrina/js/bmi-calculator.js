@@ -1,5 +1,7 @@
+// Changes styling of the tab content on open tab
 openTab('bmiCalculator', document.getElementById("bmiCalculator-button"), 'rgb(194, 240, 248)');
 
+//
 $(function(){
 	$('.calc-frame .row input').keyup(function(e){
 		if (e.keyCode == 13) {
@@ -7,6 +9,7 @@ $(function(){
 		}
 	});
 	
+	//Makes regExp validation of input
 	$('.calc-frame .row input').bind("change keyup input click", function(){
 		if (this.value.match(/[^\d\.]/g)) {
 			this.value = this.value.replace(/[^\d\.]/g, '');

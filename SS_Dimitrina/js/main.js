@@ -21,22 +21,20 @@ function openTab(tabName, elmnt, color) {
     elmnt.style.backgroundColor = color;
 }
 
-//Adds function to scroll event
-window.onscroll = function() {scrollFunction()};
-
-// Displays the scroll button, when scrolling down more than 20px from the top of the document
-function scrollFunction() {
-    if(document.getElementById("scrollButton")) {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            document.getElementById("scrollButton").style.display = "block";
+/* Adds function to scroll event and displays the scroll button,
+when scrolling down more than 20px from the top of the document
+*/
+$(function(){
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 20) {
+            $('#scrollButton').fadeIn();
         } else {
-            document.getElementById("scrollButton").style.display = "none";
+            $('#scrollButton').fadeOut();
         }
-    }
-}
-
-// Scrolls to the top of the document
-function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
+    });
+    // Scrolls to the top of the document
+    $('#scrollButton').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+    });
+});
