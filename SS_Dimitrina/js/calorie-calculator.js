@@ -104,19 +104,7 @@ function resetCalories() {
     sumElement.innerText = '';
 }
 
-  jQuery.validator.setDefaults({
-    debug: true,
-    success: "valid"
-  });
-
-  $("#recommended-intake-form").validate({
-    rules: {
-      field: {
-        required: true
-      }
-    }
-  });
-
+//TODO
   $(function() {
     $("#recommended-intake-form").submit(function submit() {
 
@@ -137,11 +125,17 @@ function resetCalories() {
       $("select").on("change", submit);
       $("span#result-RDCI").text(total);
       submit();
+
+      if (total == 0) {
+        alert ("Please select activity");
+        return false;
+      }
     });
 });
 
 $(function() { 
 
+  //TODO
   //Reset handler that clears the form
   $('form[name="recommended-intake-form"] input:reset').click(function () {
       $('form[name="recommended-intake-form"]')

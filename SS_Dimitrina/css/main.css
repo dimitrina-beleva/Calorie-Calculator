@@ -782,3 +782,11 @@ background:none;
     margin:0 auto;
     width:auto;
 }
+
+input:invalid {
+    border-bottom: 1px solid rgb(230, 108, 107);
+}
+
+form.submitted input:invalid {
+    border-bottom: 1px solid rgb(230, 108, 107);
+}
