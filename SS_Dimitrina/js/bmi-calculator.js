@@ -1,4 +1,3 @@
-// Changes styling of the tab content on open tab
 openTab('bmiCalculator', document.getElementById("bmiCalculator-button"), 'rgb(194, 240, 248)');
 
 //

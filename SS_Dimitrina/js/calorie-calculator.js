@@ -1,4 +1,3 @@
-// Changes styling of the tab content on open tab
 openTab('calorieCalculator', document.getElementById("calorieCalculator-button"), 'rgb(210, 250, 151)');
 
 //Array with products
@@ -127,7 +126,7 @@ function resetCalories() {
       submit();
 
       if (total == 0) {
-        alert ("Please select activity");
+        alert ("Please select your exercise intensity level");
         return false;
       }
     });

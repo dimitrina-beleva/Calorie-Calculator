@@ -24,7 +24,7 @@ function openTab(tabName, elmnt, color) {
 /* Adds function to scroll event and displays the scroll button,
 when scrolling down more than 20px from the top of the document
 */
-$(function(){
+
     $(window).scroll(function(){
         if ($(this).scrollTop() > 20) {
             $('#scrollButton').fadeIn();
@@ -37,4 +37,3 @@ $(function(){
         $("html, body").animate({ scrollTop: 0 }, 600);
         return false;
     });
-});

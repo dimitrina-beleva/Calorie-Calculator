@@ -1,4 +1,3 @@
-// Changes styling of the tab content on open tab
 openTab('recommendations', document.getElementById("recommendations-button"), 'rgb(253, 251, 148)')
 
 //Changes the visibility of the read more/less button and shows and hides the hidden elements
