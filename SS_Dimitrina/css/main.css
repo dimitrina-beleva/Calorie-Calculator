@@ -235,6 +235,7 @@ label {
     padding: 5px;
     margin: 30px 20px 30px;
     border-radius: 45%;
+    width:30%;
 }
 
 .carousel-item h3 {
@@ -459,7 +460,7 @@ label {
     margin-top: 20px;
 }
 
-#sum, #result-RDCI {
+.amount {
     font: bold;
     font-size: 25px;
 }
@@ -551,6 +552,10 @@ img {
     padding-bottom: 15px;
 }
 
+.box #box03 {
+    display: none;
+}
+
 .calc-frame .img {
     max-width: 100%;
     height: auto;
@@ -569,7 +574,7 @@ img {
 	font-size:16px;
 	line-height:20px;
 	font-style:italic;
-	opacity:0;
+    opacity:0;
 }
 
 .calc-frame h3 {
@@ -794,11 +799,11 @@ background:none;
     width:auto;
 }
 
-#age:invalid, #height:invalid, #weight:invalid {
+.calculate-form:invalid {
     border-bottom: 2px solid rgb(230, 108, 107);
 }
 
-#age:valid, #height:valid, #weight:valid {
+.calculate-form:valid {
     border-bottom: 2px solid rgb(107, 230, 134);
 }
 

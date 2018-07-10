@@ -67,15 +67,15 @@
             </div>
             <div class="center">
                 <label for="age">Age</label>
-                <input id="age" type="number" name="age" required min="1" max="100">
+                <input id="age" class="calculate-form" type="number" name="age" required min="1" max="100">
             </div>
             <div>
                 <label>Height (cm)</label>
-                <input id="height" type="number" name="height" required min="1" max="250">
+                <input id="height" class="calculate-form" type="number" name="height" required min="1" max="250">
             </div>
             <div>
                 <label>Weight (kg)</label>
-                <input id="weight" type="number" name="weight" required min="1" max="200">
+                <input id="weight" class="calculate-form" type="number" name="weight" required min="1" max="200">
             </div>
             <label for="activity">Select your individual exercise intensity levels</label>
             <select name="activity" id="activity">
@@ -91,7 +91,7 @@
             <br>
             <br>
             <input type="button" id="resetRDCI-button" onclick="resetRDCI()" value="Reset" name="reset">
-            <span id="result-RDCI"></span>
+            <span id="result-RDCI" class="amount"></span>
             <br>
         </div>
     </div>
@@ -133,7 +133,7 @@
     </table>
     <br>
     <button id="calculateCalories-Button" onclick="calculateCalories()">Calculate</button>
-    <span id="sum"></span>
+    <span id="sum" class="amount"></span>
     <br>
     <br>
     <button id="resetCalories-button" onclick="resetCalories()">Reset</button>
