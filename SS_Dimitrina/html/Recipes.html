@@ -64,12 +64,12 @@
         <div class="carousel-item">
             <div class="center">
                 <p>*Click on the image to see the recipe</p>
-                <a class="recipe-images" href="#Recipe1" onclick="showRecipe('Recipe1')">
+                <span class="recipe-images" onclick="showRecipe('Recipe1')">
                     <img src="../resources/Breakfast-Smoothie.jpg" alt="Breakfast smoothie">
-                </a>
-                <a class="recipe-images" href="#Recipe2" onclick="showRecipe('Recipe2')">
+                </span>
+                <span class="recipe-images" onclick="showRecipe('Recipe2')">
                     <img src="../resources/Omelette-Wedges.jpg" alt="Omelette wedges">
-                </a>
+                </span>
                 <h3>Healthy Breakfast Ideas</h3>
             </div>
         </div>
@@ -77,13 +77,13 @@
         <div class="carousel-item">
             <div class="center">
                 <p>*Click on the image to see the recipe</p>
-                <a class="recipe-images" href="#Recipe3" onclick="showRecipe('Recipe3')">
+                <span class="recipe-images" onclick="showRecipe('Recipe3')">
                     <img src="../resources/Poached-Eggs-with-Smashed-Avocado-and-Tomatoes.jpg"
                          alt="Poached eggs with smashed avocado and tomatoes">
-                </a>
-                <a class="recipe-images" href="#Recipe6" onclick="showRecipe('Recipe6')">
+                </span>
+                <span class="recipe-images" onclick="showRecipe('Recipe6')">
                     <img src="../resources/Thai-Squash-Soup.jpg" alt="Thai squash soup">
-                </a>
+                </span>
                 <h3>Quick and Easy Lunch Recipes</h3>
             </div>
         </div>
@@ -91,13 +91,13 @@
         <div class="carousel-item">
             <p>*Click on the image to see the recipe</p>
             <div class="center">
-                <a class="recipe-images" href="#Recipe4" onclick="showRecipe('Recipe4')">
+                <span class="recipe-images" onclick="showRecipe('Recipe4')">
                     <img src="../resources/Spicy-Yogurt-Chicken.jpg" alt="Spicy-yogurt-chicken">
-                </a>
-                <a class="recipe-images" href="#Recipe5" onclick="showRecipe('Recipe5')">
+                </span>
+                <span class="recipe-images" onclick="showRecipe('Recipe5')">
                     <img src="../resources/Smoked-Salmon-and-Lemon-Scramled-Eggs.jpg"
                          alt="Smoked salmon and lemon scrambled eggs">
-                </a>
+                </span>
                 <h3>All-Time Best Dinner Recipes</h3>
             </div>
         </div>
@@ -120,12 +120,11 @@
         </ol>
     </div>
 </div>
+<div class="break">
+</div>
 <div class="recipes">
-    <div class="recipe">
-        <a id="Recipe1">
+    <div id="Recipe1" class="hidden non-display border">
             <h3>Breakfast smoothie</h3>
-            <h3>/Recipe Book/</h3>
-            <br>
             <div class="recipe-details">
                 <div class="images">
                     <img src="../resources/Breakfast-Smoothie.jpg" alt="Breakfast smoothie">
@@ -158,13 +157,10 @@
                 <p>Prep: 5min</p>
                 <p>Kcal: 165 per 100g</p>
             </div>
-        </a>
     </div>
     <br>
-    <div class="recipe">
-        <a id="Recipe2">
+        <div id="Recipe2" class="hidden non-display border">
             <h3>Omelette Wedges</h3>
-            <h3>/Recipe Book/</h3>
             <div class="recipe-details">
                 <div class="images">
                     <img src="../resources/Omelette-Wedges.jpg" alt="Omelette wedges">
@@ -219,13 +215,10 @@
                 <p>Cook: 10min</p>
                 <p>Kcal: 275 per 100g</p>
             </div>
-        </a>
     </div>
     <br>
-    <div class="recipe">
-        <a id="Recipe3">
+        <div id="Recipe3" class="hidden non-display border">
             <h3>Poached eggs with smashed avocado and tomatoes</h3>
-            <h3>/Recipe Book/</h3>
             <div class="recipe-details">
                 <div class="images">
                     <img src="../resources/Poached-Eggs-with-Smashed-Avocado-and-Tomatoes.jpg"
@@ -263,19 +256,16 @@
                         </li>
                     </ol>
                 </div>
-            </div>
             <div class="preparation">
                 <p>Prep: 10min</p>
                 <p>Cook: 10min</p>
                 <p>Kcal: 411 per 100g</p>
             </div>
-        </a>
+        </div>
     </div>
     <br>
-    <div class="recipe">
-        <a id="Recipe4">
+        <div id="Recipe4" class="hidden non-display border">
             <h3>Spicy yogurt chicken</h3>
-            <h3>/Recipe Book/</h3>
             <div class="recipe-details">
                 <div class="images">
                     <img src="../resources/Spicy-Yogurt-Chicken.jpg" alt="Spicy yogurt chicken">
@@ -314,13 +304,10 @@
                 <p>Cook: 20min</p>
                 <p>Kcal: 394 per 100g</p>
             </div>
-        </a>
-    </div>
+</div>
     <br>
-    <div class="recipe">
-        <a id="Recipe5">
+        <div id="Recipe5" class="hidden non-display border">
             <h3>Smoked salmon and lemon scrambled eggs</h3>
-            <h3>/Recipe Book/</h3>
             <div class="recipe-details">
                 <div class="images">
                     <img src="../resources/Smoked-Salmon-and-Lemon-Scramled-Eggs.jpg"
@@ -354,13 +341,10 @@
                 <p>Prep: 10min</p>
                 <p>Kcal: 366 per 100g</p>
             </div>
-        </a>
     </div>
     <br>
-    <div class="recipe">
-        <a id="Recipe6">
+        <div id="Recipe6" class="hidden non-display border">
             <h3>Thai squash soup</h3>
-            <h3>/Recipe Book/</h3>
             <div class="recipe-details">
                 <div class="images">
                     <img src="../resources/Thai-Squash-Soup.jpg" alt="Thai squash soup">
@@ -401,7 +385,6 @@
                 <p>Cook: 20min</p>
                 <p>Kcal: 178 per 100g</p>
             </div>
-        </a>
     </div>
 </div>
 <div class="break">
