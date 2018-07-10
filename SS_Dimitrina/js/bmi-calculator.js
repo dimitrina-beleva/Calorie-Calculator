@@ -23,7 +23,6 @@ $(function(){
 		}
 		else if ($(this).hasClass('calculate')) {
 			var height_ = $(this).closest('.calc-frame').find('.row input').val();
-			var filter = /[^\d\.]/g;
 			
 			if (height_ == '' || height_ == 0) {
 				$(this).closest('.calc-frame').find('.error-txt').animate({

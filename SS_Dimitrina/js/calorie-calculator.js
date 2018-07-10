@@ -103,43 +103,39 @@ function resetCalories() {
     sumElement.innerText = '';
 }
 
-//TODO
-  $(function() {
-    $("#recommended-intake-form").submit(function submit() {
+//Calculates the RDCI getting the value of input fields
+function calculateRDCI() {
+    var isMale = $("#male:checked").val() == "Male";
+    var weight = $("#weight").val();
+    var height = $("#height").val();
+    var age = $("#age").val();
+    var activity = $("#activity").val();
 
-      var isMale = $("#gender").val() == "Male";
-      var weight = $("#weight").val();
-      var height = $("#height").val();
-      var age = $("#age").val();
-      var total = 0;
-          
-      if ($(isMale)) {
-        total = Math.round(((10 * weight) + (6.25 * height) - (5 * age) + 5) * activity.value);
-      } else {
-        total = Math.round(((10 * weight) + (6.25 * height) - (5 * age) - 161) * activity.value);
-      }
-      var values = $("#recommended-intake-form").serialize();
-      $("#result-RDCI").text(values);
-      $("input[type='checkbox'], input[type='radio']").on("click", submit);
-      $("select").on("change", submit);
-      $("span#result-RDCI").text(total);
-      submit();
+    if (age <= 0 || height <= 0 || weight <= 0) {
+    alert ("Please enter valid values");
+    return;
+    }
+    if (activity == 0) {
+    alert ("Please select your exercise intensity level");
+    return;
+    }
 
-      if (total == 0) {
-        alert ("Please select your exercise intensity level");
-        return false;
-      }
-    });
-});
+    var total = 0;
+    if (isMale) {
+      total = Math.round(((10 * weight) + (6.25 * height) - (5 * age) + 5) * activity);
+    } else {
+      total = Math.round(((10 * weight) + (6.25 * height) - (5 * age) - 161) * activity);
+    }
+    $("span#result-RDCI").text(total);
+}
 
-$(function() { 
-
-  //TODO
-  //Reset handler that clears the form
-  $('form[name="recommended-intake-form"] input:reset').click(function () {
-      $('form[name="recommended-intake-form"]')
-          .find(":radio, :checkbox").removeAttr("checked").end()
-          .find("textarea, :text, select").val('')
-      return false;
-  });
-});
+    //Resets all input values and total
+    function resetRDCI() {
+        $("#male").prop('checked', true);
+        $("#female").prop('checked', false);
+        $("#weight").val('');
+        $("#height").val('');
+        $("#age").val('');
+        $("#activity").val(0);
+        $("span#result-RDCI").text('')
+}

@@ -56,14 +56,14 @@
     <br>
     <h4>Recommended Daily Calorie Intake - Calculator</h4>
     <div class="recommendedCalorieIntakeCalculator">
-        <form id="recommended-intake-form">
+        <div id="recommended-intake-form">
             <div id="img-male-female" class="center">
                 <img class="gender-image" src="../resources/male.gif" alt="male">
                 <img class="gender-image" src="../resources/female.gif" alt="gemale">
             </div>
             <div class="center">
-                <input id="male" type="radio" name="gender" checked> Male
-                <input id="female" type="radio" name="gender"> Female
+                <input id="male" type="radio" name="gender" value="Male" checked> Male
+                <input id="female" type="radio" name="gender" value="Female"> Female
             </div>
             <div class="center">
                 <label for="age">Age</label>
@@ -86,13 +86,13 @@
                 <option value="1.725">6-7 times per week</option>
                 <option value="1.9">Twice daily or phisical job</option>
             </select>
-            <input type="submit" id="calculateRDCI-Button" value="Calculate" name="calculate">
+            <input type="buton" id="calculateRDCI-Button" onclick="calculateRDCI()" value="Calculate" name="calculate">
             <span id="result-RDCI"></span>
             <br>
             <br>
-            <input type="reset" id="resetRDCI-button" value="Reset" name="reset">
+            <input type="button" id="resetRDCI-button" onclick="resetRDCI()" value="Reset" name="reset">
             <br>
-        </form>
+        </div>
     </div>
     <br>
 </div>
