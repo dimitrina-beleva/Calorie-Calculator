@@ -229,7 +229,6 @@ visibility: hidden;
     border-radius: 20%;
     border: solid 2px black;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 40px 0 rgba(0,0,0,0.19);
-
 }
 
 .carousel-open:checked + .carousel-item {
