@@ -126,7 +126,7 @@ function calculateRDCI() {
     } else {
       total = Math.round(((10 * weight) + (6.25 * height) - (5 * age) - 161) * activity);
     }
-    $("span#result-RDCI").text(total);
+    $("span#result-RDCI").text('Recommended calorie intake: ' + total);
 }
 
     //Resets all input values and total
