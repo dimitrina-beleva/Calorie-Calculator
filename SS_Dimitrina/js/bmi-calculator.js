@@ -23,37 +23,37 @@ $('.btn-next').click(function () {
 	$('#box01').fadeIn(350);
 	}
 	else {
-	var weight_ = $('#weight-bmi').val();
-	if ((weight_== '' || weight_== 0) || weight_> 0 && (height_=='' || height_==0)) {
+	var weightBMI = $('#weight-bmi').val();
+	if ((weightBMI == '' || weightBMI == 0) || weightBMI > 0 && (heightBMI == '' || heightBMI == 0)) {
 		$(this).closest('.calc-frame').find('.error-txt').animate({
 			opacity: 1},300);
 	}
 	else {
-	var height_ = $('#height-bmi').val();
-	var bmi_ = (weight_/((height_/100)*(height_/100))).toFixed(1);
+	var heightBMI = $('#height-bmi').val();
+	var bmi = (weightBMI / ((heightBMI/100) * (heightBMI/100))).toFixed(1);
 	$(this).closest('.box').hide();
 	$(this).closest('.box').next().fadeIn(350);
 
     }
-	if (bmi_ < 18.5) {
+	if (bmi < 18.5) {
 			$('.result-area-holder #result01').show();
 			$('.result-area-holder #result01').siblings().hide();
-			$('span.final-bmi').text(bmi_);
+			$('span.final-bmi').text(bmi);
 		}
-	else if (bmi_ >= 18.5 && bmi_ <= 23) {
+	else if (bmi >= 18.5 && bmi <= 23) {
 			$('.result-area-holder #result02').show();
 			$('.result-area-holder #result02').siblings().hide();
-			$('span.final-bmi').text(bmi_);
+			$('span.final-bmi').text(bmi);
 		}
-	else if (bmi_ >= 23 && bmi_ <= 27.5) {
+	else if (bmi >= 23 && bmi <= 27.5) {
 			$('.result-area-holder #result03').show();
 			$('.result-area-holder #result03').siblings().hide();
-			$('span.final-bmi').text(bmi_);
+			$('span.final-bmi').text(bmi);
 		}
-	else if (bmi_ >= 27.5) {
+	else if (bmi >= 27.5) {
 			$('.result-area-holder #result04').show();
 			$('.result-area-holder #result04').siblings().hide();
-			$('span.final-bmi').text(bmi_);
+			$('span.final-bmi').text(bmi);
 		}
 	}
 	});
