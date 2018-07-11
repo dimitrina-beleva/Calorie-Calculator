@@ -71,11 +71,11 @@
             </div>
             <div>
                 <label>Height (cm)</label>
-                <input id="height" class="calculate-form" type="number" name="height" required min="1" max="250">
+                <input id="height" class="calculate-form height-weight-input" type="number" name="height" required min="1" max="250">
             </div>
             <div>
                 <label>Weight (kg)</label>
-                <input id="weight" class="calculate-form" type="number" name="weight" required min="1" max="200">
+                <input id="weight" class="calculate-form height-weight-input" type="number" name="weight" required min="1" max="200">
             </div>
             <label for="activity">Select your individual exercise intensity levels</label>
             <select name="activity" id="activity">
@@ -87,10 +87,14 @@
                 <option value="1.9">Twice daily or phisical job</option>
             </select>
             <br>
-            <input type="button" id="calculateRDCI-Button" onclick="calculateRDCI()" value="Calculate" name="calculate">
-            <br>
-            <br>
-            <input type="button" id="resetRDCI-button" onclick="resetRDCI()" value="Reset" name="reset">
+            <div class="center">
+            <input type="button" id="calculateRDCI-Button" class="rdci-button calculate-button
+            calculate-or-reset-button" onclick="calculateRDCI()"
+            value="Calculate" name="calculate">
+            <input type="button" id="resetRDCI-button" class="rdci-button reset-button
+            calculate-or-reset-button" onclick="resetRDCI()"
+            value="Reset" name="reset">
+            </div>
             <span id="result-RDCI" class="amount"></span>
             <br>
         </div>
@@ -132,11 +136,11 @@
         </tbody>
     </table>
     <br>
-    <button id="calculateCalories-Button" onclick="calculateCalories()">Calculate</button>
+    <button id="calculateCalories-Button" class="calculate-calorie-button calculate-button calculate-or-reset-button" onclick="calculateCalories()">Calculate</button>
     <span id="sum" class="amount"></span>
     <br>
     <br>
-    <button id="resetCalories-button" onclick="resetCalories()">Reset</button>
+    <button id="resetCalories-button" class="calculate-calorie-button reset-button calculate-or-reset-button" onclick="resetCalories()">Reset</button>
     <br>
     <br>
 </div>

@@ -34,7 +34,7 @@ $('.btn-next').click(function () {
 	$(this).closest('.box').hide();
 	$(this).closest('.box').next().fadeIn(350);
 
-}
+    }
 	if (bmi_ < 18.5) {
 			$('.result-area-holder #result01').show();
 			$('.result-area-holder #result01').siblings().hide();

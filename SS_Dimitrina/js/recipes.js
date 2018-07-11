@@ -1,7 +1,7 @@
 openTab('recipes', document.getElementById("recipes-button"), 'rgb(252, 202, 137)');
 
 //Shows and hides the recipes
-function showRecipe(recipeToBeShown) {
+function changeRecipeVisibility(recipeToBeShown) {
     var recipe = $('#' + recipeToBeShown);
     var isVisible = recipe.is(":visible");
     if (isVisible) {

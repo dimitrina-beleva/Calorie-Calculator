@@ -402,47 +402,47 @@ visibility: hidden;
     font-size: 16px;
 }
 
-#calculateCalories-Button, #calculateRDCI-Button {
+.height-weight-input {
     position: relative;
+    margin: 5px;
+}
+
+label {margin: 7px 0 0 4px;}
+
+.rdci-button {margin: 20px;}
+
+.calculate-or-reset-button {
+    position: relative;
+    width: 146px;
+    height: 48px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.calculate-button {
     background-color: rgba(63, 175, 48, 0.644);
-    width: 140px;
-    font-size: 16px;
-    padding: 14px 40px;
-    border-radius: 10px;
-    color: black;
-    margin-left: 130px; 
-    transition-duration: 0.4s;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
-#calculateCalories-Button:hover, #calculateRDCI-Button:hover {
-    background-color: rgba(39, 107, 121, 0.596);
-}
-        
-#calculateCalories-Button:active, #calculateRDCI-Button:active {
-    background-color: rgb(112, 122, 54);
-    box-shadow: 0 5px rgb(119, 117, 117);
-    transform: translateY(4px);
-}
-
-#resetCalories-button, #resetRDCI-button {
-    position: relative;
+.reset-button {
     background-color: rgba(245, 168, 26, 0.829);
-    width: 140px;
-    font-size: 16px;
-    padding: 14px 40px;
-    border-radius: 10px;
-    color: black;
-    font: bold;
-    margin-left: 130px; 
-    transition-duration: 0.4s;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
-#resetCalories-button:hover, #resetRDCI-button:hover {
+
+.calculate-calorie-button {
+    margin-left: 130px; 
+}
+
+.calculate-or-reset-button:hover {
     background-color: rgba(39, 107, 121, 0.596);
 }
+
         
-#resetCalories-button:active, #resetRDCI-button:active {
+.calculate-or-reset-button:active {
     background-color: rgb(112, 122, 54);
     box-shadow: 0 5px rgb(119, 117, 117);
     transform: translateY(4px);
@@ -824,6 +824,6 @@ background:none;
 }
 
 #recommended-intake-form input[type="number"] {
-    width: 80px;
+    width: 100px;
     height: 18px;
 }
